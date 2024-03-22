@@ -29,36 +29,42 @@ Partial Class Startup
         '
         'BTlogin
         '
-        Me.BTlogin.Location = New System.Drawing.Point(96, 125)
+        Me.BTlogin.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.BTlogin.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.BTlogin.Location = New System.Drawing.Point(128, 154)
+        Me.BTlogin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BTlogin.Name = "BTlogin"
-        Me.BTlogin.Size = New System.Drawing.Size(75, 23)
+        Me.BTlogin.Size = New System.Drawing.Size(100, 28)
         Me.BTlogin.TabIndex = 0
         Me.BTlogin.Text = "Login"
-        Me.BTlogin.UseVisualStyleBackColor = True
+        Me.BTlogin.UseVisualStyleBackColor = False
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(83, 37)
+        Me.TextBox1.Location = New System.Drawing.Point(111, 46)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(132, 22)
         Me.TextBox1.TabIndex = 1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(83, 80)
+        Me.TextBox2.Location = New System.Drawing.Point(111, 98)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(132, 22)
         Me.TextBox2.TabIndex = 2
         '
         'Startup
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(250, 246)
+        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ClientSize = New System.Drawing.Size(333, 303)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.BTlogin)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Startup"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
