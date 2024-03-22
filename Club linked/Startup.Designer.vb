@@ -22,19 +22,19 @@ Partial Class Startup
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BTlogin = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'Button1
+        'BTlogin
         '
-        Me.Button1.Location = New System.Drawing.Point(96, 125)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BTlogin.Location = New System.Drawing.Point(96, 125)
+        Me.BTlogin.Name = "BTlogin"
+        Me.BTlogin.Size = New System.Drawing.Size(75, 23)
+        Me.BTlogin.TabIndex = 0
+        Me.BTlogin.Text = "Login"
+        Me.BTlogin.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
@@ -54,10 +54,10 @@ Partial Class Startup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(686, 450)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BTlogin)
         Me.Name = "Startup"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -65,7 +65,7 @@ Partial Class Startup
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BTlogin As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
 End Class
