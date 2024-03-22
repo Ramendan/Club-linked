@@ -25,46 +25,67 @@ Partial Class Startup
         Me.BTlogin = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TBusername = New System.Windows.Forms.Label()
+        Me.TBpass = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'BTlogin
         '
-        Me.BTlogin.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.BTlogin.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.BTlogin.Location = New System.Drawing.Point(128, 154)
-        Me.BTlogin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BTlogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTlogin.Location = New System.Drawing.Point(96, 168)
         Me.BTlogin.Name = "BTlogin"
-        Me.BTlogin.Size = New System.Drawing.Size(100, 28)
+        Me.BTlogin.Size = New System.Drawing.Size(143, 51)
         Me.BTlogin.TabIndex = 0
         Me.BTlogin.Text = "Login"
-        Me.BTlogin.UseVisualStyleBackColor = False
+        Me.BTlogin.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(111, 46)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(83, 48)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(132, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(168, 29)
         Me.TextBox1.TabIndex = 1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(111, 98)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(83, 114)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(132, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(168, 29)
         Me.TextBox2.TabIndex = 2
+        '
+        'TBusername
+        '
+        Me.TBusername.AutoSize = True
+        Me.TBusername.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TBusername.Location = New System.Drawing.Point(119, 23)
+        Me.TBusername.Name = "TBusername"
+        Me.TBusername.Size = New System.Drawing.Size(97, 24)
+        Me.TBusername.TabIndex = 3
+        Me.TBusername.Text = "Username"
+        '
+        'TBpass
+        '
+        Me.TBpass.AutoSize = True
+        Me.TBpass.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TBpass.Location = New System.Drawing.Point(119, 89)
+        Me.TBpass.Name = "TBpass"
+        Me.TBpass.Size = New System.Drawing.Size(92, 24)
+        Me.TBpass.TabIndex = 4
+        Me.TBpass.Text = "Password"
         '
         'Startup
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.ClientSize = New System.Drawing.Size(333, 303)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(341, 279)
+        Me.Controls.Add(Me.TBpass)
+        Me.Controls.Add(Me.TBusername)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.BTlogin)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Startup"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -75,4 +96,6 @@ Partial Class Startup
     Friend WithEvents BTlogin As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TBusername As Label
+    Friend WithEvents TBpass As Label
 End Class
