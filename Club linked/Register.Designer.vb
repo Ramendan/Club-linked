@@ -30,6 +30,8 @@ Partial Class Register
         Me.LDisplayNameRegister = New System.Windows.Forms.Label()
         Me.LPasswordRegister = New System.Windows.Forms.Label()
         Me.LRePassword = New System.Windows.Forms.Label()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TBEmailRegister
@@ -46,7 +48,7 @@ Partial Class Register
         Me.TBEmailRegister.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TBEmailRegister.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TBEmailRegister.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TBEmailRegister.Location = New System.Drawing.Point(246, 46)
+        Me.TBEmailRegister.Location = New System.Drawing.Point(238, 83)
         Me.TBEmailRegister.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TBEmailRegister.Name = "TBEmailRegister"
         Me.TBEmailRegister.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -69,7 +71,7 @@ Partial Class Register
         Me.TBDisplayNameRegister.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TBDisplayNameRegister.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TBDisplayNameRegister.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TBDisplayNameRegister.Location = New System.Drawing.Point(246, 158)
+        Me.TBDisplayNameRegister.Location = New System.Drawing.Point(238, 183)
         Me.TBDisplayNameRegister.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TBDisplayNameRegister.Name = "TBDisplayNameRegister"
         Me.TBDisplayNameRegister.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -92,7 +94,7 @@ Partial Class Register
         Me.TBPasswordRegister.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TBPasswordRegister.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TBPasswordRegister.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TBPasswordRegister.Location = New System.Drawing.Point(246, 267)
+        Me.TBPasswordRegister.Location = New System.Drawing.Point(238, 292)
         Me.TBPasswordRegister.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TBPasswordRegister.Name = "TBPasswordRegister"
         Me.TBPasswordRegister.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -115,7 +117,7 @@ Partial Class Register
         Me.TBRePassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TBRePassword.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TBRePassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TBRePassword.Location = New System.Drawing.Point(246, 376)
+        Me.TBRePassword.Location = New System.Drawing.Point(238, 401)
         Me.TBRePassword.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TBRePassword.Name = "TBRePassword"
         Me.TBRePassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -127,7 +129,7 @@ Partial Class Register
         'LEmailRegister
         '
         Me.LEmailRegister.AutoSize = True
-        Me.LEmailRegister.Location = New System.Drawing.Point(357, 21)
+        Me.LEmailRegister.Location = New System.Drawing.Point(349, 46)
         Me.LEmailRegister.Name = "LEmailRegister"
         Me.LEmailRegister.Size = New System.Drawing.Size(48, 20)
         Me.LEmailRegister.TabIndex = 4
@@ -136,7 +138,7 @@ Partial Class Register
         'LDisplayNameRegister
         '
         Me.LDisplayNameRegister.AutoSize = True
-        Me.LDisplayNameRegister.Location = New System.Drawing.Point(335, 123)
+        Me.LDisplayNameRegister.Location = New System.Drawing.Point(327, 148)
         Me.LDisplayNameRegister.Name = "LDisplayNameRegister"
         Me.LDisplayNameRegister.Size = New System.Drawing.Size(106, 20)
         Me.LDisplayNameRegister.TabIndex = 5
@@ -145,7 +147,7 @@ Partial Class Register
         'LPasswordRegister
         '
         Me.LPasswordRegister.AutoSize = True
-        Me.LPasswordRegister.Location = New System.Drawing.Point(348, 233)
+        Me.LPasswordRegister.Location = New System.Drawing.Point(340, 258)
         Me.LPasswordRegister.Name = "LPasswordRegister"
         Me.LPasswordRegister.Size = New System.Drawing.Size(78, 20)
         Me.LPasswordRegister.TabIndex = 6
@@ -154,30 +156,40 @@ Partial Class Register
         'LRePassword
         '
         Me.LRePassword.AutoSize = True
-        Me.LRePassword.Location = New System.Drawing.Point(317, 341)
+        Me.LRePassword.Location = New System.Drawing.Point(309, 366)
         Me.LRePassword.Name = "LRePassword"
         Me.LRePassword.Size = New System.Drawing.Size(146, 20)
         Me.LRePassword.TabIndex = 7
         Me.LRePassword.Text = "Re-Enter password"
+        '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.Controls.Add(Me.TBEmailRegister)
+        Me.Guna2Panel1.Controls.Add(Me.LRePassword)
+        Me.Guna2Panel1.Controls.Add(Me.TBDisplayNameRegister)
+        Me.Guna2Panel1.Controls.Add(Me.LPasswordRegister)
+        Me.Guna2Panel1.Controls.Add(Me.TBPasswordRegister)
+        Me.Guna2Panel1.Controls.Add(Me.LDisplayNameRegister)
+        Me.Guna2Panel1.Controls.Add(Me.TBRePassword)
+        Me.Guna2Panel1.Controls.Add(Me.LEmailRegister)
+        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.Size = New System.Drawing.Size(737, 559)
+        Me.Guna2Panel1.TabIndex = 8
         '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.LRePassword)
-        Me.Controls.Add(Me.LPasswordRegister)
-        Me.Controls.Add(Me.LDisplayNameRegister)
-        Me.Controls.Add(Me.LEmailRegister)
-        Me.Controls.Add(Me.TBRePassword)
-        Me.Controls.Add(Me.TBPasswordRegister)
-        Me.Controls.Add(Me.TBDisplayNameRegister)
-        Me.Controls.Add(Me.TBEmailRegister)
+        Me.ClientSize = New System.Drawing.Size(737, 559)
+        Me.Controls.Add(Me.Guna2Panel1)
         Me.Name = "Register"
         Me.Text = "Register"
+        Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -189,4 +201,5 @@ Partial Class Register
     Friend WithEvents LDisplayNameRegister As Label
     Friend WithEvents LPasswordRegister As Label
     Friend WithEvents LRePassword As Label
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
 End Class
