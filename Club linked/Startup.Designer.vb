@@ -27,6 +27,7 @@ Partial Class Startup
         Me.TBusername = New System.Windows.Forms.Label()
         Me.TBpass = New System.Windows.Forms.Label()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2RatingStar1 = New Guna.UI2.WinForms.Guna2RatingStar()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -79,12 +80,20 @@ Partial Class Startup
         Me.Guna2Button1.TabIndex = 5
         Me.Guna2Button1.Text = "Login"
         '
+        'Guna2RatingStar1
+        '
+        Me.Guna2RatingStar1.Location = New System.Drawing.Point(83, 213)
+        Me.Guna2RatingStar1.Name = "Guna2RatingStar1"
+        Me.Guna2RatingStar1.Size = New System.Drawing.Size(168, 28)
+        Me.Guna2RatingStar1.TabIndex = 6
+        '
         'Startup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(341, 279)
+        Me.Controls.Add(Me.Guna2RatingStar1)
         Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.TBpass)
         Me.Controls.Add(Me.TBusername)
@@ -101,4 +110,5 @@ Partial Class Startup
     Friend WithEvents TBusername As Label
     Friend WithEvents TBpass As Label
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2RatingStar1 As Guna.UI2.WinForms.Guna2RatingStar
 End Class
