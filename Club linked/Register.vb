@@ -2,4 +2,16 @@
     Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs) Handles EmailTB.TextChanged
 
     End Sub
+
+    Private Sub RePasswordTB_TextChanged(sender As Object, e As EventArgs) Handles RePasswordTB.TextChanged
+
+    End Sub
+
+    Private Sub PasswordTB_TextChanged(sender As Object, e As EventArgs) Handles PasswordTB.TextChanged
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles EmailL.Click
+
+    End Sub
 End Class

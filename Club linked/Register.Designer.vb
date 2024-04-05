@@ -26,6 +26,10 @@ Partial Class Register
         Me.DisplayNameTB = New Guna.UI2.WinForms.Guna2TextBox()
         Me.PasswordTB = New Guna.UI2.WinForms.Guna2TextBox()
         Me.RePasswordTB = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.EmailL = New System.Windows.Forms.Label()
+        Me.DisplayNameL = New System.Windows.Forms.Label()
+        Me.Password = New System.Windows.Forms.Label()
+        Me.RePasswordL = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'EmailTB
@@ -42,7 +46,7 @@ Partial Class Register
         Me.EmailTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.EmailTB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.EmailTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.EmailTB.Location = New System.Drawing.Point(246, 55)
+        Me.EmailTB.Location = New System.Drawing.Point(246, 46)
         Me.EmailTB.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.EmailTB.Name = "EmailTB"
         Me.EmailTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -65,7 +69,7 @@ Partial Class Register
         Me.DisplayNameTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DisplayNameTB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DisplayNameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DisplayNameTB.Location = New System.Drawing.Point(246, 125)
+        Me.DisplayNameTB.Location = New System.Drawing.Point(246, 158)
         Me.DisplayNameTB.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DisplayNameTB.Name = "DisplayNameTB"
         Me.DisplayNameTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -88,7 +92,7 @@ Partial Class Register
         Me.PasswordTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PasswordTB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.PasswordTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.PasswordTB.Location = New System.Drawing.Point(246, 195)
+        Me.PasswordTB.Location = New System.Drawing.Point(246, 267)
         Me.PasswordTB.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PasswordTB.Name = "PasswordTB"
         Me.PasswordTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -111,7 +115,7 @@ Partial Class Register
         Me.RePasswordTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.RePasswordTB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.RePasswordTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.RePasswordTB.Location = New System.Drawing.Point(246, 265)
+        Me.RePasswordTB.Location = New System.Drawing.Point(246, 376)
         Me.RePasswordTB.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.RePasswordTB.Name = "RePasswordTB"
         Me.RePasswordTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -120,12 +124,52 @@ Partial Class Register
         Me.RePasswordTB.Size = New System.Drawing.Size(286, 60)
         Me.RePasswordTB.TabIndex = 3
         '
+        'EmailL
+        '
+        Me.EmailL.AutoSize = True
+        Me.EmailL.Location = New System.Drawing.Point(357, 21)
+        Me.EmailL.Name = "EmailL"
+        Me.EmailL.Size = New System.Drawing.Size(48, 20)
+        Me.EmailL.TabIndex = 4
+        Me.EmailL.Text = "Email"
+        '
+        'DisplayNameL
+        '
+        Me.DisplayNameL.AutoSize = True
+        Me.DisplayNameL.Location = New System.Drawing.Point(335, 123)
+        Me.DisplayNameL.Name = "DisplayNameL"
+        Me.DisplayNameL.Size = New System.Drawing.Size(106, 20)
+        Me.DisplayNameL.TabIndex = 5
+        Me.DisplayNameL.Text = "Display Name"
+        '
+        'Password
+        '
+        Me.Password.AutoSize = True
+        Me.Password.Location = New System.Drawing.Point(348, 233)
+        Me.Password.Name = "Password"
+        Me.Password.Size = New System.Drawing.Size(78, 20)
+        Me.Password.TabIndex = 6
+        Me.Password.Text = "Password"
+        '
+        'RePasswordL
+        '
+        Me.RePasswordL.AutoSize = True
+        Me.RePasswordL.Location = New System.Drawing.Point(317, 341)
+        Me.RePasswordL.Name = "RePasswordL"
+        Me.RePasswordL.Size = New System.Drawing.Size(146, 20)
+        Me.RePasswordL.TabIndex = 7
+        Me.RePasswordL.Text = "Re-Enter password"
+        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.RePasswordL)
+        Me.Controls.Add(Me.Password)
+        Me.Controls.Add(Me.DisplayNameL)
+        Me.Controls.Add(Me.EmailL)
         Me.Controls.Add(Me.RePasswordTB)
         Me.Controls.Add(Me.PasswordTB)
         Me.Controls.Add(Me.DisplayNameTB)
@@ -133,6 +177,7 @@ Partial Class Register
         Me.Name = "Register"
         Me.Text = "Register"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -140,4 +185,8 @@ Partial Class Register
     Friend WithEvents DisplayNameTB As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents PasswordTB As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents RePasswordTB As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents EmailL As Label
+    Friend WithEvents DisplayNameL As Label
+    Friend WithEvents Password As Label
+    Friend WithEvents RePasswordL As Label
 End Class
