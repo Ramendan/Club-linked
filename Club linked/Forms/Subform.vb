@@ -1,4 +1,4 @@
-﻿Public Class Form2
+﻿Public Class Subform
     Private Sub button5_Click(sender As Object, e As EventArgs) Handles button5.Click
         Me.Close()
     End Sub

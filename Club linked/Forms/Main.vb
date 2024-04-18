@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Main
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         hideSubmenu()
@@ -38,7 +38,7 @@
 #Region "Buttons Submenu"
     Private Sub button2_Click(sender As Object, e As EventArgs) Handles button2.Click
 
-        openChildForm(New Form2())
+        openChildForm(New Subform())
         '...
         'your codes
         '...
@@ -68,7 +68,7 @@
     End Sub
 
     Private Sub button8_Click(sender As Object, e As EventArgs) Handles button8.Click
-        openChildForm(New Form3())
+        openChildForm(New Data_Subform())
         '...
         'your codes
         '...

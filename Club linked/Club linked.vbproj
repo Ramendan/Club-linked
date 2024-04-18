@@ -95,22 +95,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Forms\Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form1.vb">
+    <Compile Include="Forms\Main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="Forms\Subform.Designer.vb">
+      <DependentUpon>Subform.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form2.vb">
+    <Compile Include="Forms\Subform.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="Forms\Data_Subform.Designer.vb">
+      <DependentUpon>Data_Subform.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form3.vb">
+    <Compile Include="Forms\Data_Subform.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Register.Designer.vb">
@@ -144,14 +144,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Subform.resx">
+      <DependentUpon>Subform.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Data_Subform.resx">
+      <DependentUpon>Data_Subform.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Register.resx">
       <DependentUpon>Register.vb</DependentUpon>
