@@ -150,4 +150,12 @@
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Application.Exit()
     End Sub
+
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs)
+        showSubmenu(PanelMediaSubmenu)
+    End Sub
+
+    Private Sub Guna2Button2_Click_1(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        showSubmenu(PanelMediaSubmenu)
+    End Sub
 End Class

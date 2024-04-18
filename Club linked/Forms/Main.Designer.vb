@@ -24,10 +24,10 @@ Partial Class Main
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.panelLogo = New System.Windows.Forms.Panel()
+        Me.pictureBox1 = New System.Windows.Forms.PictureBox()
         Me.button5 = New System.Windows.Forms.Button()
         Me.button4 = New System.Windows.Forms.Button()
         Me.button3 = New System.Windows.Forms.Button()
-        Me.button2 = New System.Windows.Forms.Button()
         Me.PanelSideMenu = New System.Windows.Forms.Panel()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnHelp = New System.Windows.Forms.Button()
@@ -44,15 +44,22 @@ Partial Class Main
         Me.button8 = New System.Windows.Forms.Button()
         Me.btnPlaylist = New System.Windows.Forms.Button()
         Me.PanelMediaSubmenu = New System.Windows.Forms.Panel()
-        Me.btnMedia = New System.Windows.Forms.Button()
         Me.PanelChildForm = New System.Windows.Forms.Panel()
-        Me.pictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.button2 = New System.Windows.Forms.Button()
+        Me.btnMedia = New System.Windows.Forms.Button()
+        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.panelLogo.SuspendLayout()
+        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelSideMenu.SuspendLayout()
         Me.PanelToolsSubmenu.SuspendLayout()
         Me.PanelPlaylistSubmenu.SuspendLayout()
         Me.PanelMediaSubmenu.SuspendLayout()
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelChildForm.SuspendLayout()
         Me.SuspendLayout()
         '
         'panelLogo
@@ -63,6 +70,17 @@ Partial Class Main
         Me.panelLogo.Name = "panelLogo"
         Me.panelLogo.Size = New System.Drawing.Size(233, 145)
         Me.panelLogo.TabIndex = 0
+        '
+        'pictureBox1
+        '
+        Me.pictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.pictureBox1.Image = CType(resources.GetObject("pictureBox1.Image"), System.Drawing.Image)
+        Me.pictureBox1.Location = New System.Drawing.Point(42, 15)
+        Me.pictureBox1.Name = "pictureBox1"
+        Me.pictureBox1.Size = New System.Drawing.Size(146, 116)
+        Me.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pictureBox1.TabIndex = 0
+        Me.pictureBox1.TabStop = False
         '
         'button5
         '
@@ -114,23 +132,6 @@ Partial Class Main
         Me.button3.Text = "Open folder"
         Me.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.button3.UseVisualStyleBackColor = True
-        '
-        'button2
-        '
-        Me.button2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.button2.FlatAppearance.BorderSize = 0
-        Me.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.button2.ForeColor = System.Drawing.Color.Silver
-        Me.button2.Location = New System.Drawing.Point(0, 0)
-        Me.button2.Name = "button2"
-        Me.button2.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.button2.Size = New System.Drawing.Size(233, 40)
-        Me.button2.TabIndex = 0
-        Me.button2.Text = "Open files"
-        Me.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.button2.UseVisualStyleBackColor = True
         '
         'PanelSideMenu
         '
@@ -195,6 +196,7 @@ Partial Class Main
         'PanelToolsSubmenu
         '
         Me.PanelToolsSubmenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.PanelToolsSubmenu.Controls.Add(Me.Guna2Button1)
         Me.PanelToolsSubmenu.Controls.Add(Me.button10)
         Me.PanelToolsSubmenu.Controls.Add(Me.button12)
         Me.PanelToolsSubmenu.Controls.Add(Me.button13)
@@ -409,6 +411,66 @@ Partial Class Main
         Me.PanelMediaSubmenu.Size = New System.Drawing.Size(233, 165)
         Me.PanelMediaSubmenu.TabIndex = 2
         '
+        'PanelChildForm
+        '
+        Me.PanelChildForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.PanelChildForm.Controls.Add(Me.Guna2Button6)
+        Me.PanelChildForm.Controls.Add(Me.Guna2Button5)
+        Me.PanelChildForm.Controls.Add(Me.Guna2Button4)
+        Me.PanelChildForm.Controls.Add(Me.Guna2Button3)
+        Me.PanelChildForm.Controls.Add(Me.Guna2Button2)
+        Me.PanelChildForm.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelChildForm.Location = New System.Drawing.Point(250, 0)
+        Me.PanelChildForm.Name = "PanelChildForm"
+        Me.PanelChildForm.Size = New System.Drawing.Size(684, 561)
+        Me.PanelChildForm.TabIndex = 2
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.Location = New System.Drawing.Point(0, 120)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.Size = New System.Drawing.Size(233, 45)
+        Me.Guna2Button1.TabIndex = 10
+        Me.Guna2Button1.Text = "Guna2Button1"
+        '
+        'Guna2Button2
+        '
+        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button2.Location = New System.Drawing.Point(31, 145)
+        Me.Guna2Button2.Name = "Guna2Button2"
+        Me.Guna2Button2.Size = New System.Drawing.Size(180, 45)
+        Me.Guna2Button2.TabIndex = 4
+        Me.Guna2Button2.Text = "Guna2Button2"
+        '
+        'button2
+        '
+        Me.button2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.button2.FlatAppearance.BorderSize = 0
+        Me.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.button2.ForeColor = System.Drawing.Color.Silver
+        Me.button2.Location = New System.Drawing.Point(0, 0)
+        Me.button2.Name = "button2"
+        Me.button2.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.button2.Size = New System.Drawing.Size(233, 40)
+        Me.button2.TabIndex = 0
+        Me.button2.Text = "Open files"
+        Me.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.button2.UseVisualStyleBackColor = True
+        '
         'btnMedia
         '
         Me.btnMedia.Dock = System.Windows.Forms.DockStyle.Top
@@ -429,27 +491,63 @@ Partial Class Main
         Me.btnMedia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnMedia.UseVisualStyleBackColor = True
         '
-        'PanelChildForm
+        'Guna2Button3
         '
-        Me.PanelChildForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.PanelChildForm.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelChildForm.Location = New System.Drawing.Point(250, 0)
-        Me.PanelChildForm.Name = "PanelChildForm"
-        Me.PanelChildForm.Size = New System.Drawing.Size(684, 561)
-        Me.PanelChildForm.TabIndex = 2
+        Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button3.Location = New System.Drawing.Point(31, 190)
+        Me.Guna2Button3.Name = "Guna2Button3"
+        Me.Guna2Button3.Size = New System.Drawing.Size(180, 45)
+        Me.Guna2Button3.TabIndex = 5
+        Me.Guna2Button3.Text = "Guna2Button3"
         '
-        'pictureBox1
+        'Guna2Button4
         '
-        Me.pictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox1.Image = CType(resources.GetObject("pictureBox1.Image"), System.Drawing.Image)
-        Me.pictureBox1.Location = New System.Drawing.Point(42, 15)
-        Me.pictureBox1.Name = "pictureBox1"
-        Me.pictureBox1.Size = New System.Drawing.Size(146, 116)
-        Me.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pictureBox1.TabIndex = 0
-        Me.pictureBox1.TabStop = False
+        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button4.Location = New System.Drawing.Point(31, 230)
+        Me.Guna2Button4.Name = "Guna2Button4"
+        Me.Guna2Button4.Size = New System.Drawing.Size(180, 45)
+        Me.Guna2Button4.TabIndex = 6
+        Me.Guna2Button4.Text = "Guna2Button4"
         '
-        'Form1
+        'Guna2Button5
+        '
+        Me.Guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button5.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button5.Location = New System.Drawing.Point(31, 270)
+        Me.Guna2Button5.Name = "Guna2Button5"
+        Me.Guna2Button5.Size = New System.Drawing.Size(180, 45)
+        Me.Guna2Button5.TabIndex = 7
+        Me.Guna2Button5.Text = "Guna2Button5"
+        '
+        'Guna2Button6
+        '
+        Me.Guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button6.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button6.Location = New System.Drawing.Point(31, 310)
+        Me.Guna2Button6.Name = "Guna2Button6"
+        Me.Guna2Button6.Size = New System.Drawing.Size(180, 45)
+        Me.Guna2Button6.TabIndex = 8
+        Me.Guna2Button6.Text = "Guna2Button6"
+        '
+        'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -460,14 +558,15 @@ Partial Class Main
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MinimumSize = New System.Drawing.Size(950, 600)
-        Me.Name = "Form1"
+        Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.panelLogo.ResumeLayout(False)
+        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelSideMenu.ResumeLayout(False)
         Me.PanelToolsSubmenu.ResumeLayout(False)
         Me.PanelPlaylistSubmenu.ResumeLayout(False)
         Me.PanelMediaSubmenu.ResumeLayout(False)
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelChildForm.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -476,7 +575,6 @@ Partial Class Main
     Private WithEvents button5 As Button
     Private WithEvents button4 As Button
     Private WithEvents button3 As Button
-    Private WithEvents button2 As Button
     Private WithEvents PanelSideMenu As Panel
     Private WithEvents btnExit As Button
     Private WithEvents btnHelp As Button
@@ -493,7 +591,14 @@ Partial Class Main
     Private WithEvents button8 As Button
     Private WithEvents btnPlaylist As Button
     Private WithEvents PanelMediaSubmenu As Panel
-    Private WithEvents btnMedia As Button
     Friend WithEvents PanelChildForm As Panel
     Private WithEvents pictureBox1 As PictureBox
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Private WithEvents button2 As Button
+    Private WithEvents btnMedia As Button
+    Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
 End Class
