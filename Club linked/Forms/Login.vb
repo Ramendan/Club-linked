@@ -7,19 +7,23 @@
 
     End Sub
 
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles BLogin.Click
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub EmailLoginTB_Click(sender As Object, e As EventArgs) Handles LEmailLogin.Click
+    Private Sub EmailLoginTB_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TBEmailLogin.TextChanged
+    Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TBPasswordLogin.TextChanged
+    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Guna2Chip1_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

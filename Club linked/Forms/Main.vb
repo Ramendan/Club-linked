@@ -23,11 +23,11 @@
 
     End Sub
 
-    Private Sub btnMedia_Click(sender As Object, e As EventArgs) Handles btnMedia.Click
+    Private Sub btnMedia_Click(sender As Object, e As EventArgs)
         showSubmenu(PanelMediaSubmenu)
     End Sub
 
-    Private Sub btnPlaylist_Click(sender As Object, e As EventArgs) Handles btnPlaylist.Click
+    Private Sub btnPlaylist_Click(sender As Object, e As EventArgs)
         showSubmenu(PanelPlaylistSubmenu)
     End Sub
 
@@ -36,7 +36,7 @@
     End Sub
 
 #Region "Buttons Submenu"
-    Private Sub button2_Click(sender As Object, e As EventArgs) Handles button2.Click
+    Private Sub button2_Click(sender As Object, e As EventArgs)
 
         openChildForm(New Subform())
         '...
@@ -46,28 +46,28 @@
 
     End Sub
 
-    Private Sub button3_Click(sender As Object, e As EventArgs) Handles button3.Click
+    Private Sub button3_Click(sender As Object, e As EventArgs)
         '...
         'your codes
         '...
         hideSubmenu()
     End Sub
 
-    Private Sub button4_Click(sender As Object, e As EventArgs) Handles button4.Click
+    Private Sub button4_Click(sender As Object, e As EventArgs)
         '...
         'your codes
         '...
         hideSubmenu()
     End Sub
 
-    Private Sub button5_Click(sender As Object, e As EventArgs) Handles button5.Click
+    Private Sub button5_Click(sender As Object, e As EventArgs)
         '...
         'your codes
         '...
         hideSubmenu()
     End Sub
 
-    Private Sub button8_Click(sender As Object, e As EventArgs) Handles button8.Click
+    Private Sub button8_Click(sender As Object, e As EventArgs)
         openChildForm(New Data_Subform())
         '...
         'your codes
@@ -75,21 +75,21 @@
         hideSubmenu()
     End Sub
 
-    Private Sub button7_Click(sender As Object, e As EventArgs) Handles button7.Click
+    Private Sub button7_Click(sender As Object, e As EventArgs)
         '...
         'your codes
         '...
         hideSubmenu()
     End Sub
 
-    Private Sub button6_Click(sender As Object, e As EventArgs) Handles button6.Click
+    Private Sub button6_Click(sender As Object, e As EventArgs)
         '...
         'your codes
         '...
         hideSubmenu()
     End Sub
 
-    Private Sub button1_Click(sender As Object, e As EventArgs) Handles button1.Click
+    Private Sub button1_Click(sender As Object, e As EventArgs)
         '...
         'your codes
         '...
