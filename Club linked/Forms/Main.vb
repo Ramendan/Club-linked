@@ -47,6 +47,7 @@
     End Sub
 
     Private Sub button3_Click(sender As Object, e As EventArgs) Handles button3.Click
+        openChildForm(New Subform)
         '...
         'your codes
         '...
