@@ -123,11 +123,11 @@ Partial Class Data_Subform
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.label1.Location = New System.Drawing.Point(259, 11)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(173, 25)
+        Me.label1.Size = New System.Drawing.Size(60, 25)
         Me.label1.TabIndex = 19
-        Me.label1.Text = "FORMULARIO X2"
+        Me.label1.Text = "Login"
         '
-        'Form3
+        'Data_Subform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -140,7 +140,7 @@ Partial Class Data_Subform
         Me.Controls.Add(Me.button5)
         Me.Controls.Add(Me.dataGridView1)
         Me.Controls.Add(Me.label1)
-        Me.Name = "Form3"
+        Me.Name = "Data_Subform"
         Me.Text = "Form3"
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

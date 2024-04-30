@@ -6,9 +6,10 @@
 
     Private Sub hideSubmenu()
 
-        PanelMediaSubmenu.Visible = False
-        PanelPlaylistSubmenu.Visible = False
-        PanelToolsSubmenu.Visible = False
+        AdminPanel.Visible = False
+        ClubsPanel.Visible = False
+        HelpPanel.Visible = False
+        GeneralPanel.Visible = False
 
     End Sub
 
@@ -23,114 +24,10 @@
 
     End Sub
 
-    Private Sub btnMedia_Click(sender As Object, e As EventArgs) Handles btnMedia.Click
-        showSubmenu(PanelMediaSubmenu)
-    End Sub
-
-    Private Sub btnPlaylist_Click(sender As Object, e As EventArgs) Handles btnPlaylist.Click
-        showSubmenu(PanelPlaylistSubmenu)
-    End Sub
-
-    Private Sub btnTools_Click(sender As Object, e As EventArgs) Handles btnTools.Click
-        showSubmenu(PanelToolsSubmenu)
-    End Sub
-
-
-    Private Sub button2_Click(sender As Object, e As EventArgs) Handles button2.Click
-
-        openChildForm(New Login)
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-
-    End Sub
-
-    Private Sub button3_Click(sender As Object, e As EventArgs) Handles button3.Click
-        openChildForm(New Subform)
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-    End Sub
-
-    Private Sub button4_Click(sender As Object, e As EventArgs) Handles button4.Click
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-    End Sub
-
-    Private Sub button5_Click(sender As Object, e As EventArgs) Handles button5.Click
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-    End Sub
-
-    Private Sub button8_Click(sender As Object, e As EventArgs) Handles button8.Click
-        openChildForm(New Login())
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-    End Sub
-
-    Private Sub button7_Click(sender As Object, e As EventArgs) Handles button7.Click
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-    End Sub
-
-    Private Sub button6_Click(sender As Object, e As EventArgs) Handles button6.Click
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-    End Sub
-
-    Private Sub button1_Click(sender As Object, e As EventArgs) Handles button1.Click
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-    End Sub
-
-    Private Sub button13_Click(sender As Object, e As EventArgs) Handles button13.Click
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-    End Sub
-
-    Private Sub button12_Click(sender As Object, e As EventArgs) Handles button12.Click
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-    End Sub
-
-    Private Sub button10_Click(sender As Object, e As EventArgs) Handles button10.Click
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-    End Sub
-
-
-    Private Sub btnEqualizer_Click(sender As Object, e As EventArgs) Handles btnEqualizer.Click
-        '...
-        'your codes
-        '...
-        hideSubmenu()
-    End Sub
 
     Private Sub btnHelp_Click(sender As Object, e As EventArgs) Handles btnHelp.Click
-        '...
-        'your codes
-        '...
         hideSubmenu()
+        showSubmenu(HelpPanel)
     End Sub
 
     Private currentForm As Form = Nothing
@@ -150,5 +47,39 @@
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Application.Exit()
+    End Sub
+
+    Private Sub btnGeneral_Click(sender As Object, e As EventArgs) Handles btnGeneral.Click
+        hideSubmenu()
+        showSubmenu(GeneralPanel)
+
+    End Sub
+
+    Private Sub btnClubs_Click(sender As Object, e As EventArgs) Handles btnClubs.Click
+        hideSubmenu()
+        showSubmenu(ClubsPanel)
+    End Sub
+
+    Private Sub btnAdmin_Click(sender As Object, e As EventArgs) Handles btnAdmin.Click
+        hideSubmenu()
+        showSubmenu(AdminPanel)
+    End Sub
+
+    Private Sub btnAccount_Click(sender As Object, e As EventArgs) Handles btnAccount.Click
+        openChildForm(New Login)
+    End Sub
+
+    Private Sub btnShowSideMenu_Click(sender As Object, e As EventArgs) Handles btnShowSideMenu.Click
+        If PanelSideMenu.Visible = False Then
+            btnShowSideMenu.Text = "<"
+            PanelSideMenu.Visible = True
+        Else
+            btnShowSideMenu.Text = ">"
+            PanelSideMenu.Visible = False
+        End If
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
     End Sub
 End Class
