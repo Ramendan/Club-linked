@@ -26,4 +26,8 @@
     Private Sub Guna2Chip1_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub lPASSWORD_login_Click(sender As Object, e As EventArgs) Handles lPASSWORD_login.Click
+
+    End Sub
 End Class
