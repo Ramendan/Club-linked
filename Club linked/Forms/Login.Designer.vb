@@ -24,13 +24,13 @@ Partial Class Login
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lLOGIN = New System.Windows.Forms.Label()
+        Me.llSignUp_LOGIN = New System.Windows.Forms.LinkLabel()
         Me.lPASSWORD_login = New System.Windows.Forms.Label()
         Me.lEMAIL_login = New System.Windows.Forms.Label()
         Me.bLOGIN = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.llSignUp_LOGIN = New System.Windows.Forms.LinkLabel()
-        Me.lLOGIN = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,6 +48,25 @@ Partial Class Login
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(428, 414)
         Me.Panel1.TabIndex = 0
+        '
+        'lLOGIN
+        '
+        Me.lLOGIN.AutoSize = True
+        Me.lLOGIN.Location = New System.Drawing.Point(129, 290)
+        Me.lLOGIN.Name = "lLOGIN"
+        Me.lLOGIN.Size = New System.Drawing.Size(70, 13)
+        Me.lLOGIN.TabIndex = 6
+        Me.lLOGIN.Text = "No Account?"
+        '
+        'llSignUp_LOGIN
+        '
+        Me.llSignUp_LOGIN.AutoSize = True
+        Me.llSignUp_LOGIN.Location = New System.Drawing.Point(205, 290)
+        Me.llSignUp_LOGIN.Name = "llSignUp_LOGIN"
+        Me.llSignUp_LOGIN.Size = New System.Drawing.Size(48, 13)
+        Me.llSignUp_LOGIN.TabIndex = 5
+        Me.llSignUp_LOGIN.TabStop = True
+        Me.llSignUp_LOGIN.Text = "Sign Up!"
         '
         'lPASSWORD_login
         '
@@ -93,25 +112,6 @@ Partial Class Login
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(181, 20)
         Me.TextBox1.TabIndex = 0
-        '
-        'llSignUp_LOGIN
-        '
-        Me.llSignUp_LOGIN.AutoSize = True
-        Me.llSignUp_LOGIN.Location = New System.Drawing.Point(205, 290)
-        Me.llSignUp_LOGIN.Name = "llSignUp_LOGIN"
-        Me.llSignUp_LOGIN.Size = New System.Drawing.Size(48, 13)
-        Me.llSignUp_LOGIN.TabIndex = 5
-        Me.llSignUp_LOGIN.TabStop = True
-        Me.llSignUp_LOGIN.Text = "Sign Up!"
-        '
-        'lLOGIN
-        '
-        Me.lLOGIN.AutoSize = True
-        Me.lLOGIN.Location = New System.Drawing.Point(129, 290)
-        Me.lLOGIN.Name = "lLOGIN"
-        Me.lLOGIN.Size = New System.Drawing.Size(70, 13)
-        Me.lLOGIN.TabIndex = 6
-        Me.lLOGIN.Text = "No Account?"
         '
         'Login
         '
