@@ -68,7 +68,7 @@
     End Sub
 
     Private Sub button8_Click(sender As Object, e As EventArgs) Handles button8.Click
-        openChildForm(New Form3())
+        openChildForm(New Login())
         '...
         'your codes
         '...
