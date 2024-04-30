@@ -23,23 +23,72 @@ Partial Class Login
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
-        Me.Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.bLOGIN = New System.Windows.Forms.Button()
+        Me.lEMAIL_login = New System.Windows.Forms.Label()
+        Me.lPASSWORD_login = New System.Windows.Forms.Label()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Guna2ShadowPanel1
+        'Panel1
         '
-        Me.Guna2ShadowPanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ShadowPanel1.Location = New System.Drawing.Point(69, 64)
-        Me.Guna2ShadowPanel1.Name = "Guna2ShadowPanel1"
-        Me.Guna2ShadowPanel1.Radius = 20
-        Me.Guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black
-        Me.Guna2ShadowPanel1.ShadowShift = 10
-        Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(501, 439)
-        Me.Guna2ShadowPanel1.TabIndex = 0
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.lPASSWORD_login)
+        Me.Panel1.Controls.Add(Me.lEMAIL_login)
+        Me.Panel1.Controls.Add(Me.bLOGIN)
+        Me.Panel1.Controls.Add(Me.TextBox2)
+        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Location = New System.Drawing.Point(84, 87)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(428, 414)
+        Me.Panel1.TabIndex = 0
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(114, 135)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(181, 20)
+        Me.TextBox1.TabIndex = 0
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(114, 234)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(181, 20)
+        Me.TextBox2.TabIndex = 1
+        '
+        'bLOGIN
+        '
+        Me.bLOGIN.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.bLOGIN.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bLOGIN.Location = New System.Drawing.Point(322, 320)
+        Me.bLOGIN.Name = "bLOGIN"
+        Me.bLOGIN.Size = New System.Drawing.Size(75, 35)
+        Me.bLOGIN.TabIndex = 2
+        Me.bLOGIN.Text = "LOGIN"
+        Me.bLOGIN.UseVisualStyleBackColor = False
+        '
+        'lEMAIL_login
+        '
+        Me.lEMAIL_login.AutoSize = True
+        Me.lEMAIL_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lEMAIL_login.Location = New System.Drawing.Point(174, 112)
+        Me.lEMAIL_login.Name = "lEMAIL_login"
+        Me.lEMAIL_login.Size = New System.Drawing.Size(63, 20)
+        Me.lEMAIL_login.TabIndex = 3
+        Me.lEMAIL_login.Text = "EMAIL" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'lPASSWORD_login
+        '
+        Me.lPASSWORD_login.AutoSize = True
+        Me.lPASSWORD_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lPASSWORD_login.Location = New System.Drawing.Point(153, 211)
+        Me.lPASSWORD_login.Name = "lPASSWORD_login"
+        Me.lPASSWORD_login.Size = New System.Drawing.Size(111, 20)
+        Me.lPASSWORD_login.TabIndex = 4
+        Me.lPASSWORD_login.Text = "PASSWORD"
         '
         'Login
         '
@@ -49,13 +98,20 @@ Partial Class Login
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(640, 594)
-        Me.Controls.Add(Me.Guna2ShadowPanel1)
+        Me.Controls.Add(Me.Panel1)
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Guna2ShadowPanel1 As Guna.UI2.WinForms.Guna2ShadowPanel
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents lPASSWORD_login As Label
+    Friend WithEvents lEMAIL_login As Label
+    Friend WithEvents bLOGIN As Button
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox1 As TextBox
 End Class
