@@ -60,7 +60,7 @@
         showSubmenu(ClubsPanel)
     End Sub
 
-    Private Sub btnAdmin_Click(sender As Object, e As EventArgs) Handles btnAdmin.Click
+    Private Sub btnAdmin_Click(sender As Object, e As EventArgs) Handles btnAdminTools.Click
         hideSubmenu()
         showSubmenu(AdminPanel)
     End Sub
@@ -83,7 +83,8 @@
 
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-        openChildForm(New Announcments)
+    Private Sub btnAdminPrivileges_Click(sender As Object, e As EventArgs) Handles btnAdminPrivileges.Click
+      openChildForm(New Announcments)
+
     End Sub
 End Class
