@@ -22,43 +22,45 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.button8 = New System.Windows.Forms.Button()
-        Me.button9 = New System.Windows.Forms.Button()
+        Me.btnSignUp_login = New System.Windows.Forms.Button()
+        Me.btnLogin = New System.Windows.Forms.Button()
         Me.button5 = New System.Windows.Forms.Button()
-        Me.label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lLogin = New System.Windows.Forms.Label()
+        Me.tbUsername_login = New System.Windows.Forms.TextBox()
+        Me.tbPassword_login = New System.Windows.Forms.TextBox()
+        Me.lUsername_login = New System.Windows.Forms.Label()
+        Me.lPassword_login = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'button8
+        'btnSignUp_login
         '
-        Me.button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.button8.FlatAppearance.BorderSize = 0
-        Me.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button8.ForeColor = System.Drawing.Color.LightGray
-        Me.button8.Location = New System.Drawing.Point(327, 328)
-        Me.button8.Name = "button8"
-        Me.button8.Size = New System.Drawing.Size(150, 40)
-        Me.button8.TabIndex = 30
-        Me.button8.Text = "Sign in"
-        Me.button8.UseVisualStyleBackColor = False
+        Me.btnSignUp_login.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.btnSignUp_login.FlatAppearance.BorderSize = 0
+        Me.btnSignUp_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSignUp_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSignUp_login.ForeColor = System.Drawing.Color.LightGray
+        Me.btnSignUp_login.Location = New System.Drawing.Point(490, 505)
+        Me.btnSignUp_login.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnSignUp_login.Name = "btnSignUp_login"
+        Me.btnSignUp_login.Size = New System.Drawing.Size(225, 62)
+        Me.btnSignUp_login.TabIndex = 30
+        Me.btnSignUp_login.Text = "Sign up"
+        Me.btnSignUp_login.UseVisualStyleBackColor = False
         '
-        'button9
+        'btnLogin
         '
-        Me.button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.button9.FlatAppearance.BorderSize = 0
-        Me.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button9.ForeColor = System.Drawing.Color.LightGray
-        Me.button9.Location = New System.Drawing.Point(155, 328)
-        Me.button9.Name = "button9"
-        Me.button9.Size = New System.Drawing.Size(150, 40)
-        Me.button9.TabIndex = 29
-        Me.button9.Text = "Login"
-        Me.button9.UseVisualStyleBackColor = False
+        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnLogin.FlatAppearance.BorderSize = 0
+        Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.ForeColor = System.Drawing.Color.LightGray
+        Me.btnLogin.Location = New System.Drawing.Point(232, 505)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(225, 62)
+        Me.btnLogin.TabIndex = 29
+        Me.btnLogin.Text = "Login"
+        Me.btnLogin.UseVisualStyleBackColor = False
         '
         'button5
         '
@@ -67,88 +69,95 @@ Partial Class Login
         Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(34, 21)
+        Me.button5.Location = New System.Drawing.Point(51, 32)
+        Me.button5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.button5.Name = "button5"
-        Me.button5.Size = New System.Drawing.Size(25, 25)
+        Me.button5.Size = New System.Drawing.Size(38, 38)
         Me.button5.TabIndex = 28
         Me.button5.Text = "X"
         Me.button5.UseVisualStyleBackColor = True
         '
-        'label1
+        'lLogin
         '
-        Me.label1.AutoSize = True
-        Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(260, 12)
-        Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(85, 31)
-        Me.label1.TabIndex = 26
-        Me.label1.Text = "Login"
+        Me.lLogin.AutoSize = True
+        Me.lLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.lLogin.Location = New System.Drawing.Point(390, 18)
+        Me.lLogin.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lLogin.Name = "lLogin"
+        Me.lLogin.Size = New System.Drawing.Size(127, 47)
+        Me.lLogin.TabIndex = 26
+        Me.lLogin.Text = "Login"
         '
-        'TextBox1
+        'tbUsername_login
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(109, 142)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(393, 40)
-        Me.TextBox1.TabIndex = 31
+        Me.tbUsername_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbUsername_login.Location = New System.Drawing.Point(164, 218)
+        Me.tbUsername_login.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tbUsername_login.Name = "tbUsername_login"
+        Me.tbUsername_login.Size = New System.Drawing.Size(588, 57)
+        Me.tbUsername_login.TabIndex = 31
         '
-        'TextBox2
+        'tbPassword_login
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(109, 245)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(393, 40)
-        Me.TextBox2.TabIndex = 32
+        Me.tbPassword_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbPassword_login.Location = New System.Drawing.Point(164, 377)
+        Me.tbPassword_login.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tbPassword_login.Name = "tbPassword_login"
+        Me.tbPassword_login.Size = New System.Drawing.Size(588, 57)
+        Me.tbPassword_login.TabIndex = 32
         '
-        'Label2
+        'lUsername_login
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(230, 95)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(151, 31)
-        Me.Label2.TabIndex = 33
-        Me.Label2.Text = "User Name"
+        Me.lUsername_login.AutoSize = True
+        Me.lUsername_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
+        Me.lUsername_login.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.lUsername_login.Location = New System.Drawing.Point(345, 146)
+        Me.lUsername_login.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lUsername_login.Name = "lUsername_login"
+        Me.lUsername_login.Size = New System.Drawing.Size(221, 46)
+        Me.lUsername_login.TabIndex = 33
+        Me.lUsername_login.Text = "User Name"
         '
-        'Label3
+        'lPassword_login
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(230, 198)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(134, 31)
-        Me.Label3.TabIndex = 34
-        Me.Label3.Text = "Password"
+        Me.lPassword_login.AutoSize = True
+        Me.lPassword_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
+        Me.lPassword_login.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.lPassword_login.Location = New System.Drawing.Point(345, 305)
+        Me.lPassword_login.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lPassword_login.Name = "lPassword_login"
+        Me.lPassword_login.Size = New System.Drawing.Size(196, 46)
+        Me.lPassword_login.TabIndex = 34
+        Me.lPassword_login.Text = "Password"
         '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(610, 450)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.button8)
-        Me.Controls.Add(Me.button9)
+        Me.ClientSize = New System.Drawing.Size(915, 692)
+        Me.Controls.Add(Me.lPassword_login)
+        Me.Controls.Add(Me.lUsername_login)
+        Me.Controls.Add(Me.tbPassword_login)
+        Me.Controls.Add(Me.tbUsername_login)
+        Me.Controls.Add(Me.btnSignUp_login)
+        Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.button5)
-        Me.Controls.Add(Me.label1)
+        Me.Controls.Add(Me.lLogin)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Login"
         Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Private WithEvents button8 As Button
-    Private WithEvents button9 As Button
+    Private WithEvents btnSignUp_login As Button
+    Private WithEvents btnLogin As Button
     Private WithEvents button5 As Button
-    Private WithEvents label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Private WithEvents Label2 As Label
-    Private WithEvents Label3 As Label
+    Private WithEvents lLogin As Label
+    Friend WithEvents tbUsername_login As TextBox
+    Friend WithEvents tbPassword_login As TextBox
+    Private WithEvents lUsername_login As Label
+    Private WithEvents lPassword_login As Label
 End Class

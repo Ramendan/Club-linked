@@ -60,7 +60,7 @@
         showSubmenu(ClubsPanel)
     End Sub
 
-    Private Sub btnAdmin_Click(sender As Object, e As EventArgs) Handles btnAdmin.Click
+    Private Sub btnAdmin_Click(sender As Object, e As EventArgs) Handles btnAdminTools.Click
         hideSubmenu()
         showSubmenu(AdminPanel)
     End Sub
@@ -80,6 +80,10 @@
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub btnAdminPrivileges_Click(sender As Object, e As EventArgs) Handles btnAdminPrivileges.Click
 
     End Sub
 End Class
