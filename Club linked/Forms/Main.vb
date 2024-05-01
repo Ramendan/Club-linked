@@ -84,6 +84,7 @@
     End Sub
 
     Private Sub btnAdminPrivileges_Click(sender As Object, e As EventArgs) Handles btnAdminPrivileges.Click
+      openChildForm(New Announcments)
 
     End Sub
 End Class
