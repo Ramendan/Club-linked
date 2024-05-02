@@ -105,10 +105,22 @@
     <Compile Include="Forms\Admin Tools\AdminAnnouncements.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Clubs\BasedClubForm.Designer.vb">
-      <DependentUpon>BasedClubForm.vb</DependentUpon>
+    <Compile Include="Forms\Clubs\BaseClubForm.Designer.vb">
+      <DependentUpon>BaseClubForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Clubs\BasedClubForm.vb">
+    <Compile Include="Forms\Clubs\BaseClubForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingClubForm.Designer.vb">
+      <DependentUpon>ProgrammingClubForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingClubForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingTab1.Designer.vb">
+      <DependentUpon>ProgrammingTab1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingTab1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\General\Announcments.Designer.vb">
@@ -165,8 +177,14 @@
     <EmbeddedResource Include="Forms\Admin Tools\AdminAnnouncements.resx">
       <DependentUpon>AdminAnnouncements.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Clubs\BasedClubForm.resx">
-      <DependentUpon>BasedClubForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Clubs\BaseClubForm.resx">
+      <DependentUpon>BaseClubForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingClubForm.resx">
+      <DependentUpon>ProgrammingClubForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingTab1.resx">
+      <DependentUpon>ProgrammingTab1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\General\Announcments.resx">
       <DependentUpon>Announcments.vb</DependentUpon>
@@ -221,6 +239,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Forms\Clubs\ChessClub\" />
+    <Folder Include="Forms\Clubs\MusicClub\" />
+    <Folder Include="Forms\Clubs\ReadingClub\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

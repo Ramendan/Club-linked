@@ -104,7 +104,7 @@
 
     End Sub
 
-    Private Sub btnEvents_Click(sender As Object, e As EventArgs) Handles btnEvents.Click
-
+    Private Sub btnProgrammingClub_Click(sender As Object, e As EventArgs) Handles btnProgrammingClub.Click
+        openChildForm(New ProgrammingClubForm)
     End Sub
 End Class

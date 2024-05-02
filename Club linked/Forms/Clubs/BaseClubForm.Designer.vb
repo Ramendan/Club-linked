@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class BasedClubForm
+Partial Class BaseClubForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -36,10 +36,9 @@ Partial Class BasedClubForm
         'PanelChildForm
         '
         Me.PanelChildForm.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelChildForm.Location = New System.Drawing.Point(0, 59)
-        Me.PanelChildForm.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelChildForm.Location = New System.Drawing.Point(0, 48)
         Me.PanelChildForm.Name = "PanelChildForm"
-        Me.PanelChildForm.Size = New System.Drawing.Size(1085, 436)
+        Me.PanelChildForm.Size = New System.Drawing.Size(814, 429)
         Me.PanelChildForm.TabIndex = 3
         '
         'TabPanel
@@ -52,9 +51,8 @@ Partial Class BasedClubForm
         Me.TabPanel.Controls.Add(Me.btnAddAdmin)
         Me.TabPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.TabPanel.Location = New System.Drawing.Point(0, 0)
-        Me.TabPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPanel.Name = "TabPanel"
-        Me.TabPanel.Size = New System.Drawing.Size(1085, 59)
+        Me.TabPanel.Size = New System.Drawing.Size(814, 48)
         Me.TabPanel.TabIndex = 2
         '
         'button5
@@ -64,10 +62,9 @@ Partial Class BasedClubForm
         Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(33, 14)
-        Me.button5.Margin = New System.Windows.Forms.Padding(4)
+        Me.button5.Location = New System.Drawing.Point(25, 11)
         Me.button5.Name = "button5"
-        Me.button5.Size = New System.Drawing.Size(33, 31)
+        Me.button5.Size = New System.Drawing.Size(25, 25)
         Me.button5.TabIndex = 38
         Me.button5.Text = "X"
         Me.button5.UseVisualStyleBackColor = True
@@ -80,10 +77,9 @@ Partial Class BasedClubForm
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.LightGray
-        Me.Button4.Location = New System.Drawing.Point(85, 0)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button4.Location = New System.Drawing.Point(64, 0)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(200, 59)
+        Me.Button4.Size = New System.Drawing.Size(150, 48)
         Me.Button4.TabIndex = 37
         Me.Button4.Text = "Show Members"
         Me.Button4.UseVisualStyleBackColor = False
@@ -96,10 +92,9 @@ Partial Class BasedClubForm
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.LightGray
-        Me.Button3.Location = New System.Drawing.Point(285, 0)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Location = New System.Drawing.Point(214, 0)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(200, 59)
+        Me.Button3.Size = New System.Drawing.Size(150, 48)
         Me.Button3.TabIndex = 36
         Me.Button3.Text = "Show Admins"
         Me.Button3.UseVisualStyleBackColor = False
@@ -112,10 +107,9 @@ Partial Class BasedClubForm
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.LightGray
-        Me.Button2.Location = New System.Drawing.Point(485, 0)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button2.Location = New System.Drawing.Point(364, 0)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(200, 59)
+        Me.Button2.Size = New System.Drawing.Size(150, 48)
         Me.Button2.TabIndex = 35
         Me.Button2.Text = "View Latest Announcments"
         Me.Button2.UseVisualStyleBackColor = False
@@ -128,10 +122,9 @@ Partial Class BasedClubForm
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.LightGray
-        Me.Button1.Location = New System.Drawing.Point(685, 0)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(514, 0)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(200, 59)
+        Me.Button1.Size = New System.Drawing.Size(150, 48)
         Me.Button1.TabIndex = 34
         Me.Button1.Text = "Show Event Calender"
         Me.Button1.UseVisualStyleBackColor = False
@@ -144,24 +137,24 @@ Partial Class BasedClubForm
         Me.btnAddAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAddAdmin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddAdmin.ForeColor = System.Drawing.Color.LightGray
-        Me.btnAddAdmin.Location = New System.Drawing.Point(885, 0)
-        Me.btnAddAdmin.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAddAdmin.Location = New System.Drawing.Point(664, 0)
         Me.btnAddAdmin.Name = "btnAddAdmin"
-        Me.btnAddAdmin.Size = New System.Drawing.Size(200, 59)
+        Me.btnAddAdmin.Size = New System.Drawing.Size(150, 48)
         Me.btnAddAdmin.TabIndex = 33
         Me.btnAddAdmin.Text = "Your Club Status"
         Me.btnAddAdmin.UseVisualStyleBackColor = False
         '
-        'BasedClubForm
+        'BaseClubForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1085, 495)
+        Me.ClientSize = New System.Drawing.Size(814, 477)
         Me.Controls.Add(Me.PanelChildForm)
         Me.Controls.Add(Me.TabPanel)
-        Me.Name = "BasedClubForm"
-        Me.Text = "Based"
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Name = "BaseClubForm"
+        Me.Text = "Base"
         Me.TabPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
 
