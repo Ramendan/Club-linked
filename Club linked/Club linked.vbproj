@@ -105,12 +105,6 @@
     <Compile Include="Forms\Admin Tools\AdminAnnouncements.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Clubs\BaseClubForm.Designer.vb">
-      <DependentUpon>BaseClubForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Clubs\BaseClubForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingClubForm.Designer.vb">
       <DependentUpon>ProgrammingClubForm.vb</DependentUpon>
     </Compile>
@@ -176,9 +170,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin Tools\AdminAnnouncements.resx">
       <DependentUpon>AdminAnnouncements.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Clubs\BaseClubForm.resx">
-      <DependentUpon>BaseClubForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingClubForm.resx">
       <DependentUpon>ProgrammingClubForm.vb</DependentUpon>

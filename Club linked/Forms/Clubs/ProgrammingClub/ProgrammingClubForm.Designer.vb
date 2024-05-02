@@ -24,12 +24,12 @@ Partial Class ProgrammingClubForm
     Private Sub InitializeComponent()
         Me.PanelChildForm = New System.Windows.Forms.Panel()
         Me.TabPanel = New System.Windows.Forms.Panel()
-        Me.button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnAddAdmin = New System.Windows.Forms.Button()
+        Me.btnMembers = New System.Windows.Forms.Button()
+        Me.btnAdmins = New System.Windows.Forms.Button()
+        Me.btnAnnouncments = New System.Windows.Forms.Button()
+        Me.btnEvents = New System.Windows.Forms.Button()
+        Me.btnStatus = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.TabPanel.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -43,107 +43,107 @@ Partial Class ProgrammingClubForm
         '
         'TabPanel
         '
-        Me.TabPanel.Controls.Add(Me.Button4)
-        Me.TabPanel.Controls.Add(Me.Button3)
-        Me.TabPanel.Controls.Add(Me.Button2)
-        Me.TabPanel.Controls.Add(Me.Button1)
-        Me.TabPanel.Controls.Add(Me.btnAddAdmin)
-        Me.TabPanel.Controls.Add(Me.button5)
+        Me.TabPanel.Controls.Add(Me.btnMembers)
+        Me.TabPanel.Controls.Add(Me.btnAdmins)
+        Me.TabPanel.Controls.Add(Me.btnAnnouncments)
+        Me.TabPanel.Controls.Add(Me.btnEvents)
+        Me.TabPanel.Controls.Add(Me.btnStatus)
+        Me.TabPanel.Controls.Add(Me.btnClose)
         Me.TabPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.TabPanel.Location = New System.Drawing.Point(0, 0)
         Me.TabPanel.Name = "TabPanel"
         Me.TabPanel.Size = New System.Drawing.Size(960, 48)
         Me.TabPanel.TabIndex = 4
         '
-        'button5
+        'btnMembers
         '
-        Me.button5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.button5.FlatAppearance.BorderSize = 0
-        Me.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(0, 0)
-        Me.button5.Name = "button5"
-        Me.button5.Size = New System.Drawing.Size(83, 48)
-        Me.button5.TabIndex = 38
-        Me.button5.Text = "X"
-        Me.button5.UseVisualStyleBackColor = True
+        Me.btnMembers.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.btnMembers.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnMembers.FlatAppearance.BorderSize = 0
+        Me.btnMembers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMembers.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMembers.ForeColor = System.Drawing.Color.LightGray
+        Me.btnMembers.Location = New System.Drawing.Point(687, 0)
+        Me.btnMembers.Name = "btnMembers"
+        Me.btnMembers.Size = New System.Drawing.Size(151, 48)
+        Me.btnMembers.TabIndex = 37
+        Me.btnMembers.Text = "Show Members"
+        Me.btnMembers.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnAdmins
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Button4.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.LightGray
-        Me.Button4.Location = New System.Drawing.Point(687, 0)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(151, 48)
-        Me.Button4.TabIndex = 37
-        Me.Button4.Text = "Show Members"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnAdmins.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.btnAdmins.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnAdmins.FlatAppearance.BorderSize = 0
+        Me.btnAdmins.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdmins.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdmins.ForeColor = System.Drawing.Color.LightGray
+        Me.btnAdmins.Location = New System.Drawing.Point(536, 0)
+        Me.btnAdmins.Name = "btnAdmins"
+        Me.btnAdmins.Size = New System.Drawing.Size(151, 48)
+        Me.btnAdmins.TabIndex = 36
+        Me.btnAdmins.Text = "Show Admins"
+        Me.btnAdmins.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnAnnouncments
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.LightGray
-        Me.Button3.Location = New System.Drawing.Point(536, 0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(151, 48)
-        Me.Button3.TabIndex = 36
-        Me.Button3.Text = "Show Admins"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnAnnouncments.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.btnAnnouncments.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnAnnouncments.FlatAppearance.BorderSize = 0
+        Me.btnAnnouncments.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAnnouncments.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnnouncments.ForeColor = System.Drawing.Color.LightGray
+        Me.btnAnnouncments.Location = New System.Drawing.Point(385, 0)
+        Me.btnAnnouncments.Name = "btnAnnouncments"
+        Me.btnAnnouncments.Size = New System.Drawing.Size(151, 48)
+        Me.btnAnnouncments.TabIndex = 35
+        Me.btnAnnouncments.Text = "Announcments"
+        Me.btnAnnouncments.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnEvents
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.LightGray
-        Me.Button2.Location = New System.Drawing.Point(385, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(151, 48)
-        Me.Button2.TabIndex = 35
-        Me.Button2.Text = "View Latest Announcments"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnEvents.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.btnEvents.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnEvents.FlatAppearance.BorderSize = 0
+        Me.btnEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEvents.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEvents.ForeColor = System.Drawing.Color.LightGray
+        Me.btnEvents.Location = New System.Drawing.Point(234, 0)
+        Me.btnEvents.Name = "btnEvents"
+        Me.btnEvents.Size = New System.Drawing.Size(151, 48)
+        Me.btnEvents.TabIndex = 34
+        Me.btnEvents.Text = "Event Calender"
+        Me.btnEvents.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btnStatus
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.LightGray
-        Me.Button1.Location = New System.Drawing.Point(234, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(151, 48)
-        Me.Button1.TabIndex = 34
-        Me.Button1.Text = "Show Event Calender"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.btnStatus.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnStatus.FlatAppearance.BorderSize = 0
+        Me.btnStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStatus.ForeColor = System.Drawing.Color.LightGray
+        Me.btnStatus.Location = New System.Drawing.Point(83, 0)
+        Me.btnStatus.Name = "btnStatus"
+        Me.btnStatus.Size = New System.Drawing.Size(151, 48)
+        Me.btnStatus.TabIndex = 33
+        Me.btnStatus.Text = "Club Status"
+        Me.btnStatus.UseVisualStyleBackColor = False
         '
-        'btnAddAdmin
+        'btnClose
         '
-        Me.btnAddAdmin.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.btnAddAdmin.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnAddAdmin.FlatAppearance.BorderSize = 0
-        Me.btnAddAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAddAdmin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddAdmin.ForeColor = System.Drawing.Color.LightGray
-        Me.btnAddAdmin.Location = New System.Drawing.Point(83, 0)
-        Me.btnAddAdmin.Name = "btnAddAdmin"
-        Me.btnAddAdmin.Size = New System.Drawing.Size(151, 48)
-        Me.btnAddAdmin.TabIndex = 33
-        Me.btnAddAdmin.Text = "Your Club Status"
-        Me.btnAddAdmin.UseVisualStyleBackColor = False
+        Me.btnClose.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClose.ForeColor = System.Drawing.Color.LightGray
+        Me.btnClose.Location = New System.Drawing.Point(0, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(83, 48)
+        Me.btnClose.TabIndex = 38
+        Me.btnClose.Text = "X"
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'ProgrammingClubForm
         '
@@ -162,10 +162,10 @@ Partial Class ProgrammingClubForm
 
     Friend WithEvents PanelChildForm As Panel
     Friend WithEvents TabPanel As Panel
-    Private WithEvents button5 As Button
-    Private WithEvents Button4 As Button
-    Private WithEvents Button3 As Button
-    Private WithEvents Button2 As Button
-    Private WithEvents Button1 As Button
-    Private WithEvents btnAddAdmin As Button
+    Private WithEvents btnClose As Button
+    Private WithEvents btnMembers As Button
+    Private WithEvents btnAdmins As Button
+    Private WithEvents btnAnnouncments As Button
+    Private WithEvents btnEvents As Button
+    Private WithEvents btnStatus As Button
 End Class
