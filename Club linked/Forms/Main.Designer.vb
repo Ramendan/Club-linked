@@ -103,7 +103,7 @@ Partial Class Main
         Me.HelpPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.HelpPanel.Location = New System.Drawing.Point(0, 795)
         Me.HelpPanel.Name = "HelpPanel"
-        Me.HelpPanel.Size = New System.Drawing.Size(224, 130)
+        Me.HelpPanel.Size = New System.Drawing.Size(233, 130)
         Me.HelpPanel.TabIndex = 7
         '
         'button10
@@ -117,7 +117,7 @@ Partial Class Main
         Me.button10.Location = New System.Drawing.Point(0, 80)
         Me.button10.Name = "button10"
         Me.button10.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.button10.Size = New System.Drawing.Size(224, 40)
+        Me.button10.Size = New System.Drawing.Size(233, 40)
         Me.button10.TabIndex = 2
         Me.button10.Text = "Preferences"
         Me.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -134,7 +134,7 @@ Partial Class Main
         Me.button12.Location = New System.Drawing.Point(0, 40)
         Me.button12.Name = "button12"
         Me.button12.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.button12.Size = New System.Drawing.Size(224, 40)
+        Me.button12.Size = New System.Drawing.Size(233, 40)
         Me.button12.TabIndex = 1
         Me.button12.Text = "Report problems"
         Me.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -151,7 +151,7 @@ Partial Class Main
         Me.btnFeatures.Location = New System.Drawing.Point(0, 0)
         Me.btnFeatures.Name = "btnFeatures"
         Me.btnFeatures.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnFeatures.Size = New System.Drawing.Size(224, 40)
+        Me.btnFeatures.Size = New System.Drawing.Size(233, 40)
         Me.btnFeatures.TabIndex = 0
         Me.btnFeatures.Text = "Features"
         Me.btnFeatures.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -170,7 +170,7 @@ Partial Class Main
         Me.btnHelp.Location = New System.Drawing.Point(0, 750)
         Me.btnHelp.Name = "btnHelp"
         Me.btnHelp.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.btnHelp.Size = New System.Drawing.Size(224, 45)
+        Me.btnHelp.Size = New System.Drawing.Size(233, 45)
         Me.btnHelp.TabIndex = 8
         Me.btnHelp.Text = "  Help"
         Me.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -190,7 +190,7 @@ Partial Class Main
         Me.btnSettings.Location = New System.Drawing.Point(0, 705)
         Me.btnSettings.Name = "btnSettings"
         Me.btnSettings.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.btnSettings.Size = New System.Drawing.Size(224, 45)
+        Me.btnSettings.Size = New System.Drawing.Size(233, 45)
         Me.btnSettings.TabIndex = 0
         Me.btnSettings.Text = "  Settings"
         Me.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -206,7 +206,7 @@ Partial Class Main
         Me.AdminPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.AdminPanel.Location = New System.Drawing.Point(0, 581)
         Me.AdminPanel.Name = "AdminPanel"
-        Me.AdminPanel.Size = New System.Drawing.Size(224, 124)
+        Me.AdminPanel.Size = New System.Drawing.Size(233, 124)
         Me.AdminPanel.TabIndex = 1
         '
         'btnAdmin
@@ -220,7 +220,7 @@ Partial Class Main
         Me.btnAdmin.Location = New System.Drawing.Point(0, 80)
         Me.btnAdmin.Name = "btnAdmin"
         Me.btnAdmin.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnAdmin.Size = New System.Drawing.Size(224, 40)
+        Me.btnAdmin.Size = New System.Drawing.Size(233, 40)
         Me.btnAdmin.TabIndex = 3
         Me.btnAdmin.Text = "Admin Announcments"
         Me.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -237,7 +237,7 @@ Partial Class Main
         Me.btnAdminPrivileges.Location = New System.Drawing.Point(0, 40)
         Me.btnAdminPrivileges.Name = "btnAdminPrivileges"
         Me.btnAdminPrivileges.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnAdminPrivileges.Size = New System.Drawing.Size(224, 40)
+        Me.btnAdminPrivileges.Size = New System.Drawing.Size(233, 40)
         Me.btnAdminPrivileges.TabIndex = 2
         Me.btnAdminPrivileges.Text = "Admin Privileges"
         Me.btnAdminPrivileges.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -254,7 +254,7 @@ Partial Class Main
         Me.btnReports.Location = New System.Drawing.Point(0, 0)
         Me.btnReports.Name = "btnReports"
         Me.btnReports.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnReports.Size = New System.Drawing.Size(224, 40)
+        Me.btnReports.Size = New System.Drawing.Size(233, 40)
         Me.btnReports.TabIndex = 1
         Me.btnReports.Text = "Reports"
         Me.btnReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -273,7 +273,7 @@ Partial Class Main
         Me.btnAdminTools.Location = New System.Drawing.Point(0, 536)
         Me.btnAdminTools.Name = "btnAdminTools"
         Me.btnAdminTools.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.btnAdminTools.Size = New System.Drawing.Size(224, 45)
+        Me.btnAdminTools.Size = New System.Drawing.Size(233, 45)
         Me.btnAdminTools.TabIndex = 1
         Me.btnAdminTools.Text = "  Admin Tools"
         Me.btnAdminTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -293,7 +293,7 @@ Partial Class Main
         Me.btnExit.Location = New System.Drawing.Point(0, 925)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.btnExit.Size = New System.Drawing.Size(224, 45)
+        Me.btnExit.Size = New System.Drawing.Size(233, 45)
         Me.btnExit.TabIndex = 9
         Me.btnExit.Text = "  Exit"
         Me.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -310,7 +310,7 @@ Partial Class Main
         Me.ClubsPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.ClubsPanel.Location = New System.Drawing.Point(0, 365)
         Me.ClubsPanel.Name = "ClubsPanel"
-        Me.ClubsPanel.Size = New System.Drawing.Size(224, 171)
+        Me.ClubsPanel.Size = New System.Drawing.Size(233, 171)
         Me.ClubsPanel.TabIndex = 3
         '
         'btnReadingClub
@@ -324,7 +324,7 @@ Partial Class Main
         Me.btnReadingClub.Location = New System.Drawing.Point(0, 120)
         Me.btnReadingClub.Name = "btnReadingClub"
         Me.btnReadingClub.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnReadingClub.Size = New System.Drawing.Size(224, 40)
+        Me.btnReadingClub.Size = New System.Drawing.Size(233, 40)
         Me.btnReadingClub.TabIndex = 3
         Me.btnReadingClub.Text = "Reading Club"
         Me.btnReadingClub.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -341,7 +341,7 @@ Partial Class Main
         Me.btnChessClub.Location = New System.Drawing.Point(0, 80)
         Me.btnChessClub.Name = "btnChessClub"
         Me.btnChessClub.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnChessClub.Size = New System.Drawing.Size(224, 40)
+        Me.btnChessClub.Size = New System.Drawing.Size(233, 40)
         Me.btnChessClub.TabIndex = 2
         Me.btnChessClub.Text = "Chess Club"
         Me.btnChessClub.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -358,7 +358,7 @@ Partial Class Main
         Me.btnMusicClub.Location = New System.Drawing.Point(0, 40)
         Me.btnMusicClub.Name = "btnMusicClub"
         Me.btnMusicClub.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnMusicClub.Size = New System.Drawing.Size(224, 40)
+        Me.btnMusicClub.Size = New System.Drawing.Size(233, 40)
         Me.btnMusicClub.TabIndex = 1
         Me.btnMusicClub.Text = "Music Club"
         Me.btnMusicClub.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -375,7 +375,7 @@ Partial Class Main
         Me.btnProgrammingClub.Location = New System.Drawing.Point(0, 0)
         Me.btnProgrammingClub.Name = "btnProgrammingClub"
         Me.btnProgrammingClub.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnProgrammingClub.Size = New System.Drawing.Size(224, 40)
+        Me.btnProgrammingClub.Size = New System.Drawing.Size(233, 40)
         Me.btnProgrammingClub.TabIndex = 0
         Me.btnProgrammingClub.Text = "Programming Club"
         Me.btnProgrammingClub.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -394,7 +394,7 @@ Partial Class Main
         Me.btnClubs.Location = New System.Drawing.Point(0, 320)
         Me.btnClubs.Name = "btnClubs"
         Me.btnClubs.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.btnClubs.Size = New System.Drawing.Size(224, 45)
+        Me.btnClubs.Size = New System.Drawing.Size(233, 45)
         Me.btnClubs.TabIndex = 4
         Me.btnClubs.Text = "  Clubs"
         Me.btnClubs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -410,7 +410,7 @@ Partial Class Main
         Me.GeneralPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.GeneralPanel.Location = New System.Drawing.Point(0, 193)
         Me.GeneralPanel.Name = "GeneralPanel"
-        Me.GeneralPanel.Size = New System.Drawing.Size(224, 127)
+        Me.GeneralPanel.Size = New System.Drawing.Size(233, 127)
         Me.GeneralPanel.TabIndex = 10
         '
         'btnEvents
@@ -424,7 +424,7 @@ Partial Class Main
         Me.btnEvents.Location = New System.Drawing.Point(0, 80)
         Me.btnEvents.Name = "btnEvents"
         Me.btnEvents.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnEvents.Size = New System.Drawing.Size(224, 40)
+        Me.btnEvents.Size = New System.Drawing.Size(233, 40)
         Me.btnEvents.TabIndex = 2
         Me.btnEvents.Text = "Events"
         Me.btnEvents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -441,7 +441,7 @@ Partial Class Main
         Me.btnAnnouncement.Location = New System.Drawing.Point(0, 40)
         Me.btnAnnouncement.Name = "btnAnnouncement"
         Me.btnAnnouncement.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnAnnouncement.Size = New System.Drawing.Size(224, 40)
+        Me.btnAnnouncement.Size = New System.Drawing.Size(233, 40)
         Me.btnAnnouncement.TabIndex = 1
         Me.btnAnnouncement.Text = "Announcments"
         Me.btnAnnouncement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -458,7 +458,7 @@ Partial Class Main
         Me.btnAccount.Location = New System.Drawing.Point(0, 0)
         Me.btnAccount.Name = "btnAccount"
         Me.btnAccount.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnAccount.Size = New System.Drawing.Size(224, 40)
+        Me.btnAccount.Size = New System.Drawing.Size(233, 40)
         Me.btnAccount.TabIndex = 0
         Me.btnAccount.Text = "My Account"
         Me.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -477,7 +477,7 @@ Partial Class Main
         Me.btnGeneral.Location = New System.Drawing.Point(0, 148)
         Me.btnGeneral.Name = "btnGeneral"
         Me.btnGeneral.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.btnGeneral.Size = New System.Drawing.Size(224, 45)
+        Me.btnGeneral.Size = New System.Drawing.Size(233, 45)
         Me.btnGeneral.TabIndex = 3
         Me.btnGeneral.Text = "  General"
         Me.btnGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -490,7 +490,7 @@ Partial Class Main
         Me.panelLogo.Dock = System.Windows.Forms.DockStyle.Top
         Me.panelLogo.Location = New System.Drawing.Point(0, 0)
         Me.panelLogo.Name = "panelLogo"
-        Me.panelLogo.Size = New System.Drawing.Size(224, 148)
+        Me.panelLogo.Size = New System.Drawing.Size(233, 148)
         Me.panelLogo.TabIndex = 2
         '
         'PanelChildForm
@@ -499,7 +499,7 @@ Partial Class Main
         Me.PanelChildForm.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelChildForm.Location = New System.Drawing.Point(250, 0)
         Me.PanelChildForm.Name = "PanelChildForm"
-        Me.PanelChildForm.Size = New System.Drawing.Size(782, 932)
+        Me.PanelChildForm.Size = New System.Drawing.Size(1139, 932)
         Me.PanelChildForm.TabIndex = 0
         '
         'btnShowSideMenu
@@ -530,9 +530,9 @@ Partial Class Main
         '
         'Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1032, 932)
+        Me.ClientSize = New System.Drawing.Size(1389, 932)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PanelChildForm)
         Me.Controls.Add(Me.PanelSideMenu)
@@ -542,6 +542,7 @@ Partial Class Main
         Me.MinimumSize = New System.Drawing.Size(950, 600)
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelSideMenu.ResumeLayout(False)
         Me.HelpPanel.ResumeLayout(False)
