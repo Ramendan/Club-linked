@@ -87,4 +87,12 @@
       openChildForm(New Announcments)
 
     End Sub
+
+    Private Sub btnEvents_Click(sender As Object, e As EventArgs) Handles btnEvents.Click
+        openChildForm(New Events)
+    End Sub
+
+    Private Sub btnAdmin_Click_1(sender As Object, e As EventArgs) Handles btnAdmin.Click
+
+    End Sub
 End Class

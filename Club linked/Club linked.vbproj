@@ -93,10 +93,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Admin Tools\Admin Privileges.Designer.vb">
+      <DependentUpon>Admin Privileges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin Tools\Admin Privileges.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\General\Announcments.Designer.vb">
       <DependentUpon>Announcments.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\General\Announcments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\Events.Designer.vb">
+      <DependentUpon>Events.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\Events.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\General\Login.Designer.vb">
@@ -135,8 +147,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\Admin Tools\Admin Privileges.resx">
+      <DependentUpon>Admin Privileges.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\General\Announcments.resx">
       <DependentUpon>Announcments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\Events.resx">
+      <DependentUpon>Events.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\General\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -186,15 +204,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Database\Database.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
