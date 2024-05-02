@@ -87,4 +87,8 @@
       openChildForm(New Announcments)
 
     End Sub
+
+    Private Sub btnEvents_Click(sender As Object, e As EventArgs) Handles btnEvents.Click
+
+    End Sub
 End Class

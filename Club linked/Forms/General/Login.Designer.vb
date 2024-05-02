@@ -223,9 +223,9 @@ Partial Class Login
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(481, 95)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(151, 31)
+        Me.Label6.Size = New System.Drawing.Size(141, 31)
         Me.Label6.TabIndex = 37
-        Me.Label6.Text = "User Name"
+        Me.Label6.Text = "College ID"
         '
         'btnSignUp
         '
