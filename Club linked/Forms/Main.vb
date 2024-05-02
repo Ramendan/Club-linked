@@ -84,7 +84,7 @@
     End Sub
 
     Private Sub btnAdminPrivileges_Click(sender As Object, e As EventArgs) Handles btnAdminPrivileges.Click
-      openChildForm(New Announcments)
+        openChildForm(New Admin_Privileges)
 
     End Sub
 
@@ -92,7 +92,15 @@
         openChildForm(New Events)
     End Sub
 
-    Private Sub btnAdmin_Click_1(sender As Object, e As EventArgs) Handles btnAdmin.Click
+    Private Sub btnAdmin_Click_1(sender As Object, e As EventArgs) Handles btnAdminAnnouncments.Click
+        openChildForm(New AdminAnnouncements)
+    End Sub
+
+    Private Sub btnAnnouncement_Click(sender As Object, e As EventArgs) Handles btnAnnouncement.Click
+        openChildForm(New Announcments)
+    End Sub
+
+    Private Sub PanelChildForm_Paint(sender As Object, e As PaintEventArgs) Handles PanelChildForm.Paint
 
     End Sub
 End Class

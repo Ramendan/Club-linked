@@ -116,7 +116,7 @@ Partial Class Admin_Privileges
         Me.GroupBox1.Controls.Add(Me.btnRevoke)
         Me.GroupBox1.Controls.Add(Me.btnSearchUsr)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(23, 75)
+        Me.GroupBox1.Location = New System.Drawing.Point(34, 75)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(1092, 550)
         Me.GroupBox1.TabIndex = 36

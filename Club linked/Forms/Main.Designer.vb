@@ -32,7 +32,7 @@ Partial Class Main
         Me.btnHelp = New System.Windows.Forms.Button()
         Me.btnSettings = New System.Windows.Forms.Button()
         Me.AdminPanel = New System.Windows.Forms.Panel()
-        Me.btnAdmin = New System.Windows.Forms.Button()
+        Me.btnAdminAnnouncments = New System.Windows.Forms.Button()
         Me.btnAdminPrivileges = New System.Windows.Forms.Button()
         Me.btnReports = New System.Windows.Forms.Button()
         Me.btnAdminTools = New System.Windows.Forms.Button()
@@ -200,7 +200,7 @@ Partial Class Main
         'AdminPanel
         '
         Me.AdminPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.AdminPanel.Controls.Add(Me.btnAdmin)
+        Me.AdminPanel.Controls.Add(Me.btnAdminAnnouncments)
         Me.AdminPanel.Controls.Add(Me.btnAdminPrivileges)
         Me.AdminPanel.Controls.Add(Me.btnReports)
         Me.AdminPanel.Dock = System.Windows.Forms.DockStyle.Top
@@ -209,22 +209,22 @@ Partial Class Main
         Me.AdminPanel.Size = New System.Drawing.Size(229, 124)
         Me.AdminPanel.TabIndex = 1
         '
-        'btnAdmin
+        'btnAdminAnnouncments
         '
-        Me.btnAdmin.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnAdmin.FlatAppearance.BorderSize = 0
-        Me.btnAdmin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAdmin.ForeColor = System.Drawing.Color.Silver
-        Me.btnAdmin.Location = New System.Drawing.Point(0, 80)
-        Me.btnAdmin.Name = "btnAdmin"
-        Me.btnAdmin.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnAdmin.Size = New System.Drawing.Size(229, 40)
-        Me.btnAdmin.TabIndex = 3
-        Me.btnAdmin.Text = "Admin Announcments"
-        Me.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAdmin.UseVisualStyleBackColor = True
+        Me.btnAdminAnnouncments.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAdminAnnouncments.FlatAppearance.BorderSize = 0
+        Me.btnAdminAnnouncments.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnAdminAnnouncments.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnAdminAnnouncments.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdminAnnouncments.ForeColor = System.Drawing.Color.Silver
+        Me.btnAdminAnnouncments.Location = New System.Drawing.Point(0, 80)
+        Me.btnAdminAnnouncments.Name = "btnAdminAnnouncments"
+        Me.btnAdminAnnouncments.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.btnAdminAnnouncments.Size = New System.Drawing.Size(229, 40)
+        Me.btnAdminAnnouncments.TabIndex = 3
+        Me.btnAdminAnnouncments.Text = "Admin Announcments"
+        Me.btnAdminAnnouncments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAdminAnnouncments.UseVisualStyleBackColor = True
         '
         'btnAdminPrivileges
         '
@@ -575,7 +575,7 @@ Partial Class Main
     Private WithEvents AdminPanel As Panel
     Private WithEvents panelLogo As Panel
     Private WithEvents btnReports As Button
-    Private WithEvents btnAdmin As Button
+    Private WithEvents btnAdminAnnouncments As Button
     Private WithEvents btnAdminPrivileges As Button
     Private WithEvents GeneralPanel As Panel
     Private WithEvents btnEvents As Button
