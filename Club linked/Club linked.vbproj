@@ -93,10 +93,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Admin Tools\Admin Privileges.Designer.vb">
+      <DependentUpon>Admin Privileges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin Tools\Admin Privileges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Tools\AdminAnnouncements.Designer.vb">
+      <DependentUpon>AdminAnnouncements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin Tools\AdminAnnouncements.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clubs\ProgramClub.Designer.vb">
+      <DependentUpon>ProgramClub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clubs\ProgramClub.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\General\Announcments.Designer.vb">
       <DependentUpon>Announcments.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\General\Announcments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\Events.Designer.vb">
+      <DependentUpon>Events.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\Events.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\General\Login.Designer.vb">
@@ -135,8 +159,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\Admin Tools\Admin Privileges.resx">
+      <DependentUpon>Admin Privileges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin Tools\AdminAnnouncements.resx">
+      <DependentUpon>AdminAnnouncements.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\ProgramClub.resx">
+      <DependentUpon>ProgramClub.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\General\Announcments.resx">
       <DependentUpon>Announcments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\Events.resx">
+      <DependentUpon>Events.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\General\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

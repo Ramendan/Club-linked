@@ -22,29 +22,17 @@ Partial Class Announcments
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.button8 = New System.Windows.Forms.Button()
         Me.button9 = New System.Windows.Forms.Button()
         Me.button5 = New System.Windows.Forms.Button()
         Me.label1 = New System.Windows.Forms.Label()
         Me.Announcment1 = New System.Windows.Forms.RichTextBox()
-        Me.Announcment2 = New System.Windows.Forms.RichTextBox()
-        Me.Announcment3 = New System.Windows.Forms.RichTextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        '
-        'button8
-        '
-        Me.button8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.button8.FlatAppearance.BorderSize = 0
-        Me.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button8.ForeColor = System.Drawing.Color.LightGray
-        Me.button8.Location = New System.Drawing.Point(570, 386)
-        Me.button8.Name = "button8"
-        Me.button8.Size = New System.Drawing.Size(150, 40)
-        Me.button8.TabIndex = 30
-        Me.button8.Text = "button8"
-        Me.button8.UseVisualStyleBackColor = False
         '
         'button9
         '
@@ -54,11 +42,12 @@ Partial Class Announcments
         Me.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button9.ForeColor = System.Drawing.Color.LightGray
-        Me.button9.Location = New System.Drawing.Point(414, 386)
+        Me.button9.Location = New System.Drawing.Point(349, 475)
+        Me.button9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.button9.Name = "button9"
-        Me.button9.Size = New System.Drawing.Size(150, 40)
+        Me.button9.Size = New System.Drawing.Size(200, 49)
         Me.button9.TabIndex = 29
-        Me.button9.Text = "button9"
+        Me.button9.Text = "Latest Admin Announcment"
         Me.button9.UseVisualStyleBackColor = False
         '
         'button5
@@ -68,9 +57,10 @@ Partial Class Announcments
         Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(80, 25)
+        Me.button5.Location = New System.Drawing.Point(144, 13)
+        Me.button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.button5.Name = "button5"
-        Me.button5.Size = New System.Drawing.Size(25, 25)
+        Me.button5.Size = New System.Drawing.Size(33, 31)
         Me.button5.TabIndex = 28
         Me.button5.Text = "X"
         Me.button5.UseVisualStyleBackColor = True
@@ -79,11 +69,12 @@ Partial Class Announcments
         '
         Me.label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.label1.AutoSize = True
-        Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(339, 36)
+        Me.label1.Location = New System.Drawing.Point(402, 31)
+        Me.label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(144, 25)
+        Me.label1.Size = New System.Drawing.Size(249, 39)
         Me.label1.TabIndex = 26
         Me.label1.Text = "Announcments"
         '
@@ -91,59 +82,126 @@ Partial Class Announcments
         '
         Me.Announcment1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Announcment1.Location = New System.Drawing.Point(108, 90)
+        Me.Announcment1.Location = New System.Drawing.Point(144, 156)
+        Me.Announcment1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Announcment1.Name = "Announcment1"
         Me.Announcment1.ReadOnly = True
-        Me.Announcment1.Size = New System.Drawing.Size(612, 75)
+        Me.Announcment1.Size = New System.Drawing.Size(815, 311)
         Me.Announcment1.TabIndex = 31
         Me.Announcment1.Text = ""
         '
-        'Announcment2
+        'Button1
         '
-        Me.Announcment2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Announcment2.Location = New System.Drawing.Point(108, 185)
-        Me.Announcment2.Name = "Announcment2"
-        Me.Announcment2.ReadOnly = True
-        Me.Announcment2.Size = New System.Drawing.Size(612, 75)
-        Me.Announcment2.TabIndex = 32
-        Me.Announcment2.Text = ""
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.LightGray
+        Me.Button1.Location = New System.Drawing.Point(144, 475)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(200, 49)
+        Me.Button1.TabIndex = 32
+        Me.Button1.Text = "Previous Announcment"
+        Me.Button1.UseVisualStyleBackColor = False
         '
-        'Announcment3
+        'Button2
         '
-        Me.Announcment3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Announcment3.Location = New System.Drawing.Point(108, 279)
-        Me.Announcment3.Name = "Announcment3"
-        Me.Announcment3.ReadOnly = True
-        Me.Announcment3.Size = New System.Drawing.Size(612, 75)
-        Me.Announcment3.TabIndex = 33
-        Me.Announcment3.Text = ""
+        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.LightGray
+        Me.Button2.Location = New System.Drawing.Point(554, 475)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(200, 49)
+        Me.Button2.TabIndex = 33
+        Me.Button2.Text = "Lastest Club Announcment"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.LightGray
+        Me.Button3.Location = New System.Drawing.Point(759, 475)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(200, 49)
+        Me.Button3.TabIndex = 34
+        Me.Button3.Text = "Next Announcment"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(139, 119)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(258, 33)
+        Me.Label2.TabIndex = 35
+        Me.Label2.Text = "Announcment Title"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(403, 119)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(263, 33)
+        Me.Label3.TabIndex = 36
+        Me.Label3.Text = "Announcment Date"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(672, 119)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(287, 33)
+        Me.Label4.TabIndex = 37
+        Me.Label4.Text = "Announcment Author"
         '
         'Announcments
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Announcment3)
-        Me.Controls.Add(Me.Announcment2)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Announcment1)
-        Me.Controls.Add(Me.button8)
         Me.Controls.Add(Me.button9)
         Me.Controls.Add(Me.button5)
         Me.Controls.Add(Me.label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Announcments"
         Me.Text = "Announcments"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Private WithEvents button8 As Button
     Private WithEvents button9 As Button
     Private WithEvents button5 As Button
     Private WithEvents label1 As Label
     Friend WithEvents Announcment1 As RichTextBox
-    Friend WithEvents Announcment2 As RichTextBox
-    Friend WithEvents Announcment3 As RichTextBox
+    Private WithEvents Button1 As Button
+    Private WithEvents Button2 As Button
+    Private WithEvents Button3 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class

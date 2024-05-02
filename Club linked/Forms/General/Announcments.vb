@@ -4,8 +4,10 @@
     End Sub
 
     Private Sub Announcments_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Announcment1.Text = "hello"
-        Announcment2.Text = "This is an announcment"
-        Announcment3.Text = "hey"
+
+    End Sub
+
+    Private Sub button9_Click(sender As Object, e As EventArgs) Handles button9.Click
+
     End Sub
 End Class
