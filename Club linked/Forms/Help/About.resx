@@ -123,8 +123,40 @@ by providing user-friendly tools and features.
 We believe in fostering collaboration and a sense of belonging
 within clubs of all sizes and interests.
 
-Meet the Clublinked team:
+
+
 Hassan Al Nassri: Team lead and project manager
-Abdulhaleem Al Barwani: Database programmer</value>
+Abdulhaleem Al Barwani: Database programmer
+Abdullah Al Zidi: UI Design
+Imad Al Balushi: UI Design
+</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAABOZJREFUeF7tnU2PFFUUhht3BBVWrEyUutVMIgl/AHT8mJlbTQKs3LInEVySGIIm
+        7g1GE7/4BbghOCZuxtHQVQ0JIhuEmBjBhR9RJhglLIyO59S8Jk316ZkpqKbuuX2e5MlMpubWnPdW9e1b
+        3XWnO4ZhGIZhGIZh1GK188Zj+NZ4lBRPvbK1SLP38jS7A9/ln2GzMWkKl52mA7A6bO7829hsTBo643+p
+        HgDyV2w2Jo3Q+aXYbEwaqfNZbDYmjdT5LDYb4xikC/M0fn9MT6I3cpf9JXViG5a1uOx6kfqPiq6fQ7nx
+        cGlXb3fh/FdS+BClGdWXg2Sui/J1k3cPPE9n1ooUNGTpUXG73/XPIYZOyjNfYef/Lx+Ewi2kiKMPCvFF
+        NZQ2eThCHF3wE64USKN5kr2MWHqgM+eMFEan/kPE0gNPNeUwCqUpKmLpgYr+UwyjUcqCWHoQgygWsfQg
+        hdAsYulBCqFZxNKDFGKTniNnr+6d38YOnH+BZlTnK7+zGZvaTyli6UEKsZF5mp1A8xEK51+X2kg2tZ9h
+        0VwPUogNPIemY6HZyKdCu6pN7ec+0VQPUogNnEXTsfTdwotCu6pN7ec+0VQPUoj1XH529nE0HUt/5tAT
+        Utthm9pPVTTVgxRiPTfTcRfT7Emp7bBN7acqmupBCrGePEtB07HkSe8lqe2wTe2nKprqQQqxnjxFRNOx
+        0JPnotR22Kb2UxVN9SCF2FCaIqL5CHnXnxTbSDa1nyHRXA9SiE1JU0SepfBYzpbDxQOcsY3tByKWHqQQ
+        mkUsPUghNItYepBCaBax9CCF0Cxi6UEKoVnE0gPNOKJ5S5KuLf5ALD3QAYjmTXk6AN8ilh7KG12FMBrN
+        XfY+YumB7zKWwmiUL+IQSxf0KFiSAmkyT7NlxNHHxd3zu2j8/E0KpkH1N+cyfIt3GUQIGLJU8++DJNuP
+        GLrhs4hCKbpT2i/108yh/Hjgu4z5Rlee1gV1nUC1UE3X6Kz/QO0TrmEYhmEYhhHqivi6lrVrWkGvbUV8
+        XelaIdwV9FpXxNeVX1YJbgW99hXxdeWDENSLdFSU+hXxdeXhCPHbJaYV8XUNYgU9nQkRrYivawAr6GN6
+        8722Iayg55dyxeKmwRBW0IuFTZHohvagK95/pcKmwTz1/6Ab2kPzSw0PK01A2r9jjg7AD1JxU6Hz36Mb
+        2oMK+XyksKnRf4ZuaA+aCbwlFxe/NAS9iW5oj7UX4eQCozfp7UM3tAd/iALNhH4UC4xafzOYD5Cggk6N
+        Fhi3vNwV8dtn+enDO+hRcEcqNE79yuVkbjvih0HhFl6Vi43PQZodRexw4PGQipuC9wX8UrAfHpQn8zup
+        yFujRceiv8kZETdM+E1rujb4SQ6gWMqk5l/aY2HGNTGIQmmC8Z26zxPgmRGdNbX/N1to0ol0PrgZTx0K
+        1zuSp/6uFC5w71Hdr612OlsQRS9rN2w9+L+KeeTSIzeajzAZZpD0eoXz34ihQ9D5KzTkeJQbL7z4jc+y
+        UN5No6GmT18PRjHc1GEw45/hcZYOxNfVTpm0PEvjl5P7M34G5Uw3F5zfk3f9cRoGPqGD8rPUaQ8j9nmW
+        HnnH+G/hzxrj4GWi/SQ7wB1GvkMu0iPlMn3l+5Doatuv0Pd/l67dl3qLt+F3FsnT5DHeR5RLTg3DMAzD
+        MAzDUEqn8x84artdtVKHvAAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>
