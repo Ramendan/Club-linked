@@ -35,9 +35,9 @@ Partial Class ProgrammingTab1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnNext)
         Me.GroupBox1.Controls.Add(Me.txtSearch)
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1.Controls.Add(Me.btnNext)
         Me.GroupBox1.Controls.Add(Me.btnPrev)
         Me.GroupBox1.Controls.Add(Me.btnSearch)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
@@ -121,7 +121,7 @@ Partial Class ProgrammingTab1
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.label1.Location = New System.Drawing.Point(25, 27)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(197, 32)
+        Me.label1.Size = New System.Drawing.Size(198, 32)
         Me.label1.TabIndex = 35
         Me.label1.Text = "Club Members"
         '

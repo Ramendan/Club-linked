@@ -26,7 +26,7 @@
 
         btnEvents.BackColor = Color.FromArgb(32, 30, 45)
         btnAnnouncments.BackColor = Color.FromArgb(32, 30, 45)
-        btnAdmins.BackColor = Color.FromArgb(32, 30, 45)
+        btnInfo.BackColor = Color.FromArgb(32, 30, 45)
         btnMembers.BackColor = Color.FromArgb(32, 30, 45)
         btnStatus.BackColor = Color.FromArgb(32, 30, 45)
         buttonToHighlight.BackColor = Color.FromArgb(235, 42, 83)
@@ -49,8 +49,8 @@
         highlight(btnAnnouncments)
     End Sub
 
-    Private Sub btnAdmins_Click(sender As Object, e As EventArgs) Handles btnAdmins.Click
-        highlight(btnAdmins)
+    Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
+        highlight(btnInfo)
     End Sub
 
     Private Sub btnStatus_Click(sender As Object, e As EventArgs) Handles btnStatus.Click
@@ -59,17 +59,5 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
-    End Sub
-
-    Private Sub PanelChildForm_Paint(sender As Object, e As PaintEventArgs) Handles PanelChildForm.Paint
-
-    End Sub
-
-    Private Sub TabPanel_Paint(sender As Object, e As PaintEventArgs) Handles TabPanel.Paint
-
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
     End Sub
 End Class
