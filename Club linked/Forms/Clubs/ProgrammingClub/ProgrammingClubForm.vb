@@ -45,10 +45,12 @@
     End Sub
 
     Private Sub btnAnnouncments_Click(sender As Object, e As EventArgs) Handles btnAnnouncments.Click
+        openChildForm(New ProgrammingAnnouncements)
         highlight(btnAnnouncments)
     End Sub
 
     Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
+        openChildForm(New ProgrammingInfo)
         highlight(btnInfo)
     End Sub
 

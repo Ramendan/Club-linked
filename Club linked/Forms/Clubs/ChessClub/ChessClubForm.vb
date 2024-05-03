@@ -30,7 +30,7 @@
     End Sub
 
     Private Sub btnMembers_Click(sender As Object, e As EventArgs) Handles btnMembers.Click
-        ' openChildForm(New Tab)
+        openChildForm(New ChessMembers)
         highlight(btnMembers)
     End Sub
 
@@ -41,10 +41,12 @@
     End Sub
 
     Private Sub btnAnnouncments_Click(sender As Object, e As EventArgs) Handles btnAnnouncments.Click
+        openChildForm(New ChessAnnouncement)
         highlight(btnAnnouncments)
     End Sub
 
     Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
+        openChildForm(New ChessInfo)
         highlight(btnInfo)
     End Sub
 
