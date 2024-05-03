@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,21 +20,26 @@ Partial Class Login
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.btnShow_signUp = New System.Windows.Forms.Button()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.button5 = New System.Windows.Forms.Button()
         Me.lLogin = New System.Windows.Forms.Label()
         Me.tbUsername_login = New System.Windows.Forms.TextBox()
-        Me.tbPassword_login = New System.Windows.Forms.TextBox()
+        Me.tbPasswordlogin = New System.Windows.Forms.TextBox()
         Me.lUsername_login = New System.Windows.Forms.Label()
         Me.lPassword_login = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.gbLogin = New System.Windows.Forms.GroupBox()
+        Me.btShowPasswordLogin = New System.Windows.Forms.Button()
         Me.gbRegister = New System.Windows.Forms.GroupBox()
+        Me.btShowConfirmPassword = New System.Windows.Forms.Button()
+        Me.btShowPassword = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.tbConfirmPassword = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnSignUp = New System.Windows.Forms.Button()
@@ -44,9 +49,12 @@ Partial Class Login
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.tbPassword = New System.Windows.Forms.TextBox()
+        Me.TTinsertNums = New System.Windows.Forms.ToolTip(Me.components)
+        Me.PanelChildForm = New System.Windows.Forms.Panel()
         Me.gbLogin.SuspendLayout()
         Me.gbRegister.SuspendLayout()
+        Me.PanelChildForm.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnShow_signUp
@@ -110,13 +118,13 @@ Partial Class Login
         Me.tbUsername_login.Size = New System.Drawing.Size(317, 40)
         Me.tbUsername_login.TabIndex = 31
         '
-        'tbPassword_login
+        'tbPasswordlogin
         '
-        Me.tbPassword_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbPassword_login.Location = New System.Drawing.Point(45, 245)
-        Me.tbPassword_login.Name = "tbPassword_login"
-        Me.tbPassword_login.Size = New System.Drawing.Size(317, 40)
-        Me.tbPassword_login.TabIndex = 32
+        Me.tbPasswordlogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbPasswordlogin.Location = New System.Drawing.Point(45, 245)
+        Me.tbPasswordlogin.Name = "tbPasswordlogin"
+        Me.tbPasswordlogin.Size = New System.Drawing.Size(317, 40)
+        Me.tbPasswordlogin.TabIndex = 32
         '
         'lUsername_login
         '
@@ -155,6 +163,7 @@ Partial Class Login
         '
         'gbLogin
         '
+        Me.gbLogin.Controls.Add(Me.btShowPasswordLogin)
         Me.gbLogin.Controls.Add(Me.btnLogin)
         Me.gbLogin.Controls.Add(Me.Label1)
         Me.gbLogin.Controls.Add(Me.lLogin)
@@ -162,17 +171,31 @@ Partial Class Login
         Me.gbLogin.Controls.Add(Me.lPassword_login)
         Me.gbLogin.Controls.Add(Me.tbUsername_login)
         Me.gbLogin.Controls.Add(Me.lUsername_login)
-        Me.gbLogin.Controls.Add(Me.tbPassword_login)
+        Me.gbLogin.Controls.Add(Me.tbPasswordlogin)
         Me.gbLogin.Location = New System.Drawing.Point(34, 63)
         Me.gbLogin.Name = "gbLogin"
         Me.gbLogin.Size = New System.Drawing.Size(411, 463)
         Me.gbLogin.TabIndex = 36
         Me.gbLogin.TabStop = False
         '
+        'btShowPasswordLogin
+        '
+        Me.btShowPasswordLogin.BackColor = System.Drawing.Color.White
+        Me.btShowPasswordLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btShowPasswordLogin.ForeColor = System.Drawing.Color.Transparent
+        Me.btShowPasswordLogin.Image = CType(resources.GetObject("btShowPasswordLogin.Image"), System.Drawing.Image)
+        Me.btShowPasswordLogin.Location = New System.Drawing.Point(295, 252)
+        Me.btShowPasswordLogin.Name = "btShowPasswordLogin"
+        Me.btShowPasswordLogin.Size = New System.Drawing.Size(56, 21)
+        Me.btShowPasswordLogin.TabIndex = 43
+        Me.btShowPasswordLogin.UseVisualStyleBackColor = False
+        '
         'gbRegister
         '
+        Me.gbRegister.Controls.Add(Me.btShowConfirmPassword)
+        Me.gbRegister.Controls.Add(Me.btShowPassword)
         Me.gbRegister.Controls.Add(Me.Label7)
-        Me.gbRegister.Controls.Add(Me.TextBox4)
+        Me.gbRegister.Controls.Add(Me.tbConfirmPassword)
         Me.gbRegister.Controls.Add(Me.TextBox3)
         Me.gbRegister.Controls.Add(Me.Label6)
         Me.gbRegister.Controls.Add(Me.btnSignUp)
@@ -182,12 +205,36 @@ Partial Class Login
         Me.gbRegister.Controls.Add(Me.Label4)
         Me.gbRegister.Controls.Add(Me.TextBox1)
         Me.gbRegister.Controls.Add(Me.Label5)
-        Me.gbRegister.Controls.Add(Me.TextBox2)
-        Me.gbRegister.Location = New System.Drawing.Point(34, 63)
+        Me.gbRegister.Controls.Add(Me.tbPassword)
+        Me.gbRegister.Location = New System.Drawing.Point(35, 63)
         Me.gbRegister.Name = "gbRegister"
         Me.gbRegister.Size = New System.Drawing.Size(761, 463)
         Me.gbRegister.TabIndex = 37
         Me.gbRegister.TabStop = False
+        '
+        'btShowConfirmPassword
+        '
+        Me.btShowConfirmPassword.BackColor = System.Drawing.Color.White
+        Me.btShowConfirmPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btShowConfirmPassword.ForeColor = System.Drawing.Color.Transparent
+        Me.btShowConfirmPassword.Image = CType(resources.GetObject("btShowConfirmPassword.Image"), System.Drawing.Image)
+        Me.btShowConfirmPassword.Location = New System.Drawing.Point(654, 250)
+        Me.btShowConfirmPassword.Name = "btShowConfirmPassword"
+        Me.btShowConfirmPassword.Size = New System.Drawing.Size(56, 21)
+        Me.btShowConfirmPassword.TabIndex = 42
+        Me.btShowConfirmPassword.UseVisualStyleBackColor = False
+        '
+        'btShowPassword
+        '
+        Me.btShowPassword.BackColor = System.Drawing.Color.White
+        Me.btShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btShowPassword.ForeColor = System.Drawing.Color.Transparent
+        Me.btShowPassword.Image = CType(resources.GetObject("btShowPassword.Image"), System.Drawing.Image)
+        Me.btShowPassword.Location = New System.Drawing.Point(296, 250)
+        Me.btShowPassword.Name = "btShowPassword"
+        Me.btShowPassword.Size = New System.Drawing.Size(56, 21)
+        Me.btShowPassword.TabIndex = 41
+        Me.btShowPassword.UseVisualStyleBackColor = False
         '
         'Label7
         '
@@ -200,14 +247,14 @@ Partial Class Login
         Me.Label7.TabIndex = 39
         Me.Label7.Text = "Confirm Password"
         '
-        'TextBox4
+        'tbConfirmPassword
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(398, 245)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox4.Size = New System.Drawing.Size(317, 40)
-        Me.TextBox4.TabIndex = 38
+        Me.tbConfirmPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbConfirmPassword.Location = New System.Drawing.Point(398, 245)
+        Me.tbConfirmPassword.Name = "tbConfirmPassword"
+        Me.tbConfirmPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tbConfirmPassword.Size = New System.Drawing.Size(317, 40)
+        Me.tbConfirmPassword.TabIndex = 38
         '
         'TextBox3
         '
@@ -216,7 +263,7 @@ Partial Class Login
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(317, 40)
         Me.TextBox3.TabIndex = 36
-        Me.TextBox3.Text = "Example: 200123"
+        Me.TTinsertNums.SetToolTip(Me.TextBox3, "Example: 210000")
         '
         'Label6
         '
@@ -311,14 +358,27 @@ Partial Class Login
         Me.Label5.TabIndex = 33
         Me.Label5.Text = "Name"
         '
-        'TextBox2
+        'tbPassword
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(45, 245)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(317, 40)
-        Me.TextBox2.TabIndex = 32
+        Me.tbPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbPassword.Location = New System.Drawing.Point(45, 245)
+        Me.tbPassword.Name = "tbPassword"
+        Me.tbPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tbPassword.Size = New System.Drawing.Size(317, 40)
+        Me.tbPassword.TabIndex = 32
+        '
+        'TTinsertNums
+        '
+        Me.TTinsertNums.ToolTipTitle = "Only insert numbers"
+        '
+        'PanelChildForm
+        '
+        Me.PanelChildForm.Controls.Add(Me.gbRegister)
+        Me.PanelChildForm.Controls.Add(Me.gbLogin)
+        Me.PanelChildForm.Location = New System.Drawing.Point(0, 0)
+        Me.PanelChildForm.Name = "PanelChildForm"
+        Me.PanelChildForm.Size = New System.Drawing.Size(1091, 941)
+        Me.PanelChildForm.TabIndex = 38
         '
         'Login
         '
@@ -326,15 +386,15 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1091, 941)
-        Me.Controls.Add(Me.gbRegister)
-        Me.Controls.Add(Me.gbLogin)
         Me.Controls.Add(Me.button5)
+        Me.Controls.Add(Me.PanelChildForm)
         Me.Name = "Login"
         Me.Text = "Login"
         Me.gbLogin.ResumeLayout(False)
         Me.gbLogin.PerformLayout()
         Me.gbRegister.ResumeLayout(False)
         Me.gbRegister.PerformLayout()
+        Me.PanelChildForm.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -343,7 +403,7 @@ Partial Class Login
     Private WithEvents button5 As Button
     Private WithEvents lLogin As Label
     Friend WithEvents tbUsername_login As TextBox
-    Friend WithEvents tbPassword_login As TextBox
+    Friend WithEvents tbPasswordlogin As TextBox
     Private WithEvents lUsername_login As Label
     Private WithEvents lPassword_login As Label
     Private WithEvents Label1 As Label
@@ -356,9 +416,14 @@ Partial Class Login
     Private WithEvents Label4 As Label
     Friend WithEvents TextBox1 As TextBox
     Private WithEvents Label5 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents tbPassword As TextBox
     Private WithEvents Label7 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents tbConfirmPassword As TextBox
     Friend WithEvents TextBox3 As TextBox
     Private WithEvents Label6 As Label
+    Friend WithEvents TTinsertNums As ToolTip
+    Friend WithEvents btShowConfirmPassword As Button
+    Friend WithEvents btShowPassword As Button
+    Friend WithEvents PanelChildForm As Panel
+    Friend WithEvents btShowPasswordLogin As Button
 End Class
