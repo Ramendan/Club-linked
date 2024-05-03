@@ -106,7 +106,7 @@ Partial Class ProgrammingMembers
         Me.GroupBox2.Controls.Add(Me.CheckBox1)
         Me.GroupBox2.Location = New System.Drawing.Point(21, 71)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(161, 125)
+        Me.GroupBox2.Size = New System.Drawing.Size(150, 125)
         Me.GroupBox2.TabIndex = 38
         Me.GroupBox2.TabStop = False
         '
