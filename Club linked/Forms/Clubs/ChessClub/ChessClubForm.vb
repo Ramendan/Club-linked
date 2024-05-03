@@ -22,7 +22,7 @@
 
         btnEvents.BackColor = Color.FromArgb(32, 30, 45)
         btnAnnouncments.BackColor = Color.FromArgb(32, 30, 45)
-        btnAdmins.BackColor = Color.FromArgb(32, 30, 45)
+        btnInfo.BackColor = Color.FromArgb(32, 30, 45)
         btnMembers.BackColor = Color.FromArgb(32, 30, 45)
         btnStatus.BackColor = Color.FromArgb(32, 30, 45)
         buttonToHighlight.BackColor = Color.FromArgb(235, 42, 83)
@@ -44,8 +44,8 @@
         highlight(btnAnnouncments)
     End Sub
 
-    Private Sub btnAdmins_Click(sender As Object, e As EventArgs) Handles btnAdmins.Click
-        highlight(btnAdmins)
+    Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
+        highlight(btnInfo)
     End Sub
 
     Private Sub btnStatus_Click(sender As Object, e As EventArgs) Handles btnStatus.Click
