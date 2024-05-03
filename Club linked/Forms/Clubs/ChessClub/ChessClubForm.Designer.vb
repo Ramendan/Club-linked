@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ProgrammingClubForm
+Partial Class ChessClubForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,7 +29,7 @@ Partial Class ProgrammingClubForm
         Me.btnAnnouncments = New System.Windows.Forms.Button()
         Me.btnEvents = New System.Windows.Forms.Button()
         Me.btnStatus = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TabPanel.SuspendLayout()
         Me.SuspendLayout()
@@ -39,8 +39,8 @@ Partial Class ProgrammingClubForm
         Me.PanelChildForm.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelChildForm.Location = New System.Drawing.Point(0, 48)
         Me.PanelChildForm.Name = "PanelChildForm"
-        Me.PanelChildForm.Size = New System.Drawing.Size(960, 402)
-        Me.PanelChildForm.TabIndex = 5
+        Me.PanelChildForm.Size = New System.Drawing.Size(978, 402)
+        Me.PanelChildForm.TabIndex = 7
         '
         'TabPanel
         '
@@ -49,13 +49,13 @@ Partial Class ProgrammingClubForm
         Me.TabPanel.Controls.Add(Me.btnAnnouncments)
         Me.TabPanel.Controls.Add(Me.btnEvents)
         Me.TabPanel.Controls.Add(Me.btnStatus)
-        Me.TabPanel.Controls.Add(Me.Button1)
+        Me.TabPanel.Controls.Add(Me.btnClose)
         Me.TabPanel.Controls.Add(Me.Panel1)
         Me.TabPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.TabPanel.Location = New System.Drawing.Point(0, 0)
         Me.TabPanel.Name = "TabPanel"
-        Me.TabPanel.Size = New System.Drawing.Size(960, 48)
-        Me.TabPanel.TabIndex = 4
+        Me.TabPanel.Size = New System.Drawing.Size(978, 48)
+        Me.TabPanel.TabIndex = 6
         '
         'btnMembers
         '
@@ -132,21 +132,21 @@ Partial Class ProgrammingClubForm
         Me.btnStatus.Text = "Club Status"
         Me.btnStatus.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btnClose
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.LightGray
-        Me.Button1.Location = New System.Drawing.Point(36, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(40, 48)
-        Me.Button1.TabIndex = 40
-        Me.Button1.Text = "X"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnClose.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.btnClose.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClose.ForeColor = System.Drawing.Color.LightGray
+        Me.btnClose.Location = New System.Drawing.Point(36, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(40, 48)
+        Me.btnClose.TabIndex = 38
+        Me.btnClose.Text = "X"
+        Me.btnClose.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -155,18 +155,18 @@ Partial Class ProgrammingClubForm
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(36, 48)
-        Me.Panel1.TabIndex = 41
+        Me.Panel1.TabIndex = 39
         '
-        'ProgrammingClubForm
+        'ChessClubForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(960, 450)
+        Me.ClientSize = New System.Drawing.Size(978, 450)
         Me.Controls.Add(Me.PanelChildForm)
         Me.Controls.Add(Me.TabPanel)
-        Me.Name = "ProgrammingClubForm"
-        Me.Text = "Form1"
+        Me.Name = "ChessClubForm"
+        Me.Text = "ChessClubForm"
         Me.TabPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -179,6 +179,6 @@ Partial Class ProgrammingClubForm
     Private WithEvents btnAnnouncments As Button
     Private WithEvents btnEvents As Button
     Private WithEvents btnStatus As Button
-    Private WithEvents Button1 As Button
+    Private WithEvents btnClose As Button
     Friend WithEvents Panel1 As Panel
 End Class

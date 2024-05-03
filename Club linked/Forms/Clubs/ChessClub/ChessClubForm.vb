@@ -1,11 +1,7 @@
-﻿Public Class ProgrammingClubForm
-    Private Sub ProgrammingClubForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-    End Sub
+﻿Public Class ChessClubForm
 
     Private currentForm As Form = Nothing
-    Private Sub button5_Click(sender As Object, e As EventArgs)
+    Private Sub button5_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
     Private Sub openChildForm(childForm As Form)
@@ -34,14 +30,13 @@
     End Sub
 
     Private Sub btnMembers_Click(sender As Object, e As EventArgs) Handles btnMembers.Click
-
-        openChildForm(New ProgrammingTab1)
+        ' openChildForm(New Tab)
         highlight(btnMembers)
     End Sub
 
 
     Private Sub btnEvents_Click(sender As Object, e As EventArgs) Handles btnEvents.Click
-        ' openChildForm(New ProgrammingTab2)
+
         highlight(btnEvents)
     End Sub
 
@@ -57,11 +52,7 @@
         highlight(btnStatus)
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Close()
-    End Sub
-
-    Private Sub PanelChildForm_Paint(sender As Object, e As PaintEventArgs) Handles PanelChildForm.Paint
+    Private Sub ChessClubForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

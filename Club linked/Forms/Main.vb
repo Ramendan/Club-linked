@@ -2,6 +2,7 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         hideSubmenu()
+
     End Sub
 
     Private Sub hideSubmenu()
@@ -108,7 +109,15 @@
         openChildForm(New ProgrammingClubForm)
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
+    Private Sub btnMusicClub_Click(sender As Object, e As EventArgs) Handles btnMusicClub.Click
+        openChildForm(New MusicClubForm)
+    End Sub
 
+    Private Sub btnReadingClub_Click(sender As Object, e As EventArgs) Handles btnReadingClub.Click
+        openChildForm(New ReadingClubForm)
+    End Sub
+
+    Private Sub btnChessClub_Click(sender As Object, e As EventArgs) Handles btnChessClub.Click
+        openChildForm(New ChessClubForm)
     End Sub
 End Class

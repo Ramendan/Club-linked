@@ -49,10 +49,10 @@ Partial Class Main
         Me.btnAccount = New System.Windows.Forms.Button()
         Me.btnGeneral = New System.Windows.Forms.Button()
         Me.panelLogo = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PanelChildForm = New System.Windows.Forms.Panel()
         Me.btnShowSideMenu = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelSideMenu.SuspendLayout()
         Me.HelpPanel.SuspendLayout()
@@ -495,6 +495,18 @@ Partial Class Main
         Me.panelLogo.Size = New System.Drawing.Size(233, 177)
         Me.panelLogo.TabIndex = 2
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(12, 131)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(210, 39)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Club Linked"
+        '
         'PanelChildForm
         '
         Me.PanelChildForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
@@ -529,18 +541,6 @@ Partial Class Main
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(27, 932)
         Me.Panel1.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(12, 131)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(210, 39)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Club Linked"
         '
         'Main
         '
