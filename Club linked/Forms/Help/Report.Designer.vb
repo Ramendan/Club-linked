@@ -1,0 +1,119 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Report
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.gbCreator = New System.Windows.Forms.GroupBox()
+        Me.btnOpenDatabase = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Announcment1 = New System.Windows.Forms.RichTextBox()
+        Me.gbCreator.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'gbCreator
+        '
+        Me.gbCreator.Controls.Add(Me.btnOpenDatabase)
+        Me.gbCreator.Controls.Add(Me.TextBox1)
+        Me.gbCreator.Controls.Add(Me.Button1)
+        Me.gbCreator.Controls.Add(Me.Announcment1)
+        Me.gbCreator.Location = New System.Drawing.Point(62, 55)
+        Me.gbCreator.Margin = New System.Windows.Forms.Padding(2)
+        Me.gbCreator.Name = "gbCreator"
+        Me.gbCreator.Padding = New System.Windows.Forms.Padding(2)
+        Me.gbCreator.Size = New System.Drawing.Size(676, 340)
+        Me.gbCreator.TabIndex = 48
+        Me.gbCreator.TabStop = False
+        '
+        'btnOpenDatabase
+        '
+        Me.btnOpenDatabase.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnOpenDatabase.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnOpenDatabase.FlatAppearance.BorderSize = 0
+        Me.btnOpenDatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOpenDatabase.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnOpenDatabase.ForeColor = System.Drawing.Color.LightGray
+        Me.btnOpenDatabase.Location = New System.Drawing.Point(243, 241)
+        Me.btnOpenDatabase.Name = "btnOpenDatabase"
+        Me.btnOpenDatabase.Size = New System.Drawing.Size(169, 68)
+        Me.btnOpenDatabase.TabIndex = 46
+        Me.btnOpenDatabase.Text = "Open announcment database"
+        Me.btnOpenDatabase.UseVisualStyleBackColor = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(24, 29)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(282, 29)
+        Me.TextBox1.TabIndex = 45
+        Me.TextBox1.Text = "Title here"
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.LightGray
+        Me.Button1.Location = New System.Drawing.Point(24, 241)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(169, 68)
+        Me.Button1.TabIndex = 42
+        Me.Button1.Text = "Send now"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Announcment1
+        '
+        Me.Announcment1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Announcment1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Announcment1.Location = New System.Drawing.Point(24, 63)
+        Me.Announcment1.Name = "Announcment1"
+        Me.Announcment1.ReadOnly = True
+        Me.Announcment1.Size = New System.Drawing.Size(626, 173)
+        Me.Announcment1.TabIndex = 41
+        Me.Announcment1.Text = "Announcment text here"
+        '
+        'Report
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.gbCreator)
+        Me.Name = "Report"
+        Me.Text = "Report"
+        Me.gbCreator.ResumeLayout(False)
+        Me.gbCreator.PerformLayout()
+        Me.ResumeLayout(False)
+
+    End Sub
+
+    Friend WithEvents gbCreator As GroupBox
+    Private WithEvents btnOpenDatabase As Button
+    Friend WithEvents TextBox1 As TextBox
+    Private WithEvents Button1 As Button
+    Friend WithEvents Announcment1 As RichTextBox
+End Class

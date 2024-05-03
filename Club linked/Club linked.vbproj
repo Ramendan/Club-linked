@@ -204,6 +204,18 @@
     <Compile Include="Forms\General\Login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Help\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
     </Compile>
@@ -287,6 +299,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\General\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.vb</DependentUpon>

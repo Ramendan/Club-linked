@@ -50,10 +50,9 @@ Partial Class AdminAnnouncements
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.LightGray
-        Me.Button1.Location = New System.Drawing.Point(32, 297)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(24, 241)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(225, 84)
+        Me.Button1.Size = New System.Drawing.Size(169, 68)
         Me.Button1.TabIndex = 42
         Me.Button1.Text = "Send now"
         Me.Button1.UseVisualStyleBackColor = False
@@ -63,11 +62,10 @@ Partial Class AdminAnnouncements
         Me.Announcment1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Announcment1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Announcment1.Location = New System.Drawing.Point(32, 77)
-        Me.Announcment1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Announcment1.Location = New System.Drawing.Point(24, 63)
         Me.Announcment1.Name = "Announcment1"
         Me.Announcment1.ReadOnly = True
-        Me.Announcment1.Size = New System.Drawing.Size(834, 212)
+        Me.Announcment1.Size = New System.Drawing.Size(626, 173)
         Me.Announcment1.TabIndex = 41
         Me.Announcment1.Text = "Announcment text here"
         '
@@ -78,10 +76,9 @@ Partial Class AdminAnnouncements
         Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(69, 19)
-        Me.button5.Margin = New System.Windows.Forms.Padding(4)
+        Me.button5.Location = New System.Drawing.Point(52, 15)
         Me.button5.Name = "button5"
-        Me.button5.Size = New System.Drawing.Size(33, 31)
+        Me.button5.Size = New System.Drawing.Size(25, 25)
         Me.button5.TabIndex = 39
         Me.button5.Text = "X"
         Me.button5.UseVisualStyleBackColor = True
@@ -92,19 +89,19 @@ Partial Class AdminAnnouncements
         Me.label1.AutoSize = True
         Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(336, 37)
-        Me.label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.label1.Location = New System.Drawing.Point(252, 30)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(249, 39)
+        Me.label1.Size = New System.Drawing.Size(204, 32)
         Me.label1.TabIndex = 38
         Me.label1.Text = "Announcments"
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(32, 36)
+        Me.TextBox1.Location = New System.Drawing.Point(24, 29)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(374, 34)
+        Me.TextBox1.Size = New System.Drawing.Size(282, 29)
         Me.TextBox1.TabIndex = 45
         Me.TextBox1.Text = "Title here"
         '
@@ -116,10 +113,9 @@ Partial Class AdminAnnouncements
         Me.btnOpenDatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOpenDatabase.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOpenDatabase.ForeColor = System.Drawing.Color.LightGray
-        Me.btnOpenDatabase.Location = New System.Drawing.Point(324, 297)
-        Me.btnOpenDatabase.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnOpenDatabase.Location = New System.Drawing.Point(243, 241)
         Me.btnOpenDatabase.Name = "btnOpenDatabase"
-        Me.btnOpenDatabase.Size = New System.Drawing.Size(225, 84)
+        Me.btnOpenDatabase.Size = New System.Drawing.Size(169, 68)
         Me.btnOpenDatabase.TabIndex = 46
         Me.btnOpenDatabase.Text = "Open announcment database"
         Me.btnOpenDatabase.UseVisualStyleBackColor = False
@@ -130,9 +126,11 @@ Partial Class AdminAnnouncements
         Me.gbCreator.Controls.Add(Me.TextBox1)
         Me.gbCreator.Controls.Add(Me.Button1)
         Me.gbCreator.Controls.Add(Me.Announcment1)
-        Me.gbCreator.Location = New System.Drawing.Point(37, 107)
+        Me.gbCreator.Location = New System.Drawing.Point(28, 87)
+        Me.gbCreator.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.gbCreator.Name = "gbCreator"
-        Me.gbCreator.Size = New System.Drawing.Size(901, 418)
+        Me.gbCreator.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gbCreator.Size = New System.Drawing.Size(676, 340)
         Me.gbCreator.TabIndex = 47
         Me.gbCreator.TabStop = False
         '
@@ -146,9 +144,11 @@ Partial Class AdminAnnouncements
         Me.gbAnnouncementDatabase.Controls.Add(Me.btnPrev)
         Me.gbAnnouncementDatabase.Controls.Add(Me.btnSearch)
         Me.gbAnnouncementDatabase.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.gbAnnouncementDatabase.Location = New System.Drawing.Point(31, 129)
+        Me.gbAnnouncementDatabase.Location = New System.Drawing.Point(23, 105)
+        Me.gbAnnouncementDatabase.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.gbAnnouncementDatabase.Name = "gbAnnouncementDatabase"
-        Me.gbAnnouncementDatabase.Size = New System.Drawing.Size(910, 376)
+        Me.gbAnnouncementDatabase.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gbAnnouncementDatabase.Size = New System.Drawing.Size(682, 306)
         Me.gbAnnouncementDatabase.TabIndex = 48
         Me.gbAnnouncementDatabase.TabStop = False
         '
@@ -159,10 +159,9 @@ Partial Class AdminAnnouncements
         Me.btnCreator.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCreator.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCreator.ForeColor = System.Drawing.Color.LightGray
-        Me.btnCreator.Location = New System.Drawing.Point(26, 199)
-        Me.btnCreator.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCreator.Location = New System.Drawing.Point(20, 162)
         Me.btnCreator.Name = "btnCreator"
-        Me.btnCreator.Size = New System.Drawing.Size(200, 49)
+        Me.btnCreator.Size = New System.Drawing.Size(150, 40)
         Me.btnCreator.TabIndex = 36
         Me.btnCreator.Text = "Return to creator"
         Me.btnCreator.UseVisualStyleBackColor = False
@@ -174,10 +173,9 @@ Partial Class AdminAnnouncements
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.LightGray
-        Me.Button3.Location = New System.Drawing.Point(25, 82)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Location = New System.Drawing.Point(19, 67)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(200, 49)
+        Me.Button3.Size = New System.Drawing.Size(150, 40)
         Me.Button3.TabIndex = 35
         Me.Button3.Text = "Delete"
         Me.Button3.UseVisualStyleBackColor = False
@@ -185,20 +183,22 @@ Partial Class AdminAnnouncements
         'txtSearch
         '
         Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearch.Location = New System.Drawing.Point(255, 330)
+        Me.txtSearch.Location = New System.Drawing.Point(191, 268)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(636, 28)
+        Me.txtSearch.Size = New System.Drawing.Size(478, 24)
         Me.txtSearch.TabIndex = 34
         Me.txtSearch.Text = "Enter your search here..."
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(255, 22)
+        Me.DataGridView1.Location = New System.Drawing.Point(191, 18)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(636, 288)
+        Me.DataGridView1.Size = New System.Drawing.Size(477, 234)
         Me.DataGridView1.TabIndex = 33
         '
         'btnNext
@@ -208,10 +208,9 @@ Partial Class AdminAnnouncements
         Me.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNext.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNext.ForeColor = System.Drawing.Color.LightGray
-        Me.btnNext.Location = New System.Drawing.Point(26, 22)
-        Me.btnNext.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnNext.Location = New System.Drawing.Point(20, 18)
         Me.btnNext.Name = "btnNext"
-        Me.btnNext.Size = New System.Drawing.Size(200, 49)
+        Me.btnNext.Size = New System.Drawing.Size(150, 40)
         Me.btnNext.TabIndex = 32
         Me.btnNext.Text = "Next"
         Me.btnNext.UseVisualStyleBackColor = False
@@ -223,10 +222,9 @@ Partial Class AdminAnnouncements
         Me.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPrev.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrev.ForeColor = System.Drawing.Color.LightGray
-        Me.btnPrev.Location = New System.Drawing.Point(25, 142)
-        Me.btnPrev.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnPrev.Location = New System.Drawing.Point(19, 115)
         Me.btnPrev.Name = "btnPrev"
-        Me.btnPrev.Size = New System.Drawing.Size(200, 49)
+        Me.btnPrev.Size = New System.Drawing.Size(150, 40)
         Me.btnPrev.TabIndex = 31
         Me.btnPrev.Text = "Prev"
         Me.btnPrev.UseVisualStyleBackColor = False
@@ -239,24 +237,24 @@ Partial Class AdminAnnouncements
         Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSearch.ForeColor = System.Drawing.Color.LightGray
-        Me.btnSearch.Location = New System.Drawing.Point(34, 309)
-        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSearch.Location = New System.Drawing.Point(26, 251)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(200, 49)
+        Me.btnSearch.Size = New System.Drawing.Size(150, 40)
         Me.btnSearch.TabIndex = 29
         Me.btnSearch.Text = "Search for event"
         Me.btnSearch.UseVisualStyleBackColor = False
         '
         'AdminAnnouncements
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(967, 551)
+        Me.ClientSize = New System.Drawing.Size(725, 448)
         Me.Controls.Add(Me.button5)
         Me.Controls.Add(Me.label1)
         Me.Controls.Add(Me.gbCreator)
         Me.Controls.Add(Me.gbAnnouncementDatabase)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "AdminAnnouncements"
         Me.Text = "AdminAnnouncements"
         Me.gbCreator.ResumeLayout(False)
