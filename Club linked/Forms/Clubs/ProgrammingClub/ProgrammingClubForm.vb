@@ -34,8 +34,7 @@
     End Sub
 
     Private Sub btnMembers_Click(sender As Object, e As EventArgs) Handles btnMembers.Click
-
-        openChildForm(New ProgrammingTab1)
+        openChildForm(New ProgrammingMembers)
         highlight(btnMembers)
     End Sub
 
