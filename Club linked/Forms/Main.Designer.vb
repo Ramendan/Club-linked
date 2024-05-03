@@ -26,7 +26,6 @@ Partial Class Main
         Me.pictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelSideMenu = New System.Windows.Forms.Panel()
         Me.HelpPanel = New System.Windows.Forms.Panel()
-        Me.button10 = New System.Windows.Forms.Button()
         Me.button12 = New System.Windows.Forms.Button()
         Me.btnFeatures = New System.Windows.Forms.Button()
         Me.btnHelp = New System.Windows.Forms.Button()
@@ -98,31 +97,13 @@ Partial Class Main
         'HelpPanel
         '
         Me.HelpPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.HelpPanel.Controls.Add(Me.button10)
         Me.HelpPanel.Controls.Add(Me.button12)
         Me.HelpPanel.Controls.Add(Me.btnFeatures)
         Me.HelpPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.HelpPanel.Location = New System.Drawing.Point(0, 824)
         Me.HelpPanel.Name = "HelpPanel"
-        Me.HelpPanel.Size = New System.Drawing.Size(233, 130)
+        Me.HelpPanel.Size = New System.Drawing.Size(233, 82)
         Me.HelpPanel.TabIndex = 7
-        '
-        'button10
-        '
-        Me.button10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.button10.FlatAppearance.BorderSize = 0
-        Me.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.button10.ForeColor = System.Drawing.Color.Silver
-        Me.button10.Location = New System.Drawing.Point(0, 80)
-        Me.button10.Name = "button10"
-        Me.button10.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.button10.Size = New System.Drawing.Size(233, 40)
-        Me.button10.TabIndex = 2
-        Me.button10.Text = "Preferences"
-        Me.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.button10.UseVisualStyleBackColor = True
         '
         'button12
         '
@@ -291,7 +272,7 @@ Partial Class Main
         Me.btnExit.ForeColor = System.Drawing.Color.Silver
         Me.btnExit.Image = CType(resources.GetObject("btnExit.Image"), System.Drawing.Image)
         Me.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnExit.Location = New System.Drawing.Point(0, 954)
+        Me.btnExit.Location = New System.Drawing.Point(0, 906)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.btnExit.Size = New System.Drawing.Size(233, 45)
@@ -573,7 +554,6 @@ Partial Class Main
     Private WithEvents btnExit As Button
     Private WithEvents btnHelp As Button
     Private WithEvents HelpPanel As Panel
-    Private WithEvents button10 As Button
     Private WithEvents button12 As Button
     Private WithEvents btnFeatures As Button
     Private WithEvents btnAdminTools As Button
