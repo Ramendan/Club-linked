@@ -132,10 +132,10 @@
     <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingClubForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingTab1.Designer.vb">
-      <DependentUpon>ProgrammingTab1.vb</DependentUpon>
+    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingMembers.Designer.vb">
+      <DependentUpon>ProgrammingMembers.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingTab1.vb">
+    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingMembers.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Clubs\ReadingClub\ReadingClubForm.Designer.vb">
@@ -210,8 +210,8 @@
     <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingClubForm.resx">
       <DependentUpon>ProgrammingClubForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingTab1.resx">
-      <DependentUpon>ProgrammingTab1.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingMembers.resx">
+      <DependentUpon>ProgrammingMembers.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\ReadingClub\ReadingClubForm.resx">
       <DependentUpon>ReadingClubForm.vb</DependentUpon>

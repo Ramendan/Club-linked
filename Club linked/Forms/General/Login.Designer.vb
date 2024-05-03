@@ -205,6 +205,7 @@ Partial Class Login
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(398, 245)
         Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox4.Size = New System.Drawing.Size(317, 40)
         Me.TextBox4.TabIndex = 38
         '
@@ -215,6 +216,7 @@ Partial Class Login
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(317, 40)
         Me.TextBox3.TabIndex = 36
+        Me.TextBox3.Text = "Example: 200123"
         '
         'Label6
         '
@@ -303,17 +305,18 @@ Partial Class Login
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(130, 95)
+        Me.Label5.Location = New System.Drawing.Point(159, 95)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(147, 31)
+        Me.Label5.Size = New System.Drawing.Size(86, 31)
         Me.Label5.TabIndex = 33
-        Me.Label5.Text = "First Name"
+        Me.Label5.Text = "Name"
         '
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(45, 245)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(317, 40)
         Me.TextBox2.TabIndex = 32
         '
@@ -322,7 +325,7 @@ Partial Class Login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1091, 987)
+        Me.ClientSize = New System.Drawing.Size(1091, 941)
         Me.Controls.Add(Me.gbRegister)
         Me.Controls.Add(Me.gbLogin)
         Me.Controls.Add(Me.button5)
