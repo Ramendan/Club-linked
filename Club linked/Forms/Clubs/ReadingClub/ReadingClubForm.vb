@@ -51,4 +51,8 @@
         highlight(btnStatus)
         'openChildForm(New test)
     End Sub
+
+    Private Sub PanelChildForm_Paint(sender As Object, e As PaintEventArgs) Handles PanelChildForm.Paint
+
+    End Sub
 End Class

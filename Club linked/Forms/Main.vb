@@ -1,6 +1,5 @@
 ﻿Public Class Main
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         hideSubmenu()
 
     End Sub
@@ -79,11 +78,6 @@
             PanelSideMenu.Visible = False
         End If
     End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
     Private Sub btnAdminPrivileges_Click(sender As Object, e As EventArgs) Handles btnAdminPrivileges.Click
         openChildForm(New Admin_Privileges)
 
@@ -99,10 +93,6 @@
 
     Private Sub btnAnnouncement_Click(sender As Object, e As EventArgs) Handles btnAnnouncement.Click
         openChildForm(New Announcments)
-    End Sub
-
-    Private Sub PanelChildForm_Paint(sender As Object, e As PaintEventArgs) Handles PanelChildForm.Paint
-
     End Sub
 
     Private Sub btnProgrammingClub_Click(sender As Object, e As EventArgs) Handles btnProgrammingClub.Click
