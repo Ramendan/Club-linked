@@ -117,4 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>The programming club provides a space for students interested in programming to connect, learn, and collaborate.
+It fosters a community around coding, offering opportunities to:
+
+Develop programming skills: Members can learn new programming languages, practice problem-solving, and gain experience working on projects.
+
+Participate in competitive programming: Some clubs focus on preparing students for coding competitions, helping them hone their skills and teamwork.
+
+Network with peers: Clubs connect students with similar interests, allowing them to build friendships, share knowledge, and potentially form teams for projects or competitions.</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AElFTkSuQmCC
+</value>
+  </data>
 </root>
