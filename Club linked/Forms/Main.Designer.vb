@@ -52,6 +52,7 @@ Partial Class Main
         Me.PanelChildForm = New System.Windows.Forms.Panel()
         Me.btnShowSideMenu = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelSideMenu.SuspendLayout()
         Me.HelpPanel.SuspendLayout()
@@ -101,7 +102,7 @@ Partial Class Main
         Me.HelpPanel.Controls.Add(Me.button12)
         Me.HelpPanel.Controls.Add(Me.btnFeatures)
         Me.HelpPanel.Dock = System.Windows.Forms.DockStyle.Top
-        Me.HelpPanel.Location = New System.Drawing.Point(0, 795)
+        Me.HelpPanel.Location = New System.Drawing.Point(0, 824)
         Me.HelpPanel.Name = "HelpPanel"
         Me.HelpPanel.Size = New System.Drawing.Size(233, 130)
         Me.HelpPanel.TabIndex = 7
@@ -136,7 +137,7 @@ Partial Class Main
         Me.button12.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
         Me.button12.Size = New System.Drawing.Size(233, 40)
         Me.button12.TabIndex = 1
-        Me.button12.Text = "Report problems"
+        Me.button12.Text = "Report Problems"
         Me.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.button12.UseVisualStyleBackColor = True
         '
@@ -153,7 +154,7 @@ Partial Class Main
         Me.btnFeatures.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
         Me.btnFeatures.Size = New System.Drawing.Size(233, 40)
         Me.btnFeatures.TabIndex = 0
-        Me.btnFeatures.Text = "Features"
+        Me.btnFeatures.Text = "About Club Linked"
         Me.btnFeatures.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnFeatures.UseVisualStyleBackColor = True
         '
@@ -167,7 +168,7 @@ Partial Class Main
         Me.btnHelp.ForeColor = System.Drawing.Color.Silver
         Me.btnHelp.Image = CType(resources.GetObject("btnHelp.Image"), System.Drawing.Image)
         Me.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnHelp.Location = New System.Drawing.Point(0, 750)
+        Me.btnHelp.Location = New System.Drawing.Point(0, 779)
         Me.btnHelp.Name = "btnHelp"
         Me.btnHelp.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.btnHelp.Size = New System.Drawing.Size(233, 45)
@@ -187,7 +188,7 @@ Partial Class Main
         Me.btnSettings.ForeColor = System.Drawing.Color.Silver
         Me.btnSettings.Image = CType(resources.GetObject("btnSettings.Image"), System.Drawing.Image)
         Me.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSettings.Location = New System.Drawing.Point(0, 705)
+        Me.btnSettings.Location = New System.Drawing.Point(0, 734)
         Me.btnSettings.Name = "btnSettings"
         Me.btnSettings.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.btnSettings.Size = New System.Drawing.Size(233, 45)
@@ -204,7 +205,7 @@ Partial Class Main
         Me.AdminPanel.Controls.Add(Me.btnAdminPrivileges)
         Me.AdminPanel.Controls.Add(Me.btnReports)
         Me.AdminPanel.Dock = System.Windows.Forms.DockStyle.Top
-        Me.AdminPanel.Location = New System.Drawing.Point(0, 581)
+        Me.AdminPanel.Location = New System.Drawing.Point(0, 610)
         Me.AdminPanel.Name = "AdminPanel"
         Me.AdminPanel.Size = New System.Drawing.Size(233, 124)
         Me.AdminPanel.TabIndex = 1
@@ -270,7 +271,7 @@ Partial Class Main
         Me.btnAdminTools.ForeColor = System.Drawing.Color.Silver
         Me.btnAdminTools.Image = CType(resources.GetObject("btnAdminTools.Image"), System.Drawing.Image)
         Me.btnAdminTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAdminTools.Location = New System.Drawing.Point(0, 536)
+        Me.btnAdminTools.Location = New System.Drawing.Point(0, 565)
         Me.btnAdminTools.Name = "btnAdminTools"
         Me.btnAdminTools.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.btnAdminTools.Size = New System.Drawing.Size(233, 45)
@@ -290,7 +291,7 @@ Partial Class Main
         Me.btnExit.ForeColor = System.Drawing.Color.Silver
         Me.btnExit.Image = CType(resources.GetObject("btnExit.Image"), System.Drawing.Image)
         Me.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnExit.Location = New System.Drawing.Point(0, 925)
+        Me.btnExit.Location = New System.Drawing.Point(0, 954)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.btnExit.Size = New System.Drawing.Size(233, 45)
@@ -308,7 +309,7 @@ Partial Class Main
         Me.ClubsPanel.Controls.Add(Me.btnMusicClub)
         Me.ClubsPanel.Controls.Add(Me.btnProgrammingClub)
         Me.ClubsPanel.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ClubsPanel.Location = New System.Drawing.Point(0, 365)
+        Me.ClubsPanel.Location = New System.Drawing.Point(0, 394)
         Me.ClubsPanel.Name = "ClubsPanel"
         Me.ClubsPanel.Size = New System.Drawing.Size(233, 171)
         Me.ClubsPanel.TabIndex = 3
@@ -391,7 +392,7 @@ Partial Class Main
         Me.btnClubs.ForeColor = System.Drawing.Color.Silver
         Me.btnClubs.Image = CType(resources.GetObject("btnClubs.Image"), System.Drawing.Image)
         Me.btnClubs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnClubs.Location = New System.Drawing.Point(0, 320)
+        Me.btnClubs.Location = New System.Drawing.Point(0, 349)
         Me.btnClubs.Name = "btnClubs"
         Me.btnClubs.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.btnClubs.Size = New System.Drawing.Size(233, 45)
@@ -408,7 +409,7 @@ Partial Class Main
         Me.GeneralPanel.Controls.Add(Me.btnAnnouncement)
         Me.GeneralPanel.Controls.Add(Me.btnAccount)
         Me.GeneralPanel.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GeneralPanel.Location = New System.Drawing.Point(0, 193)
+        Me.GeneralPanel.Location = New System.Drawing.Point(0, 222)
         Me.GeneralPanel.Name = "GeneralPanel"
         Me.GeneralPanel.Size = New System.Drawing.Size(233, 127)
         Me.GeneralPanel.TabIndex = 10
@@ -474,7 +475,7 @@ Partial Class Main
         Me.btnGeneral.ForeColor = System.Drawing.Color.Silver
         Me.btnGeneral.Image = CType(resources.GetObject("btnGeneral.Image"), System.Drawing.Image)
         Me.btnGeneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGeneral.Location = New System.Drawing.Point(0, 148)
+        Me.btnGeneral.Location = New System.Drawing.Point(0, 177)
         Me.btnGeneral.Name = "btnGeneral"
         Me.btnGeneral.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.btnGeneral.Size = New System.Drawing.Size(233, 45)
@@ -486,11 +487,12 @@ Partial Class Main
         '
         'panelLogo
         '
+        Me.panelLogo.Controls.Add(Me.Label1)
         Me.panelLogo.Controls.Add(Me.pictureBox1)
         Me.panelLogo.Dock = System.Windows.Forms.DockStyle.Top
         Me.panelLogo.Location = New System.Drawing.Point(0, 0)
         Me.panelLogo.Name = "panelLogo"
-        Me.panelLogo.Size = New System.Drawing.Size(233, 148)
+        Me.panelLogo.Size = New System.Drawing.Size(233, 177)
         Me.panelLogo.TabIndex = 2
         '
         'PanelChildForm
@@ -528,6 +530,18 @@ Partial Class Main
         Me.Panel1.Size = New System.Drawing.Size(27, 932)
         Me.Panel1.TabIndex = 1
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(12, 131)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(210, 39)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Club Linked"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -550,6 +564,7 @@ Partial Class Main
         Me.ClubsPanel.ResumeLayout(False)
         Me.GeneralPanel.ResumeLayout(False)
         Me.panelLogo.ResumeLayout(False)
+        Me.panelLogo.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -569,7 +584,6 @@ Partial Class Main
     Private WithEvents btnMusicClub As Button
     Private WithEvents btnProgrammingClub As Button
     Private WithEvents btnClubs As Button
-    Private WithEvents btnGeneral As Button
     Friend WithEvents PanelChildForm As Panel
     Private WithEvents pictureBox1 As PictureBox
     Private WithEvents AdminPanel As Panel
@@ -583,4 +597,6 @@ Partial Class Main
     Private WithEvents btnAccount As Button
     Friend WithEvents btnShowSideMenu As Button
     Friend WithEvents Panel1 As Panel
+    Private WithEvents btnGeneral As Button
+    Friend WithEvents Label1 As Label
 End Class
