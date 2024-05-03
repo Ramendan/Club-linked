@@ -32,10 +32,10 @@ Partial Class ReadingInfo
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1211, 53)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox1.Location = New System.Drawing.Point(821, 16)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(96, 99)
+        Me.PictureBox1.Size = New System.Drawing.Size(97, 98)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
@@ -44,10 +44,9 @@ Partial Class ReadingInfo
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(29, 74)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(19, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(274, 33)
+        Me.Label1.Size = New System.Drawing.Size(180, 24)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "About Reading Club"
         '
@@ -56,23 +55,21 @@ Partial Class ReadingInfo
         Me.RichTextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.RichTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox2.ForeColor = System.Drawing.SystemColors.Control
-        Me.RichTextBox2.Location = New System.Drawing.Point(35, 185)
-        Me.RichTextBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.RichTextBox2.Location = New System.Drawing.Point(23, 120)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(1341, 461)
+        Me.RichTextBox2.Size = New System.Drawing.Size(895, 301)
         Me.RichTextBox2.TabIndex = 9
         Me.RichTextBox2.Text = resources.GetString("RichTextBox2.Text")
         '
         'ReadingInfo
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1408, 763)
+        Me.ClientSize = New System.Drawing.Size(939, 496)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.RichTextBox2)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "ReadingInfo"
         Me.Text = "ReadingInfo"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

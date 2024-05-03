@@ -120,29 +120,28 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAATDSURBVHhe7Z3NihxlFIZH0YULFXWjJv4wVcMEt7mA+DN0
-        VRwQQcYLkOAlqBvJPYigIKK3ISQayVQlkYComyiu/ANd6EYFN8bvjK8fVvVb9unTVVoy7wPPInVOv6c4
-        30x3ekKmt4QQQgghhBBCCCGEEEL0uX769O1NUb/YFNWltqh+aMv6pkymXWAn5z44c+Y2rGtc2mJRpmGf
-        LQ2XHZuy+vTyzv421jYOHxWLh9qi/o4NlMSi/rbd2T+B9W1OCn1/aYhcYXUB69uMdqfa4wPkKg+LxRNY
-        Y5z0nPYuC5cOi+ptrDFOCvmShsuVNmX9BdYYJ30H/MrC5Wptd1hjHBYs/WKNcVio9Is1xmGh0i/WGIeF
-        Sr9YYxwWKv1ijXFYqPSLNcZhodIv1hiHha5jejPy1WG5eO5w95k7EbkxltUUZ59ti/oGmzkncctxWKhX
-        W3772OJeRI3O5Yf37zmaQWbPRdxqHBbq1b7yETMZac5Bf+6cxG3GYaFex3zaGeJqWd/FZs9F3GYcFuoV
-        EZPDZs9F3GIcFuoVEZPDZvdtiuq3tqxeOtzde9BMrx0v/3ltnP4hcYtxWKhXREwOm93XFoj2jF1jvea6
-        /UPioXFYqFdETA6b3ffDU9UDaM9ce+Tp+1mvuW7/kHhoHBbqFRGTw2b3tacRtGfsH85Zr7lu/5B4aBwW
-        6hURk8Nm9x14SnmF9Zrr9g+Jh8ZhoV7/jb+GXt/eu5vN7msvoLZU74vquv1D4jbjsFCv9uMCxExGW1TP
-        s9lzEbcZh4W6Leob9uMCRI3OtVNP3Ze+Kr+ms2cibjUOC13H9K1rP6s5sHesiNyYo3e/6St/7ss3cctx
-        WKj0izXGYaHSL9YYh4VKv1hjHBYq/WKNcVio9Is1xmGh0i/WGIeFSr9YYxwWKv1ijXFYqPSLNcZhodIv
-        1hiHhUq/WGMcFir9Yo1xWKj0izXGYaHSL9YYh4VKv1hjHBZqorwE6zVRzrAeE+UM6zFRXhuWZaKcYT0m
-        yh3SxVtYb1PWv6MlDgs2UV6C9ZooZ1iPiXKG9Zgorw3LMlHOsB4T5Q7pog7AC8syUc6wHhPlDumiDsAL
-        yzJRzrAeE+UO6aIOwAvLMlHOsB4T5Q7pog7AC8syUc6wHhPlDumiDsALyzJRzrAeE+UO6aIOwAvLMlHO
-        sB4T5Q7pog7AC8syUc6wHhPlDumiDsALyzJRzrAeE+UO6aIOwAvLMlHOsB4T5Q7pog7AC8syUc6wHhPl
-        DumiDsALyzJRzrAeE+UO6eKcDqD6abm/+hHlzNh9XqaYO7MDqF/v9zZl9RrKmbH7vHjzvH3GvA7g5MEd
-        TVG/mW72lyOL+g27hnJm7D4vU8yd1QH8hd2UiT8OMnaflzHnWp3t6D89gOPEpAeQvv3or620/xyHlmOP
-        /TcstqP0tPUzWuIM/eLWdDCv3tw6fyvaji22g7SP8/39mGlHn6MtTjrFd1i4XG16CnoLa4zTbJ99koXL
-        1V4pqsexxs1Ib0AusAHyHyyq97C+zbla1iePPpSADZJLNkX1DftdExthH8uRXlQ+YQPl3yyqj6/sVo9i
-        beNiH1CTBpxLg+wTNb7vDD7epl1UF9OL7guTfYiPEEIIIYQQQgghhPifs7X1B2XW4UvC/Oz0AAAAAElF
-        TkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAABMNJREFUeF7tnc2KHGUUhkfRhQsVdaMm/jBVwwS3uYD4M3RVHBBBxguQ4CWoG8k9
+        iKAgorchJBrJVCWRgKibKK78A13oRgU3xu+Mrx9W9Vv26dNVWjLvA88idU6/pzjfTHd6Qqa3hBBCCCGE
+        EEIIIYQQQvS5fvr07U1Rv9gU1aW2qH5oy/qmTKZdYCfnPjhz5jasa1zaYlGmYZ8tDZcdm7L69PLO/jbW
+        Ng4fFYuH2qL+jg2UxKL+tt3ZP4H1bU4KfX9piFxhdQHr24x2p9rjA+QqD4vFE1hjnPSc9i4Llw6L6m2s
+        MU4K+ZKGy5U2Zf0F1hgnfQf8ysLlam13WGMcFiz9Yo1xWKj0izXGYaHSL9YYh4VKv1hjHBYq/WKNcVio
+        9Is1xmGh0i/WGIeFrmN6M/LVYbl47nD3mTsRuTGW1RRnn22L+gabOSdxy3FYqFdbfvvY4l5Ejc7lh/fv
+        OZpBZs9F3GocFurVvvIRMxlpzkF/7pzEbcZhoV7HfNoZ4mpZ38Vmz0XcZhwW6hURk8Nmz0XcYhwW6hUR
+        k8Nm922K6re2rF463N170EyvHS//eW2c/iFxi3FYqFdETA6b3dcWiPaMXWO95rr9Q+KhcVioV0RMDpvd
+        98NT1QNoz1x75On7Wa+5bv+QeGgcFuoVEZPDZve1pxG0Z+wfzlmvuW7/kHhoHBbqFRGTw2b3HXhKeYX1
+        muv2D4mHxmGhXv+Nv4Ze3967m83uay+gtlTvi+q6/UPiNuOwUK/24wLETEZbVM+z2XMRtxmHhbot6hv2
+        4wJEjc61U0/dl74qv6azZyJuNQ4LXcf0rWs/qzmwd6yI3Jijd7/pK3/uyzdxy3FYqPSLNcZhodIv1hiH
+        hUq/WGMcFir9Yo1xWKj0izXGYaHSL9YYh4VKv1hjHBYq/WKNcVio9Is1xmGh0i/WGIeFSr9YYxwWKv1i
+        jXFYqPSLNcZhodIv1hiHhUq/WGMcFmqivATrNVHOsB4T5QzrMVFeG5ZlopxhPSbKHdLFW1hvU9a/oyUO
+        CzZRXoL1mihnWI+Jcob1mCivDcsyUc6wHhPlDumiDsALyzJRzrAeE+UO6aIOwAvLMlHOsB4T5Q7pog7A
+        C8syUc6wHhPlDumiDsALyzJRzrAeE+UO6aIOwAvLMlHOsB4T5Q7pog7AC8syUc6wHhPlDumiDsALyzJR
+        zrAeE+UO6aIOwAvLMlHOsB4T5Q7pog7AC8syUc6wHhPlDumiDsALyzJRzrAeE+UO6aIOwAvLMlHOsB4T
+        5Q7p4pwOoPppub/6EeXM2H1eppg7swOoX+/3NmX1GsqZsfu8ePO8fca8DuDkwR1NUb+ZbvaXI4v6DbuG
+        cmbsPi9TzJ3VAfyF3ZSJPw4ydp+XMedane3oPz2A48SkB5C+/eivrbT/HIeWY4/9Nyy2o/S09TNa4gz9
+        4tZ0MK/e3Dp/K9qOLbaDtI/z/f2YaUefoy1OOsV3WLhcbXoKegtrjNNsn32ShcvVXimqx7HGzUhvQC6w
+        AfIfLKr3sL7NuVrWJ48+lIANkks2RfUN+10TG2Efy5FeVD5hA+XfLKqPr+xWj2Jt42IfUJMGnEuD7BM1
+        vu8MPt6mXVQX04vuC5N9iI8QQgghhBBCCCGE+J+ztfUHZdbhS8L87PQAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="RichTextBox2.Text" xml:space="preserve">
