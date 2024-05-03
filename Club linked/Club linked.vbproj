@@ -120,6 +120,12 @@
     <Compile Include="Forms\Clubs\ChessClub\ChessClubForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Clubs\ChessClub\ChessInfo.Designer.vb">
+      <DependentUpon>ChessInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clubs\ChessClub\ChessInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Clubs\ChessClub\ChessMembers.Designer.vb">
       <DependentUpon>ChessMembers.vb</DependentUpon>
     </Compile>
@@ -144,10 +150,22 @@
     <Compile Include="Forms\Clubs\MusicClub\MusicClubForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Clubs\MusicClub\MusicInfo.Designer.vb">
+      <DependentUpon>MusicInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clubs\MusicClub\MusicInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Clubs\MusicClub\MusicMembers.Designer.vb">
       <DependentUpon>MusicMembers.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Clubs\MusicClub\MusicMembers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingInfo.Designer.vb">
+      <DependentUpon>ProgrammingInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingInfo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingAnnouncements.Designer.vb">
@@ -178,6 +196,12 @@
       <DependentUpon>ReadingClubForm.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Clubs\ReadingClub\ReadingClubForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clubs\ReadingClub\ReadingInfo.Designer.vb">
+      <DependentUpon>ReadingInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clubs\ReadingClub\ReadingInfo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Clubs\ReadingClub\ReadingMembers.Designer.vb">
@@ -258,6 +282,9 @@
     <EmbeddedResource Include="Forms\Clubs\ChessClub\ChessClubForm.resx">
       <DependentUpon>ChessClubForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\ChessClub\ChessInfo.resx">
+      <DependentUpon>ChessInfo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\ChessClub\ChessMembers.resx">
       <DependentUpon>ChessMembers.vb</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +297,9 @@
     <EmbeddedResource Include="Forms\Clubs\MusicClub\MusicClubForm.resx">
       <DependentUpon>MusicClubForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\MusicClub\MusicInfo.resx">
+      <DependentUpon>MusicInfo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\MusicClub\MusicMembers.resx">
       <DependentUpon>MusicMembers.vb</DependentUpon>
     </EmbeddedResource>
@@ -279,6 +309,9 @@
     <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingClubForm.resx">
       <DependentUpon>ProgrammingClubForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingInfo.resx">
+      <DependentUpon>ProgrammingInfo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingMembers.resx">
       <DependentUpon>ProgrammingMembers.vb</DependentUpon>
     </EmbeddedResource>
@@ -287,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\ReadingClub\ReadingClubForm.resx">
       <DependentUpon>ReadingClubForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\ReadingClub\ReadingInfo.resx">
+      <DependentUpon>ReadingInfo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\ReadingClub\ReadingMembers.resx">
       <DependentUpon>ReadingMembers.vb</DependentUpon>
