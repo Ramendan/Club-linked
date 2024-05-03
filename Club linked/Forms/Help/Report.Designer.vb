@@ -23,7 +23,6 @@ Partial Class Report
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gbCreator = New System.Windows.Forms.GroupBox()
-        Me.btnOpenDatabase = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Announcment1 = New System.Windows.Forms.RichTextBox()
@@ -32,7 +31,6 @@ Partial Class Report
         '
         'gbCreator
         '
-        Me.gbCreator.Controls.Add(Me.btnOpenDatabase)
         Me.gbCreator.Controls.Add(Me.TextBox1)
         Me.gbCreator.Controls.Add(Me.Button1)
         Me.gbCreator.Controls.Add(Me.Announcment1)
@@ -43,21 +41,6 @@ Partial Class Report
         Me.gbCreator.Size = New System.Drawing.Size(676, 340)
         Me.gbCreator.TabIndex = 48
         Me.gbCreator.TabStop = False
-        '
-        'btnOpenDatabase
-        '
-        Me.btnOpenDatabase.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnOpenDatabase.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.btnOpenDatabase.FlatAppearance.BorderSize = 0
-        Me.btnOpenDatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnOpenDatabase.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOpenDatabase.ForeColor = System.Drawing.Color.LightGray
-        Me.btnOpenDatabase.Location = New System.Drawing.Point(243, 241)
-        Me.btnOpenDatabase.Name = "btnOpenDatabase"
-        Me.btnOpenDatabase.Size = New System.Drawing.Size(169, 68)
-        Me.btnOpenDatabase.TabIndex = 46
-        Me.btnOpenDatabase.Text = "Open announcment database"
-        Me.btnOpenDatabase.UseVisualStyleBackColor = False
         '
         'TextBox1
         '
@@ -112,7 +95,6 @@ Partial Class Report
     End Sub
 
     Friend WithEvents gbCreator As GroupBox
-    Private WithEvents btnOpenDatabase As Button
     Friend WithEvents TextBox1 As TextBox
     Private WithEvents Button1 As Button
     Friend WithEvents Announcment1 As RichTextBox

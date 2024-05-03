@@ -110,4 +110,8 @@
     Private Sub btnChessClub_Click(sender As Object, e As EventArgs) Handles btnChessClub.Click
         openChildForm(New ChessClubForm)
     End Sub
+
+    Private Sub btnAbout_Click(sender As Object, e As EventArgs) Handles btnAbout.Click
+        openChildForm(New About)
+    End Sub
 End Class

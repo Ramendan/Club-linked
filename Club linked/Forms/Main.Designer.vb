@@ -27,7 +27,7 @@ Partial Class Main
         Me.PanelSideMenu = New System.Windows.Forms.Panel()
         Me.HelpPanel = New System.Windows.Forms.Panel()
         Me.button12 = New System.Windows.Forms.Button()
-        Me.btnFeatures = New System.Windows.Forms.Button()
+        Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnHelp = New System.Windows.Forms.Button()
         Me.btnSettings = New System.Windows.Forms.Button()
         Me.AdminPanel = New System.Windows.Forms.Panel()
@@ -98,7 +98,7 @@ Partial Class Main
         '
         Me.HelpPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.HelpPanel.Controls.Add(Me.button12)
-        Me.HelpPanel.Controls.Add(Me.btnFeatures)
+        Me.HelpPanel.Controls.Add(Me.btnAbout)
         Me.HelpPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.HelpPanel.Location = New System.Drawing.Point(0, 824)
         Me.HelpPanel.Name = "HelpPanel"
@@ -122,22 +122,22 @@ Partial Class Main
         Me.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.button12.UseVisualStyleBackColor = True
         '
-        'btnFeatures
+        'btnAbout
         '
-        Me.btnFeatures.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnFeatures.FlatAppearance.BorderSize = 0
-        Me.btnFeatures.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnFeatures.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnFeatures.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFeatures.ForeColor = System.Drawing.Color.Silver
-        Me.btnFeatures.Location = New System.Drawing.Point(0, 0)
-        Me.btnFeatures.Name = "btnFeatures"
-        Me.btnFeatures.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.btnFeatures.Size = New System.Drawing.Size(233, 40)
-        Me.btnFeatures.TabIndex = 0
-        Me.btnFeatures.Text = "About Club Linked"
-        Me.btnFeatures.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnFeatures.UseVisualStyleBackColor = True
+        Me.btnAbout.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAbout.FlatAppearance.BorderSize = 0
+        Me.btnAbout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnAbout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAbout.ForeColor = System.Drawing.Color.Silver
+        Me.btnAbout.Location = New System.Drawing.Point(0, 0)
+        Me.btnAbout.Name = "btnAbout"
+        Me.btnAbout.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.btnAbout.Size = New System.Drawing.Size(233, 40)
+        Me.btnAbout.TabIndex = 0
+        Me.btnAbout.Text = "About Club Linked"
+        Me.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAbout.UseVisualStyleBackColor = True
         '
         'btnHelp
         '
@@ -555,7 +555,7 @@ Partial Class Main
     Private WithEvents btnHelp As Button
     Private WithEvents HelpPanel As Panel
     Private WithEvents button12 As Button
-    Private WithEvents btnFeatures As Button
+    Private WithEvents btnAbout As Button
     Private WithEvents btnAdminTools As Button
     Private WithEvents btnSettings As Button
     Private WithEvents ClubsPanel As Panel
