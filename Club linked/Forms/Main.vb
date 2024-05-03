@@ -114,4 +114,8 @@
     Private Sub btnAbout_Click(sender As Object, e As EventArgs) Handles btnAbout.Click
         openChildForm(New About)
     End Sub
+
+    Private Sub btnReport_Click(sender As Object, e As EventArgs) Handles btnReport.Click
+        openChildForm(New Report)
+    End Sub
 End Class

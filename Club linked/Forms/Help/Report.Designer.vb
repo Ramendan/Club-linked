@@ -26,11 +26,14 @@ Partial Class Report
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Announcment1 = New System.Windows.Forms.RichTextBox()
+        Me.lLogin = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.gbCreator.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbCreator
         '
+        Me.gbCreator.Controls.Add(Me.ComboBox1)
         Me.gbCreator.Controls.Add(Me.TextBox1)
         Me.gbCreator.Controls.Add(Me.Button1)
         Me.gbCreator.Controls.Add(Me.Announcment1)
@@ -38,14 +41,14 @@ Partial Class Report
         Me.gbCreator.Margin = New System.Windows.Forms.Padding(2)
         Me.gbCreator.Name = "gbCreator"
         Me.gbCreator.Padding = New System.Windows.Forms.Padding(2)
-        Me.gbCreator.Size = New System.Drawing.Size(676, 340)
+        Me.gbCreator.Size = New System.Drawing.Size(676, 350)
         Me.gbCreator.TabIndex = 48
         Me.gbCreator.TabStop = False
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(24, 29)
+        Me.TextBox1.Location = New System.Drawing.Point(25, 15)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(282, 29)
@@ -60,7 +63,7 @@ Partial Class Report
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.LightGray
-        Me.Button1.Location = New System.Drawing.Point(24, 241)
+        Me.Button1.Location = New System.Drawing.Point(25, 267)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(169, 68)
         Me.Button1.TabIndex = 42
@@ -72,12 +75,33 @@ Partial Class Report
         Me.Announcment1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Announcment1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Announcment1.Location = New System.Drawing.Point(24, 63)
+        Me.Announcment1.Location = New System.Drawing.Point(25, 100)
         Me.Announcment1.Name = "Announcment1"
         Me.Announcment1.ReadOnly = True
-        Me.Announcment1.Size = New System.Drawing.Size(626, 173)
+        Me.Announcment1.Size = New System.Drawing.Size(626, 161)
         Me.Announcment1.TabIndex = 41
-        Me.Announcment1.Text = "Announcment text here"
+        Me.Announcment1.Text = "Report text here"
+        '
+        'lLogin
+        '
+        Me.lLogin.AutoSize = True
+        Me.lLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.lLogin.Location = New System.Drawing.Point(65, 22)
+        Me.lLogin.Name = "lLogin"
+        Me.lLogin.Size = New System.Drawing.Size(102, 31)
+        Me.lLogin.TabIndex = 49
+        Me.lLogin.Text = "Report"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Report spam", "Report user", "Report bug", "Give suggestion", "More.."})
+        Me.ComboBox1.Location = New System.Drawing.Point(25, 56)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(282, 32)
+        Me.ComboBox1.TabIndex = 46
         '
         'Report
         '
@@ -85,12 +109,14 @@ Partial Class Report
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lLogin)
         Me.Controls.Add(Me.gbCreator)
         Me.Name = "Report"
         Me.Text = "Report"
         Me.gbCreator.ResumeLayout(False)
         Me.gbCreator.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -98,4 +124,6 @@ Partial Class Report
     Friend WithEvents TextBox1 As TextBox
     Private WithEvents Button1 As Button
     Friend WithEvents Announcment1 As RichTextBox
+    Private WithEvents lLogin As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
