@@ -108,6 +108,12 @@
     <Compile Include="Forms\Admin Tools\AdminAnnouncements.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Clubs\ChessClub\ChessAnnouncement.Designer.vb">
+      <DependentUpon>ChessAnnouncement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clubs\ChessClub\ChessAnnouncement.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Clubs\ChessClub\ChessClubForm.Designer.vb">
       <DependentUpon>ChessClubForm.vb</DependentUpon>
     </Compile>
@@ -126,6 +132,12 @@
     <Compile Include="Forms\Clubs\ChessClub\test.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Clubs\MusicClub\MusicAnnouncements.Designer.vb">
+      <DependentUpon>MusicAnnouncements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clubs\MusicClub\MusicAnnouncements.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Clubs\MusicClub\MusicClubForm.Designer.vb">
       <DependentUpon>MusicClubForm.vb</DependentUpon>
     </Compile>
@@ -138,6 +150,12 @@
     <Compile Include="Forms\Clubs\MusicClub\MusicMembers.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingAnnouncements.Designer.vb">
+      <DependentUpon>ProgrammingAnnouncements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingAnnouncements.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingClubForm.Designer.vb">
       <DependentUpon>ProgrammingClubForm.vb</DependentUpon>
     </Compile>
@@ -148,6 +166,12 @@
       <DependentUpon>ProgrammingMembers.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Clubs\ProgrammingClub\ProgrammingMembers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clubs\ReadingClub\ReadingAnnouncements.Designer.vb">
+      <DependentUpon>ReadingAnnouncements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clubs\ReadingClub\ReadingAnnouncements.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Clubs\ReadingClub\ReadingClubForm.Designer.vb">
@@ -216,6 +240,9 @@
     <EmbeddedResource Include="Forms\Admin Tools\AdminAnnouncements.resx">
       <DependentUpon>AdminAnnouncements.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\ChessClub\ChessAnnouncement.resx">
+      <DependentUpon>ChessAnnouncement.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\ChessClub\ChessClubForm.resx">
       <DependentUpon>ChessClubForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -225,17 +252,26 @@
     <EmbeddedResource Include="Forms\Clubs\ChessClub\test.resx">
       <DependentUpon>test.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\MusicClub\MusicAnnouncements.resx">
+      <DependentUpon>MusicAnnouncements.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\MusicClub\MusicClubForm.resx">
       <DependentUpon>MusicClubForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\MusicClub\MusicMembers.resx">
       <DependentUpon>MusicMembers.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingAnnouncements.resx">
+      <DependentUpon>ProgrammingAnnouncements.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingClubForm.resx">
       <DependentUpon>ProgrammingClubForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\ProgrammingClub\ProgrammingMembers.resx">
       <DependentUpon>ProgrammingMembers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\ReadingClub\ReadingAnnouncements.resx">
+      <DependentUpon>ReadingAnnouncements.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\ReadingClub\ReadingClubForm.resx">
       <DependentUpon>ReadingClubForm.vb</DependentUpon>
