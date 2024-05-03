@@ -18,7 +18,40 @@
         gbRegister.Visible = True
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+    Private Sub btnLoginShowPass_MouseHover(sender As Object, e As EventArgs) Handles btnLoginShowPass.MouseHover
+        tbPassword_login.PasswordChar = ""
     End Sub
+
+    Private Sub btnLoginShowPass_MouseLeave(sender As Object, e As EventArgs) Handles btnLoginShowPass.MouseLeave
+        tbPassword_login.PasswordChar = "*"
+        btnHideLoginPass.Visible = True
+    End Sub
+
+    Private Sub btnConfirmShowPass_MouseHover(sender As Object, e As EventArgs) Handles btnConfirmShowPass.MouseHover
+        tbConfirmPass.PasswordChar = ""
+    End Sub
+
+    Private Sub btnConfirmShowPass_MouseLeave(sender As Object, e As EventArgs) Handles btnConfirmShowPass.MouseLeave
+        tbConfirmPass.PasswordChar = "*"
+        btnHideConfirmPass.Visible = True
+    End Sub
+
+    Private Sub btnRigShowPass_MouseHover(sender As Object, e As EventArgs) Handles btnRigShowPass.MouseHover
+        tbRegiserPass.PasswordChar = ""
+    End Sub
+
+    Private Sub btnRigShowPass_MouseLeave(sender As Object, e As EventArgs) Handles btnRigShowPass.MouseLeave
+        tbRegiserPass.PasswordChar = "*"
+        btnHideRegisterPass.Visible = True
+    End Sub
+    Private Sub btnHideRegisterPass_MouseHover(sender As Object, e As EventArgs) Handles btnHideRegisterPass.MouseHover
+        btnHideRegisterPass.Visible = False
+    End Sub
+    Private Sub btnHideConfirmPass_MouseHover(sender As Object, e As EventArgs) Handles btnHideConfirmPass.MouseHover
+        btnHideConfirmPass.Visible = False
+    End Sub
+    Private Sub btnHideLoginPass_MouseHover(sender As Object, e As EventArgs) Handles btnHideLoginPass.MouseHover
+        btnHideLoginPass.Visible = False
+    End Sub
+
 End Class

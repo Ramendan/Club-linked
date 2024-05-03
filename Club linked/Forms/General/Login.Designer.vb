@@ -33,9 +33,15 @@ Partial Class Login
         Me.lPassword_login = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.gbLogin = New System.Windows.Forms.GroupBox()
+        Me.btnHideLoginPass = New System.Windows.Forms.Button()
+        Me.btnLoginShowPass = New System.Windows.Forms.Button()
         Me.gbRegister = New System.Windows.Forms.GroupBox()
+        Me.btnHideConfirmPass = New System.Windows.Forms.Button()
+        Me.btnHideRegisterPass = New System.Windows.Forms.Button()
+        Me.btnConfirmShowPass = New System.Windows.Forms.Button()
+        Me.btnRigShowPass = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.tbConfirmPass = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnSignUp = New System.Windows.Forms.Button()
@@ -45,9 +51,7 @@ Partial Class Login
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.tbRegiserPass = New System.Windows.Forms.TextBox()
         Me.gbLogin.SuspendLayout()
         Me.gbRegister.SuspendLayout()
         Me.SuspendLayout()
@@ -118,6 +122,7 @@ Partial Class Login
         Me.tbPassword_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbPassword_login.Location = New System.Drawing.Point(45, 245)
         Me.tbPassword_login.Name = "tbPassword_login"
+        Me.tbPassword_login.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.tbPassword_login.Size = New System.Drawing.Size(317, 40)
         Me.tbPassword_login.TabIndex = 32
         '
@@ -158,6 +163,8 @@ Partial Class Login
         '
         'gbLogin
         '
+        Me.gbLogin.Controls.Add(Me.btnHideLoginPass)
+        Me.gbLogin.Controls.Add(Me.btnLoginShowPass)
         Me.gbLogin.Controls.Add(Me.btnLogin)
         Me.gbLogin.Controls.Add(Me.Label1)
         Me.gbLogin.Controls.Add(Me.lLogin)
@@ -172,12 +179,38 @@ Partial Class Login
         Me.gbLogin.TabIndex = 36
         Me.gbLogin.TabStop = False
         '
+        'btnHideLoginPass
+        '
+        Me.btnHideLoginPass.BackColor = System.Drawing.Color.White
+        Me.btnHideLoginPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHideLoginPass.ForeColor = System.Drawing.Color.Transparent
+        Me.btnHideLoginPass.Image = CType(resources.GetObject("btnHideLoginPass.Image"), System.Drawing.Image)
+        Me.btnHideLoginPass.Location = New System.Drawing.Point(307, 246)
+        Me.btnHideLoginPass.Name = "btnHideLoginPass"
+        Me.btnHideLoginPass.Size = New System.Drawing.Size(52, 30)
+        Me.btnHideLoginPass.TabIndex = 44
+        Me.btnHideLoginPass.UseVisualStyleBackColor = False
+        '
+        'btnLoginShowPass
+        '
+        Me.btnLoginShowPass.BackColor = System.Drawing.Color.White
+        Me.btnLoginShowPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLoginShowPass.ForeColor = System.Drawing.Color.Transparent
+        Me.btnLoginShowPass.Image = CType(resources.GetObject("btnLoginShowPass.Image"), System.Drawing.Image)
+        Me.btnLoginShowPass.Location = New System.Drawing.Point(307, 246)
+        Me.btnLoginShowPass.Name = "btnLoginShowPass"
+        Me.btnLoginShowPass.Size = New System.Drawing.Size(52, 30)
+        Me.btnLoginShowPass.TabIndex = 42
+        Me.btnLoginShowPass.UseVisualStyleBackColor = False
+        '
         'gbRegister
         '
-        Me.gbRegister.Controls.Add(Me.Button2)
-        Me.gbRegister.Controls.Add(Me.Button1)
+        Me.gbRegister.Controls.Add(Me.btnHideConfirmPass)
+        Me.gbRegister.Controls.Add(Me.btnHideRegisterPass)
+        Me.gbRegister.Controls.Add(Me.btnConfirmShowPass)
+        Me.gbRegister.Controls.Add(Me.btnRigShowPass)
         Me.gbRegister.Controls.Add(Me.Label7)
-        Me.gbRegister.Controls.Add(Me.TextBox4)
+        Me.gbRegister.Controls.Add(Me.tbConfirmPass)
         Me.gbRegister.Controls.Add(Me.TextBox3)
         Me.gbRegister.Controls.Add(Me.Label6)
         Me.gbRegister.Controls.Add(Me.btnSignUp)
@@ -187,12 +220,60 @@ Partial Class Login
         Me.gbRegister.Controls.Add(Me.Label4)
         Me.gbRegister.Controls.Add(Me.TextBox1)
         Me.gbRegister.Controls.Add(Me.Label5)
-        Me.gbRegister.Controls.Add(Me.TextBox2)
+        Me.gbRegister.Controls.Add(Me.tbRegiserPass)
         Me.gbRegister.Location = New System.Drawing.Point(34, 63)
         Me.gbRegister.Name = "gbRegister"
         Me.gbRegister.Size = New System.Drawing.Size(761, 463)
         Me.gbRegister.TabIndex = 37
         Me.gbRegister.TabStop = False
+        '
+        'btnHideConfirmPass
+        '
+        Me.btnHideConfirmPass.BackColor = System.Drawing.Color.White
+        Me.btnHideConfirmPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHideConfirmPass.ForeColor = System.Drawing.Color.Transparent
+        Me.btnHideConfirmPass.Image = CType(resources.GetObject("btnHideConfirmPass.Image"), System.Drawing.Image)
+        Me.btnHideConfirmPass.Location = New System.Drawing.Point(661, 246)
+        Me.btnHideConfirmPass.Name = "btnHideConfirmPass"
+        Me.btnHideConfirmPass.Size = New System.Drawing.Size(52, 30)
+        Me.btnHideConfirmPass.TabIndex = 43
+        Me.btnHideConfirmPass.UseVisualStyleBackColor = False
+        '
+        'btnHideRegisterPass
+        '
+        Me.btnHideRegisterPass.BackColor = System.Drawing.Color.White
+        Me.btnHideRegisterPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHideRegisterPass.ForeColor = System.Drawing.Color.Transparent
+        Me.btnHideRegisterPass.Image = CType(resources.GetObject("btnHideRegisterPass.Image"), System.Drawing.Image)
+        Me.btnHideRegisterPass.Location = New System.Drawing.Point(307, 246)
+        Me.btnHideRegisterPass.Name = "btnHideRegisterPass"
+        Me.btnHideRegisterPass.Size = New System.Drawing.Size(52, 30)
+        Me.btnHideRegisterPass.TabIndex = 42
+        Me.btnHideRegisterPass.UseVisualStyleBackColor = False
+        '
+        'btnConfirmShowPass
+        '
+        Me.btnConfirmShowPass.BackColor = System.Drawing.Color.White
+        Me.btnConfirmShowPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConfirmShowPass.ForeColor = System.Drawing.Color.Transparent
+        Me.btnConfirmShowPass.Image = CType(resources.GetObject("btnConfirmShowPass.Image"), System.Drawing.Image)
+        Me.btnConfirmShowPass.Location = New System.Drawing.Point(661, 246)
+        Me.btnConfirmShowPass.Name = "btnConfirmShowPass"
+        Me.btnConfirmShowPass.Size = New System.Drawing.Size(52, 30)
+        Me.btnConfirmShowPass.TabIndex = 41
+        Me.btnConfirmShowPass.UseVisualStyleBackColor = False
+        '
+        'btnRigShowPass
+        '
+        Me.btnRigShowPass.BackColor = System.Drawing.Color.White
+        Me.btnRigShowPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRigShowPass.ForeColor = System.Drawing.Color.Transparent
+        Me.btnRigShowPass.Image = CType(resources.GetObject("btnRigShowPass.Image"), System.Drawing.Image)
+        Me.btnRigShowPass.Location = New System.Drawing.Point(308, 246)
+        Me.btnRigShowPass.Name = "btnRigShowPass"
+        Me.btnRigShowPass.Size = New System.Drawing.Size(52, 30)
+        Me.btnRigShowPass.TabIndex = 40
+        Me.btnRigShowPass.UseVisualStyleBackColor = False
         '
         'Label7
         '
@@ -205,14 +286,14 @@ Partial Class Login
         Me.Label7.TabIndex = 39
         Me.Label7.Text = "Confirm Password"
         '
-        'TextBox4
+        'tbConfirmPass
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(398, 245)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox4.Size = New System.Drawing.Size(317, 40)
-        Me.TextBox4.TabIndex = 38
+        Me.tbConfirmPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbConfirmPass.Location = New System.Drawing.Point(398, 245)
+        Me.tbConfirmPass.Name = "tbConfirmPass"
+        Me.tbConfirmPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tbConfirmPass.Size = New System.Drawing.Size(317, 40)
+        Me.tbConfirmPass.TabIndex = 38
         '
         'TextBox3
         '
@@ -315,38 +396,14 @@ Partial Class Login
         Me.Label5.TabIndex = 33
         Me.Label5.Text = "Name"
         '
-        'TextBox2
+        'tbRegiserPass
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(45, 245)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(317, 40)
-        Me.TextBox2.TabIndex = 32
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(308, 246)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(52, 30)
-        Me.Button1.TabIndex = 40
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.White
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(663, 246)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(52, 30)
-        Me.Button2.TabIndex = 41
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.tbRegiserPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbRegiserPass.Location = New System.Drawing.Point(45, 245)
+        Me.tbRegiserPass.Name = "tbRegiserPass"
+        Me.tbRegiserPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tbRegiserPass.Size = New System.Drawing.Size(317, 40)
+        Me.tbRegiserPass.TabIndex = 32
         '
         'Login
         '
@@ -354,9 +411,9 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1091, 941)
-        Me.Controls.Add(Me.gbRegister)
         Me.Controls.Add(Me.gbLogin)
         Me.Controls.Add(Me.button5)
+        Me.Controls.Add(Me.gbRegister)
         Me.Name = "Login"
         Me.Text = "Login"
         Me.gbLogin.ResumeLayout(False)
@@ -384,11 +441,15 @@ Partial Class Login
     Private WithEvents Label4 As Label
     Friend WithEvents TextBox1 As TextBox
     Private WithEvents Label5 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents tbRegiserPass As TextBox
     Private WithEvents Label7 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents tbConfirmPass As TextBox
     Friend WithEvents TextBox3 As TextBox
     Private WithEvents Label6 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnRigShowPass As Button
+    Friend WithEvents btnConfirmShowPass As Button
+    Friend WithEvents btnLoginShowPass As Button
+    Friend WithEvents btnHideRegisterPass As Button
+    Friend WithEvents btnHideConfirmPass As Button
+    Friend WithEvents btnHideLoginPass As Button
 End Class
