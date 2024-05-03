@@ -50,6 +50,7 @@
 
     Private Sub btnStatus_Click(sender As Object, e As EventArgs) Handles btnStatus.Click
         highlight(btnStatus)
+        openChildForm(New test)
     End Sub
 
     Private Sub ChessClubForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
