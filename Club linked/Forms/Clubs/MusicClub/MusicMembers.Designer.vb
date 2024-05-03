@@ -74,9 +74,9 @@ Partial Class MusicMembers
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(28, 86)
+        Me.TextBox1.Location = New System.Drawing.Point(16, 86)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(128, 20)
         Me.TextBox1.TabIndex = 39
         '
         'CheckBox1
@@ -133,7 +133,7 @@ Partial Class MusicMembers
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.label1.Location = New System.Drawing.Point(28, 17)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(198, 32)
+        Me.label1.Size = New System.Drawing.Size(197, 32)
         Me.label1.TabIndex = 37
         Me.label1.Text = "Club Members"
         '

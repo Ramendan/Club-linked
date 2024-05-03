@@ -7,7 +7,7 @@
 
     End Sub
 
-    Private Sub button9_Click(sender As Object, e As EventArgs) Handles button9.Click
+    Private Sub button9_Click(sender As Object, e As EventArgs) 
 
     End Sub
 End Class
