@@ -117,4 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAPMSURBVHhe7Z07axRRGIZXCy9YeKm8kYWdWZQU/gUtYs6Y
+        FFZpvf4EUSOKllqLoH9CkyqVECSZWQwBLQQVCwu1NIm3wiqeiW+VvIsHN3lnMt954EGROPvMm81ehmha
+        kUgkEolEIpFIJLJZFMOjh/I0u1Kk2XSRZO/yJPvpf7+6nVxr9u1F6qbydPTy3ND4QZxefSmOT+ztJdnt
+        PHHf2EltZ/0daqVI3K3yHHG69WL+xMhRf29ZYPGNMnGv5jojQzjtelB0x4/5e/0nGtxA187VnzNOv1rK
+        L0n/5bnIQputW5htn96DGaoj77o7PLD5+jveJGaoBrzaWWFxNnTLlb468hFXN0bZstd1lzCHHh8wvT7I
+        mnnqnmEOPf7h5wOLMqV/s4Y59Pgb/0GjLOk3wBx6aJBBMYceFmNRzKGHxVgUc+hhMRbFHHpYjEUxhx4W
+        Y1HMoYfFWBRz6GExFsUceliMRTGHHhZjUcyhh8VYFHPoYTEWxRx6WIxFMYceFhNinrjfRepulN9JgUNV
+        RtmQp9nNv02891/iUHpYTIjlCeMQtaFsYq0h4hB6WEyIL066IzhEbXjZHjvMWkPEIfSwmBDr8NCznvL7
+        fFhriDiEHhYTYk0fgiZZa4g4hB4WE2L5hFd+EuKT8ICwGItiDj0sxqKYQw+LsSjm0MNiLIo59LAYi2IO
+        PSzGophDD4uxKObQw2Isijn0sJgQq7gauhlvuPqJm9DDYkKs8lJEedusaRBxaD0sJsQqr4YOctWznzi0
+        HhYTYpXXgAa56tlPHFoPiwmx4oeg/77q2U8cWg+LCbGKq6HxSbjBYg49LMaimEMPi7Eo5tDDYiyKOfSw
+        GItiDj0sxqKYQw+LsSjm0MNiLIo59LAYi2IOPSzGophDD4uxKObQw2Isijn0sBiLYg49LMaimEMPi7Eo
+        5tDDYiyKOfSwGItiDj0sxqKYQw+LsSjm0MNiLIo59LAYi2IOPSzGophDD4uxKObQw2KsmSfuM+bQw4LM
+        mbj7mEOPv/HvNMqCSfbFn/+DN8MTuzCHnjx171ncfCcbw4dEtpLyv25nnwD/5zP+mWkHPiyyVRSd7CL7
+        BMC7+LDIVjHbPn+gSN0SGR+6573EnXl96uw+/JXIZlN03XU+ftN1y/7XR5X/YLeZNNvtXw30NgbaME+y
+        J5iiOsp/d+VDPrLAputfcPxabd3biSmqA//4rVgf2HRr8wkoKd+U5MnoNf/V8JXFNlF/ro9x+vVhsTOy
+        v0jOXfBxT/07xrfN/GE/bsnf+x/W9qerRiKRSCQSiUQikRrSav0Bbu1Q1ZHkRx4AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="RichTextBox2.Text" xml:space="preserve">
+    <value>A university reading club provides a welcoming space for students who enjoy reading and want to connect with fellow book lovers.
+
+It fosters a community around literature, offering opportunities to:
+
+Expand literary horizons: Members can explore different genres, authors, and writing styles through the club's chosen books.
+
+Engage in thoughtful discussions: Club meetings allow for insightful discussions about the chosen book's themes, characters, plot, and literary techniques.
+
+Develop critical thinking and communication skills: Analyzing and discussing literature encourages critical thinking, interpretation, and effective communication.
+
+Connect with like-minded individuals: Reading clubs create a sense of community, allowing students to build friendships with others who share their passion for reading.</value>
+  </data>
 </root>

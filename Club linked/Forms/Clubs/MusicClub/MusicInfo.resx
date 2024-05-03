@@ -117,4 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAATDSURBVHhe7Z3NihxlFIZH0YULFXWjJv4wVcMEt7mA+DN0
+        VRwQQcYLkOAlqBvJPYigIKK3ISQayVQlkYComyiu/ANd6EYFN8bvjK8fVvVb9unTVVoy7wPPInVOv6c4
+        30x3ekKmt4QQQgghhBBCCCGEEEL0uX769O1NUb/YFNWltqh+aMv6pkymXWAn5z44c+Y2rGtc2mJRpmGf
+        LQ2XHZuy+vTyzv421jYOHxWLh9qi/o4NlMSi/rbd2T+B9W1OCn1/aYhcYXUB69uMdqfa4wPkKg+LxRNY
+        Y5z0nPYuC5cOi+ptrDFOCvmShsuVNmX9BdYYJ30H/MrC5Wptd1hjHBYs/WKNcVio9Is1xmGh0i/WGIeF
+        Sr9YYxwWKv1ijXFYqPSLNcZhodIv1hiHha5jejPy1WG5eO5w95k7EbkxltUUZ59ti/oGmzkncctxWKhX
+        W3772OJeRI3O5Yf37zmaQWbPRdxqHBbq1b7yETMZac5Bf+6cxG3GYaFex3zaGeJqWd/FZs9F3GYcFuoV
+        EZPDZs9F3GIcFuoVEZPDZvdtiuq3tqxeOtzde9BMrx0v/3ltnP4hcYtxWKhXREwOm93XFoj2jF1jvea6
+        /UPioXFYqFdETA6b3ffDU9UDaM9ce+Tp+1mvuW7/kHhoHBbqFRGTw2b3tacRtGfsH85Zr7lu/5B4aBwW
+        6hURk8Nm9x14SnmF9Zrr9g+Jh8ZhoV7/jb+GXt/eu5vN7msvoLZU74vquv1D4jbjsFCv9uMCxExGW1TP
+        s9lzEbcZh4W6Leob9uMCRI3OtVNP3Ze+Kr+ms2cibjUOC13H9K1rP6s5sHesiNyYo3e/6St/7ss3cctx
+        WKj0izXGYaHSL9YYh4VKv1hjHBYq/WKNcVio9Is1xmGh0i/WGIeFSr9YYxwWKv1ijXFYqPSLNcZhodIv
+        1hiHhUq/WGMcFir9Yo1xWKj0izXGYaHSL9YYh4VKv1hjHBZqorwE6zVRzrAeE+UM6zFRXhuWZaKcYT0m
+        yh3SxVtYb1PWv6MlDgs2UV6C9ZooZ1iPiXKG9Zgorw3LMlHOsB4T5Q7pog7AC8syUc6wHhPlDumiDsAL
+        yzJRzrAeE+UO6aIOwAvLMlHOsB4T5Q7pog7AC8syUc6wHhPlDumiDsALyzJRzrAeE+UO6aIOwAvLMlHO
+        sB4T5Q7pog7AC8syUc6wHhPlDumiDsALyzJRzrAeE+UO6aIOwAvLMlHOsB4T5Q7pog7AC8syUc6wHhPl
+        DumiDsALyzJRzrAeE+UO6eKcDqD6abm/+hHlzNh9XqaYO7MDqF/v9zZl9RrKmbH7vHjzvH3GvA7g5MEd
+        TVG/mW72lyOL+g27hnJm7D4vU8yd1QH8hd2UiT8OMnaflzHnWp3t6D89gOPEpAeQvv3or620/xyHlmOP
+        /TcstqP0tPUzWuIM/eLWdDCv3tw6fyvaji22g7SP8/39mGlHn6MtTjrFd1i4XG16CnoLa4zTbJ99koXL
+        1V4pqsexxs1Ib0AusAHyHyyq97C+zbla1iePPpSADZJLNkX1DftdExthH8uRXlQ+YQPl3yyqj6/sVo9i
+        beNiH1CTBpxLg+wTNb7vDD7epl1UF9OL7guTfYiPEEIIIYQQQgghhPifs7X1B2XW4UvC/Oz0AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="RichTextBox2.Text" xml:space="preserve">
+    <value>The music club provides a welcoming space for students who share a passion for music, regardless of their skill level or musical background.
+It fosters a vibrant musical community, offering opportunities to:
+
+Develop musical skills: Members can hone their instrumental or vocal abilities through individual practice, group rehearsals, and workshops.
+
+Explore different musical genres: Clubs often encompass a variety of musical interests, allowing members to discover new styles and collaborate with musicians of diverse backgrounds.
+
+Perform and share their passion: Clubs provide platforms for members to showcase their talents through concerts, open mic nights, or participation in campus events.
+
+Connect with like-minded individuals: Music clubs create a sense of community, allowing students to build friendships, share their love for music, and potentially form bands or ensembles.</value>
+  </data>
 </root>
