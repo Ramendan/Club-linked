@@ -422,6 +422,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Database\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
