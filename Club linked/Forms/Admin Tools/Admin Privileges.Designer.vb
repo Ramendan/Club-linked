@@ -35,17 +35,27 @@ Partial Class Admin_Privileges
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.txtSearchUsr = New System.Windows.Forms.TextBox()
         Me.button5 = New System.Windows.Forms.Button()
-        Me.UsersInfo = New Club_linked.UsersInfo()
         Me.AccountsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.UsersInfo = New Club_linked.UsersInfo()
         Me.AccountsTableAdapter = New Club_linked.UsersInfoTableAdapters.AccountsTableAdapter()
+        Me.AllAccountdata = New Club_linked.AllAccountdata()
+        Me.AccountsBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.AccountsTableAdapter1 = New Club_linked.AllAccountdataTableAdapters.AccountsTableAdapter()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.status = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.programming = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.chess = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.reading = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.music = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AccountsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.UsersInfo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AccountsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UsersInfo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AllAccountdata, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AccountsBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'label1
@@ -64,8 +74,8 @@ Partial Class Admin_Privileges
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
-        Me.DataGridView1.DataSource = Me.AccountsBindingSource1
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.status, Me.programming, Me.chess, Me.reading, Me.music})
+        Me.DataGridView1.DataSource = Me.AccountsBindingSource2
         Me.DataGridView1.Location = New System.Drawing.Point(191, 18)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
@@ -199,19 +209,33 @@ Partial Class Admin_Privileges
         Me.button5.Text = "X"
         Me.button5.UseVisualStyleBackColor = True
         '
-        'UsersInfo
-        '
-        Me.UsersInfo.DataSetName = "UsersInfo"
-        Me.UsersInfo.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'AccountsBindingSource1
         '
         Me.AccountsBindingSource1.DataMember = "Accounts"
         Me.AccountsBindingSource1.DataSource = Me.UsersInfo
         '
+        'UsersInfo
+        '
+        Me.UsersInfo.DataSetName = "UsersInfo"
+        Me.UsersInfo.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'AccountsTableAdapter
         '
         Me.AccountsTableAdapter.ClearBeforeFill = True
+        '
+        'AllAccountdata
+        '
+        Me.AllAccountdata.DataSetName = "AllAccountdata"
+        Me.AllAccountdata.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'AccountsBindingSource2
+        '
+        Me.AccountsBindingSource2.DataMember = "Accounts"
+        Me.AccountsBindingSource2.DataSource = Me.AllAccountdata
+        '
+        'AccountsTableAdapter1
+        '
+        Me.AccountsTableAdapter1.ClearBeforeFill = True
         '
         'DataGridViewTextBoxColumn1
         '
@@ -224,6 +248,36 @@ Partial Class Admin_Privileges
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "username"
         Me.DataGridViewTextBoxColumn2.HeaderText = "username"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'status
+        '
+        Me.status.DataPropertyName = "status"
+        Me.status.HeaderText = "status"
+        Me.status.Name = "status"
+        '
+        'programming
+        '
+        Me.programming.DataPropertyName = "programming"
+        Me.programming.HeaderText = "programming"
+        Me.programming.Name = "programming"
+        '
+        'chess
+        '
+        Me.chess.DataPropertyName = "chess"
+        Me.chess.HeaderText = "chess"
+        Me.chess.Name = "chess"
+        '
+        'reading
+        '
+        Me.reading.DataPropertyName = "reading"
+        Me.reading.HeaderText = "reading"
+        Me.reading.Name = "reading"
+        '
+        'music
+        '
+        Me.music.DataPropertyName = "music"
+        Me.music.HeaderText = "music"
+        Me.music.Name = "music"
         '
         'Admin_Privileges
         '
@@ -243,8 +297,10 @@ Partial Class Admin_Privileges
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.UsersInfo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AccountsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UsersInfo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AllAccountdata, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AccountsBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -267,6 +323,14 @@ Partial Class Admin_Privileges
     Friend WithEvents UsersInfo As UsersInfo
     Friend WithEvents AccountsBindingSource1 As BindingSource
     Friend WithEvents AccountsTableAdapter As UsersInfoTableAdapters.AccountsTableAdapter
+    Friend WithEvents AllAccountdata As AllAccountdata
+    Friend WithEvents AccountsBindingSource2 As BindingSource
+    Friend WithEvents AccountsTableAdapter1 As AllAccountdataTableAdapters.AccountsTableAdapter
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents status As DataGridViewTextBoxColumn
+    Friend WithEvents programming As DataGridViewTextBoxColumn
+    Friend WithEvents chess As DataGridViewTextBoxColumn
+    Friend WithEvents reading As DataGridViewTextBoxColumn
+    Friend WithEvents music As DataGridViewTextBoxColumn
 End Class

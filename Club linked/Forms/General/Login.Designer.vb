@@ -28,7 +28,7 @@ Partial Class Login
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.lLogin = New System.Windows.Forms.Label()
-        Me.tbUsername_login = New System.Windows.Forms.TextBox()
+        Me.tbID_login = New System.Windows.Forms.TextBox()
         Me.tbPassword_login = New System.Windows.Forms.TextBox()
         Me.lUsername_login = New System.Windows.Forms.Label()
         Me.lPassword_login = New System.Windows.Forms.Label()
@@ -54,6 +54,8 @@ Partial Class Login
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbRegiserPass = New System.Windows.Forms.TextBox()
         Me.ttID = New System.Windows.Forms.ToolTip(Me.components)
+        Me.btnLogout = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.gbLogin.SuspendLayout()
         Me.gbRegister.SuspendLayout()
         Me.SuspendLayout()
@@ -111,13 +113,13 @@ Partial Class Login
         Me.lLogin.TabIndex = 26
         Me.lLogin.Text = "Login"
         '
-        'tbUsername_login
+        'tbID_login
         '
-        Me.tbUsername_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbUsername_login.Location = New System.Drawing.Point(45, 142)
-        Me.tbUsername_login.Name = "tbUsername_login"
-        Me.tbUsername_login.Size = New System.Drawing.Size(317, 40)
-        Me.tbUsername_login.TabIndex = 31
+        Me.tbID_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbID_login.Location = New System.Drawing.Point(45, 142)
+        Me.tbID_login.Name = "tbID_login"
+        Me.tbID_login.Size = New System.Drawing.Size(317, 40)
+        Me.tbID_login.TabIndex = 31
         '
         'tbPassword_login
         '
@@ -133,11 +135,11 @@ Partial Class Login
         Me.lUsername_login.AutoSize = True
         Me.lUsername_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.lUsername_login.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.lUsername_login.Location = New System.Drawing.Point(128, 95)
+        Me.lUsername_login.Location = New System.Drawing.Point(149, 95)
         Me.lUsername_login.Name = "lUsername_login"
-        Me.lUsername_login.Size = New System.Drawing.Size(151, 31)
+        Me.lUsername_login.Size = New System.Drawing.Size(107, 31)
         Me.lUsername_login.TabIndex = 33
-        Me.lUsername_login.Text = "User Name"
+        Me.lUsername_login.Text = "User ID"
         '
         'lPassword_login
         '
@@ -172,7 +174,7 @@ Partial Class Login
         Me.gbLogin.Controls.Add(Me.lLogin)
         Me.gbLogin.Controls.Add(Me.btnShow_signUp)
         Me.gbLogin.Controls.Add(Me.lPassword_login)
-        Me.gbLogin.Controls.Add(Me.tbUsername_login)
+        Me.gbLogin.Controls.Add(Me.tbID_login)
         Me.gbLogin.Controls.Add(Me.lUsername_login)
         Me.gbLogin.Controls.Add(Me.tbPassword_login)
         Me.gbLogin.Location = New System.Drawing.Point(34, 63)
@@ -412,15 +414,42 @@ Partial Class Login
         '
         Me.ttID.ToolTipTitle = "ID must be a number"
         '
+        'btnLogout
+        '
+        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnLogout.FlatAppearance.BorderSize = 0
+        Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogout.ForeColor = System.Drawing.Color.LightGray
+        Me.btnLogout.Location = New System.Drawing.Point(645, 13)
+        Me.btnLogout.Name = "btnLogout"
+        Me.btnLogout.Size = New System.Drawing.Size(150, 40)
+        Me.btnLogout.TabIndex = 44
+        Me.btnLogout.Text = "Logout"
+        Me.btnLogout.UseVisualStyleBackColor = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(73, 15)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(85, 31)
+        Me.Label8.TabIndex = 45
+        Me.Label8.Text = "Login"
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1091, 941)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.gbRegister)
         Me.Controls.Add(Me.gbLogin)
+        Me.Controls.Add(Me.gbRegister)
         Me.Name = "Login"
         Me.Text = "Login"
         Me.gbLogin.ResumeLayout(False)
@@ -428,13 +457,14 @@ Partial Class Login
         Me.gbRegister.ResumeLayout(False)
         Me.gbRegister.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Private WithEvents btnShow_signUp As Button
     Private WithEvents btnLogin As Button
     Private WithEvents btnClose As Button
     Private WithEvents lLogin As Label
-    Friend WithEvents tbUsername_login As TextBox
+    Friend WithEvents tbID_login As TextBox
     Friend WithEvents tbPassword_login As TextBox
     Private WithEvents lUsername_login As Label
     Private WithEvents lPassword_login As Label
@@ -460,4 +490,6 @@ Partial Class Login
     Friend WithEvents btnHideConfirmPass As Button
     Friend WithEvents btnHideLoginPass As Button
     Friend WithEvents ttID As ToolTip
+    Private WithEvents btnLogout As Button
+    Private WithEvents Label8 As Label
 End Class
