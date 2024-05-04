@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Admin_Privileges
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class AdminReports
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,10 @@ Partial Class Admin_Privileges
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.label1 = New System.Windows.Forms.Label()
         Me.btnAddAdmin = New System.Windows.Forms.Button()
         Me.btnRevoke = New System.Windows.Forms.Button()
         Me.btnSearchUsr = New System.Windows.Forms.Button()
@@ -38,28 +38,28 @@ Partial Class Admin_Privileges
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(191, 18)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(613, 354)
+        Me.DataGridView1.TabIndex = 33
+        '
         'label1
         '
         Me.label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.label1.AutoSize = True
         Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!)
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(56, 32)
+        Me.label1.Location = New System.Drawing.Point(48, 32)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(87, 32)
-        Me.label1.TabIndex = 34
-        Me.label1.Text = "Users"
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(191, 18)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(613, 354)
-        Me.DataGridView1.TabIndex = 33
+        Me.label1.Size = New System.Drawing.Size(113, 32)
+        Me.label1.TabIndex = 37
+        Me.label1.Text = "Reports"
         '
         'btnAddAdmin
         '
@@ -72,7 +72,7 @@ Partial Class Admin_Privileges
         Me.btnAddAdmin.Name = "btnAddAdmin"
         Me.btnAddAdmin.Size = New System.Drawing.Size(150, 40)
         Me.btnAddAdmin.TabIndex = 32
-        Me.btnAddAdmin.Text = "Give Admin Status"
+        Me.btnAddAdmin.Text = "Ban user"
         Me.btnAddAdmin.UseVisualStyleBackColor = False
         '
         'btnRevoke
@@ -86,7 +86,7 @@ Partial Class Admin_Privileges
         Me.btnRevoke.Name = "btnRevoke"
         Me.btnRevoke.Size = New System.Drawing.Size(150, 40)
         Me.btnRevoke.TabIndex = 31
-        Me.btnRevoke.Text = "Revoke Admin Status"
+        Me.btnRevoke.Text = "Unban user"
         Me.btnRevoke.UseVisualStyleBackColor = False
         '
         'btnSearchUsr
@@ -113,12 +113,12 @@ Partial Class Admin_Privileges
         Me.GroupBox1.Controls.Add(Me.btnRevoke)
         Me.GroupBox1.Controls.Add(Me.btnSearchUsr)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(26, 61)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(18, 61)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(819, 447)
-        Me.GroupBox1.TabIndex = 36
+        Me.GroupBox1.TabIndex = 39
         Me.GroupBox1.TabStop = False
         '
         'GroupBox2
@@ -126,9 +126,9 @@ Partial Class Admin_Privileges
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.ListBox1)
         Me.GroupBox2.Location = New System.Drawing.Point(20, 120)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Size = New System.Drawing.Size(150, 252)
         Me.GroupBox2.TabIndex = 35
         Me.GroupBox2.TabStop = False
@@ -137,12 +137,12 @@ Partial Class Admin_Privileges
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(40, 13)
+        Me.Label2.Location = New System.Drawing.Point(11, 13)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 26)
+        Me.Label2.Size = New System.Drawing.Size(131, 26)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Select"
+        Me.Label2.Text = "Search from"
         '
         'ListBox1
         '
@@ -153,7 +153,7 @@ Partial Class Admin_Privileges
         Me.ListBox1.ItemHeight = 22
         Me.ListBox1.Items.AddRange(New Object() {"All", "Programming", "Music", "Chess", "Reading"})
         Me.ListBox1.Location = New System.Drawing.Point(5, 41)
-        Me.ListBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ListBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(141, 114)
         Me.ListBox1.TabIndex = 0
@@ -162,7 +162,7 @@ Partial Class Admin_Privileges
         '
         Me.txtSearchUsr.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearchUsr.Location = New System.Drawing.Point(191, 391)
-        Me.txtSearchUsr.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSearchUsr.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearchUsr.Name = "txtSearchUsr"
         Me.txtSearchUsr.Size = New System.Drawing.Size(614, 24)
         Me.txtSearchUsr.TabIndex = 34
@@ -175,14 +175,14 @@ Partial Class Admin_Privileges
         Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(26, 30)
+        Me.button5.Location = New System.Drawing.Point(18, 30)
         Me.button5.Name = "button5"
         Me.button5.Size = New System.Drawing.Size(25, 25)
-        Me.button5.TabIndex = 35
+        Me.button5.TabIndex = 38
         Me.button5.Text = "X"
         Me.button5.UseVisualStyleBackColor = True
         '
-        'Admin_Privileges
+        'AdminReports
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -191,9 +191,8 @@ Partial Class Admin_Privileges
         Me.Controls.Add(Me.label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.button5)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Name = "Admin_Privileges"
-        Me.Text = "Admin_Privileges"
+        Me.Name = "AdminReports"
+        Me.Text = "AdminReports"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -204,15 +203,15 @@ Partial Class Admin_Privileges
 
     End Sub
 
-    Private WithEvents label1 As Label
     Friend WithEvents DataGridView1 As DataGridView
+    Private WithEvents label1 As Label
     Private WithEvents btnAddAdmin As Button
     Private WithEvents btnRevoke As Button
     Private WithEvents btnSearchUsr As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents txtSearchUsr As TextBox
-    Private WithEvents button5 As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label2 As Label
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents txtSearchUsr As TextBox
+    Private WithEvents button5 As Button
 End Class
