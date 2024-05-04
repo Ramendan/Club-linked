@@ -23,7 +23,6 @@
         btnAnnouncments.BackColor = Color.FromArgb(32, 30, 45)
         btnInfo.BackColor = Color.FromArgb(32, 30, 45)
         btnMembers.BackColor = Color.FromArgb(32, 30, 45)
-        btnStatus.BackColor = Color.FromArgb(32, 30, 45)
         buttonToHighlight.BackColor = Color.FromArgb(235, 42, 83)
 
     End Sub
@@ -47,10 +46,5 @@
     Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
         openChildForm(New MusicInfo)
         highlight(btnInfo)
-    End Sub
-
-    Private Sub btnStatus_Click(sender As Object, e As EventArgs)
-        highlight(btnStatus)
-        'openChildForm(New test)
     End Sub
 End Class

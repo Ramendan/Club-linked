@@ -330,6 +330,9 @@
     <EmbeddedResource Include="Forms\Clubs\ReadingClub\ReadingClubForm.resx">
       <DependentUpon>ReadingClubForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clubs\ReadingClub\ReadingEvents.resx">
+      <DependentUpon>ReadingEvents.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clubs\ReadingClub\ReadingInfo.resx">
       <DependentUpon>ReadingInfo.vb</DependentUpon>
     </EmbeddedResource>

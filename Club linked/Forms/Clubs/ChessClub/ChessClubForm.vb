@@ -24,7 +24,6 @@
         btnAnnouncments.BackColor = Color.FromArgb(32, 30, 45)
         btnInfo.BackColor = Color.FromArgb(32, 30, 45)
         btnMembers.BackColor = Color.FromArgb(32, 30, 45)
-        btnStatus.BackColor = Color.FromArgb(32, 30, 45)
         buttonToHighlight.BackColor = Color.FromArgb(235, 42, 83)
 
     End Sub
@@ -48,21 +47,5 @@
     Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
         openChildForm(New ChessInfo)
         highlight(btnInfo)
-    End Sub
-
-    Private Sub ChessClubForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub PanelChildForm_Paint(sender As Object, e As PaintEventArgs) Handles PanelChildForm.Paint
-
-    End Sub
-
-    Private Sub TabPanel_Paint(sender As Object, e As PaintEventArgs) Handles TabPanel.Paint
-
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
     End Sub
 End Class

@@ -28,7 +28,6 @@
         btnAnnouncments.BackColor = Color.FromArgb(32, 30, 45)
         btnInfo.BackColor = Color.FromArgb(32, 30, 45)
         btnMembers.BackColor = Color.FromArgb(32, 30, 45)
-        btnStatus.BackColor = Color.FromArgb(32, 30, 45)
         buttonToHighlight.BackColor = Color.FromArgb(235, 42, 83)
 
     End Sub
@@ -53,11 +52,6 @@
         openChildForm(New ProgrammingInfo)
         highlight(btnInfo)
     End Sub
-
-    Private Sub btnStatus_Click(sender As Object, e As EventArgs)
-        highlight(btnStatus)
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
     End Sub
