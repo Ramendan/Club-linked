@@ -35,15 +35,12 @@ Partial Class Admin_Privileges
         Me.txtSearchUsr = New System.Windows.Forms.TextBox()
         Me.button5 = New System.Windows.Forms.Button()
         Me.AccountsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DatabaseDataSet = New Club_linked.DatabaseDataSet()
-        Me.AccountsTableAdapter = New Club_linked.DatabaseDataSetTableAdapters.AccountsTableAdapter()
         Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.UsernameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.AccountsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'label1
@@ -196,16 +193,12 @@ Partial Class Admin_Privileges
         'AccountsBindingSource
         '
         Me.AccountsBindingSource.DataMember = "Accounts"
-        Me.AccountsBindingSource.DataSource = Me.DatabaseDataSet
         '
         'DatabaseDataSet
         '
-        Me.DatabaseDataSet.DataSetName = "DatabaseDataSet"
-        Me.DatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'AccountsTableAdapter
         '
-        Me.AccountsTableAdapter.ClearBeforeFill = True
         '
         'UserIDDataGridViewTextBoxColumn
         '
@@ -239,7 +232,6 @@ Partial Class Admin_Privileges
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.AccountsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DatabaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -256,9 +248,7 @@ Partial Class Admin_Privileges
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label2 As Label
     Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents DatabaseDataSet As DatabaseDataSet
     Friend WithEvents AccountsBindingSource As BindingSource
-    Friend WithEvents AccountsTableAdapter As DatabaseDataSetTableAdapters.AccountsTableAdapter
     Friend WithEvents UserIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents UsernameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

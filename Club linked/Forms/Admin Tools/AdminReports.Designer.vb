@@ -34,7 +34,6 @@ Partial Class AdminReports
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.txtSearchUsr = New System.Windows.Forms.TextBox()
         Me.button5 = New System.Windows.Forms.Button()
-        Me.DatabaseDataSet = New Club_linked.DatabaseDataSet()
         Me.DatabaseDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DatabaseDataSet1 = New Club_linked.DatabaseDataSet1()
         Me.AccountsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -49,7 +48,6 @@ Partial Class AdminReports
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.DatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DatabaseDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DatabaseDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AccountsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -207,12 +205,10 @@ Partial Class AdminReports
         '
         'DatabaseDataSet
         '
-        Me.DatabaseDataSet.DataSetName = "DatabaseDataSet"
-        Me.DatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'DatabaseDataSetBindingSource
         '
-        Me.DatabaseDataSetBindingSource.DataSource = Me.DatabaseDataSet
+
         Me.DatabaseDataSetBindingSource.Position = 0
         '
         'DatabaseDataSet1
@@ -305,7 +301,6 @@ Partial Class AdminReports
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.DatabaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DatabaseDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DatabaseDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AccountsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -327,7 +322,6 @@ Partial Class AdminReports
     Friend WithEvents txtSearchUsr As TextBox
     Private WithEvents button5 As Button
     Friend WithEvents DatabaseDataSetBindingSource As BindingSource
-    Friend WithEvents DatabaseDataSet As DatabaseDataSet
     Friend WithEvents DatabaseDataSet1 As DatabaseDataSet1
     Friend WithEvents AccountsBindingSource As BindingSource
     Friend WithEvents AccountsTableAdapter As DatabaseDataSet1TableAdapters.AccountsTableAdapter
