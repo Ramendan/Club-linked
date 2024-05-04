@@ -22,6 +22,7 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.btnShow_signUp = New System.Windows.Forms.Button()
         Me.btnLogin = New System.Windows.Forms.Button()
@@ -52,6 +53,7 @@ Partial Class Login
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbRegiserPass = New System.Windows.Forms.TextBox()
+        Me.ttID = New System.Windows.Forms.ToolTip(Me.components)
         Me.gbLogin.SuspendLayout()
         Me.gbRegister.SuspendLayout()
         Me.SuspendLayout()
@@ -302,6 +304,7 @@ Partial Class Login
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(317, 40)
         Me.TextBox3.TabIndex = 36
+        Me.ttID.SetToolTip(Me.TextBox3, "Example: 210000")
         '
         'Label6
         '
@@ -405,6 +408,10 @@ Partial Class Login
         Me.tbRegiserPass.Size = New System.Drawing.Size(317, 40)
         Me.tbRegiserPass.TabIndex = 32
         '
+        'ttID
+        '
+        Me.ttID.ToolTipTitle = "ID must be a number"
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -452,4 +459,5 @@ Partial Class Login
     Friend WithEvents btnHideRegisterPass As Button
     Friend WithEvents btnHideConfirmPass As Button
     Friend WithEvents btnHideLoginPass As Button
+    Friend WithEvents ttID As ToolTip
 End Class
