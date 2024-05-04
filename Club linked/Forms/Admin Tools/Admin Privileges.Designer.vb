@@ -34,12 +34,11 @@ Partial Class Admin_Privileges
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.txtSearchUsr = New System.Windows.Forms.TextBox()
         Me.button5 = New System.Windows.Forms.Button()
-        Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UsernameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PasswordDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AccountsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DatabaseDataSet = New Club_linked.DatabaseDataSet()
         Me.AccountsTableAdapter = New Club_linked.DatabaseDataSetTableAdapters.AccountsTableAdapter()
+        Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UsernameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -63,7 +62,7 @@ Partial Class Admin_Privileges
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserIDDataGridViewTextBoxColumn, Me.UsernameDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserIDDataGridViewTextBoxColumn, Me.UsernameDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.AccountsBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(191, 18)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
@@ -94,7 +93,7 @@ Partial Class Admin_Privileges
         Me.btnRevoke.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRevoke.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRevoke.ForeColor = System.Drawing.Color.LightGray
-        Me.btnRevoke.Location = New System.Drawing.Point(20, 75)
+        Me.btnRevoke.Location = New System.Drawing.Point(20, 69)
         Me.btnRevoke.Name = "btnRevoke"
         Me.btnRevoke.Size = New System.Drawing.Size(150, 40)
         Me.btnRevoke.TabIndex = 31
@@ -194,27 +193,6 @@ Partial Class Admin_Privileges
         Me.button5.Text = "X"
         Me.button5.UseVisualStyleBackColor = True
         '
-        'UserIDDataGridViewTextBoxColumn
-        '
-        Me.UserIDDataGridViewTextBoxColumn.DataPropertyName = "userID"
-        Me.UserIDDataGridViewTextBoxColumn.HeaderText = "userID"
-        Me.UserIDDataGridViewTextBoxColumn.Name = "UserIDDataGridViewTextBoxColumn"
-        Me.UserIDDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'UsernameDataGridViewTextBoxColumn
-        '
-        Me.UsernameDataGridViewTextBoxColumn.DataPropertyName = "username"
-        Me.UsernameDataGridViewTextBoxColumn.HeaderText = "username"
-        Me.UsernameDataGridViewTextBoxColumn.Name = "UsernameDataGridViewTextBoxColumn"
-        Me.UsernameDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'PasswordDataGridViewTextBoxColumn
-        '
-        Me.PasswordDataGridViewTextBoxColumn.DataPropertyName = "password"
-        Me.PasswordDataGridViewTextBoxColumn.HeaderText = "password"
-        Me.PasswordDataGridViewTextBoxColumn.Name = "PasswordDataGridViewTextBoxColumn"
-        Me.PasswordDataGridViewTextBoxColumn.ReadOnly = True
-        '
         'AccountsBindingSource
         '
         Me.AccountsBindingSource.DataMember = "Accounts"
@@ -228,6 +206,20 @@ Partial Class Admin_Privileges
         'AccountsTableAdapter
         '
         Me.AccountsTableAdapter.ClearBeforeFill = True
+        '
+        'UserIDDataGridViewTextBoxColumn
+        '
+        Me.UserIDDataGridViewTextBoxColumn.DataPropertyName = "userID"
+        Me.UserIDDataGridViewTextBoxColumn.HeaderText = "userID"
+        Me.UserIDDataGridViewTextBoxColumn.Name = "UserIDDataGridViewTextBoxColumn"
+        Me.UserIDDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'UsernameDataGridViewTextBoxColumn
+        '
+        Me.UsernameDataGridViewTextBoxColumn.DataPropertyName = "username"
+        Me.UsernameDataGridViewTextBoxColumn.HeaderText = "username"
+        Me.UsernameDataGridViewTextBoxColumn.Name = "UsernameDataGridViewTextBoxColumn"
+        Me.UsernameDataGridViewTextBoxColumn.ReadOnly = True
         '
         'Admin_Privileges
         '
@@ -269,5 +261,4 @@ Partial Class Admin_Privileges
     Friend WithEvents AccountsTableAdapter As DatabaseDataSetTableAdapters.AccountsTableAdapter
     Friend WithEvents UserIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents UsernameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents PasswordDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class
