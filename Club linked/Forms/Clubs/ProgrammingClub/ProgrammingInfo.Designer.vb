@@ -43,11 +43,11 @@ Partial Class ProgrammingInfo
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(12, 41)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(223, 24)
+        Me.Label1.Size = New System.Drawing.Size(338, 31)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "About Programming Club"
         '
