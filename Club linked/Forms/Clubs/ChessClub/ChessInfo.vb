@@ -16,7 +16,7 @@
                 btnLeave.Enabled = True
                 btnJoin.BackColor = Color.FromArgb(32, 30, 45)
                 btnLeave.BackColor = Color.FromArgb(235, 42, 83)
-                lblCount.Text = $"There are {GetChessClubMemberCount() + 1} people who are members of the chess club."
+                lblCount.Text = $"There are {GetClubMemberCount() + 1} people who are members of the chess club."
 
             Catch ex As Exception
                 MsgBox("Error: " & ex.Message)
@@ -49,7 +49,7 @@
                 btnJoin.Enabled = True
                 btnLeave.BackColor = Color.FromArgb(32, 30, 45)
                 btnJoin.BackColor = Color.FromArgb(235, 42, 83)
-                lblCount.Text = $"There are {GetChessClubMemberCount()} people who are members of the chess club."
+                lblCount.Text = $"There are {GetClubMemberCount()} people who are members of the chess club."
 
             Catch ex As Exception
                 MsgBox("Error: " & ex.Message)
@@ -65,7 +65,7 @@
 
     End Sub
 
-    Function GetChessClubMemberCount() As Integer
+    Function GetClubMemberCount() As Integer
         Dim count As Integer = 0
 
         Try
@@ -87,6 +87,6 @@
     End Function
 
     Private Sub ChessInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblCount.Text = $"There are {GetChessClubMemberCount()} people who are members of the chess club."
+        lblCount.Text = $"There are {GetClubMemberCount()} people who are members of the chess club."
     End Sub
 End Class
