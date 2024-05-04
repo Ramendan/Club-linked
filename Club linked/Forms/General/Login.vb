@@ -61,18 +61,33 @@ Public Class Login
 
         If Len(tbRegiserPass.Text) >= 6 Then
             If tbRegiserPass.Text = tbConfirmPass.Text Then
+                Try
 
-                Main.cmd = Main.con.CreateCommand()
-                Main.cmd.CommandType = CommandType.Text
-                Main.cmd.CommandText = $"Insert into Accounts (userID, username, password) values ('{tbID.Text}','{tbName.Text}','{tbRegiserPass.Text}')"
-                Main.cmd.ExecuteNonQuery()
+                    Main.con.Open()
 
-                MsgBox($"Welcome {tbName.Text}")
-                btnLogout.Visible = True
-                gbRegister.Visible = False
-                Main.Username = tbName.Text
-                Main.ID = tbID.Text
-                Label8.Text = $"Currently signed in as: {Main.Username}"
+                    Main.cmd = Main.con.CreateCommand()
+                    Main.cmd.CommandType = CommandType.Text
+                    Main.cmd.CommandText = $"Insert into Accounts (userID, username, password) values ('{tbID.Text}','{tbName.Text}','{tbRegiserPass.Text}')"
+                    Main.cmd.ExecuteNonQuery()
+
+                    MsgBox($"Welcome {tbName.Text}")
+                    btnLogout.Visible = True
+                    gbRegister.Visible = False
+                    Main.Username = tbName.Text
+                    Main.ID = tbID.Text
+                    Label8.Text = $"Currently signed in as: {Main.Username}"
+
+                Catch ex As Exception
+
+                    MsgBox(MsgBox("Error: " & ex.Message))
+
+                Finally
+
+                    If Main.con.State = ConnectionState.Open Then
+                        Main.con.Close()
+                    End If
+
+                End Try
 
             Else
                 MsgBox("Passwords do not match")
@@ -111,7 +126,7 @@ Public Class Login
 
                 reader.Close()
             Catch ex As Exception
-                Console.WriteLine("Error: " & ex.Message)
+                MsgBox("Error: " & ex.Message)
             Finally
                 If Main.con.State = ConnectionState.Open Then
                     Main.con.Close()

@@ -28,6 +28,7 @@ Partial Class ChessInfo
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.btnJoin = New System.Windows.Forms.Button()
         Me.btnLeave = New System.Windows.Forms.Button()
+        Me.lblCount = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -92,12 +93,24 @@ Partial Class ChessInfo
         Me.btnLeave.Text = "Leave"
         Me.btnLeave.UseVisualStyleBackColor = False
         '
+        'lblCount
+        '
+        Me.lblCount.AutoSize = True
+        Me.lblCount.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.lblCount.Location = New System.Drawing.Point(51, 84)
+        Me.lblCount.Name = "lblCount"
+        Me.lblCount.Size = New System.Drawing.Size(151, 24)
+        Me.lblCount.TabIndex = 32
+        Me.lblCount.Text = "Member count:"
+        '
         'ChessInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(977, 513)
+        Me.Controls.Add(Me.lblCount)
         Me.Controls.Add(Me.btnLeave)
         Me.Controls.Add(Me.btnJoin)
         Me.Controls.Add(Me.PictureBox1)
@@ -116,4 +129,5 @@ Partial Class ChessInfo
     Friend WithEvents RichTextBox2 As RichTextBox
     Private WithEvents btnJoin As Button
     Private WithEvents btnLeave As Button
+    Friend WithEvents lblCount As Label
 End Class

@@ -13,10 +13,7 @@ Public Class Main
         ' con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database\Database.mdf;Integrated Security=True"
         con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\tooth\Source\Repos\Ramendan\Club-linked\Club linked\Database\Database.mdf;Integrated Security=True"
 
-        If con.State = ConnectionState.Open Then
-            con.Close()
-        End If
-        con.Open()
+
 
         hideSubmenu()
 
