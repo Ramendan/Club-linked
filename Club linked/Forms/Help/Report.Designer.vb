@@ -26,7 +26,7 @@ Partial Class Report
         Me.cbReason = New System.Windows.Forms.ComboBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Announcment1 = New System.Windows.Forms.RichTextBox()
+        Me.tbReportText = New System.Windows.Forms.RichTextBox()
         Me.lLogin = New System.Windows.Forms.Label()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -41,7 +41,7 @@ Partial Class Report
         Me.gbCreator.Controls.Add(Me.cbReason)
         Me.gbCreator.Controls.Add(Me.TextBox1)
         Me.gbCreator.Controls.Add(Me.Button1)
-        Me.gbCreator.Controls.Add(Me.Announcment1)
+        Me.gbCreator.Controls.Add(Me.tbReportText)
         Me.gbCreator.Location = New System.Drawing.Point(62, 55)
         Me.gbCreator.Margin = New System.Windows.Forms.Padding(2)
         Me.gbCreator.Name = "gbCreator"
@@ -84,17 +84,16 @@ Partial Class Report
         Me.Button1.Text = "Send now"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Announcment1
+        'tbReportText
         '
-        Me.Announcment1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.tbReportText.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Announcment1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Announcment1.Location = New System.Drawing.Point(25, 100)
-        Me.Announcment1.Name = "Announcment1"
-        Me.Announcment1.ReadOnly = True
-        Me.Announcment1.Size = New System.Drawing.Size(626, 161)
-        Me.Announcment1.TabIndex = 41
-        Me.Announcment1.Text = "Report text here"
+        Me.tbReportText.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbReportText.Location = New System.Drawing.Point(25, 100)
+        Me.tbReportText.Name = "tbReportText"
+        Me.tbReportText.Size = New System.Drawing.Size(626, 161)
+        Me.tbReportText.TabIndex = 41
+        Me.tbReportText.Text = "Report text here"
         '
         'lLogin
         '
@@ -164,7 +163,7 @@ Partial Class Report
     Friend WithEvents gbCreator As GroupBox
     Friend WithEvents TextBox1 As TextBox
     Private WithEvents Button1 As Button
-    Friend WithEvents Announcment1 As RichTextBox
+    Friend WithEvents tbReportText As RichTextBox
     Private WithEvents lLogin As Label
     Friend WithEvents cbReason As ComboBox
     Private WithEvents btnClose As Button

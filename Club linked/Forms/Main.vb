@@ -1,5 +1,12 @@
-﻿Public Class Main
+﻿Imports System.Data.SqlClient
+
+Public Class Main
+
+    Public Shared con As New SqlConnection
+    Public Shared cmd As New SqlCommand
+
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database\Database.mdf;Integrated Security=True"
         hideSubmenu()
 
     End Sub

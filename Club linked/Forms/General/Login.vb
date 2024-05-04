@@ -54,4 +54,7 @@
         btnHideLoginPass.Visible = False
     End Sub
 
+    Private Sub btnSignUp_Click(sender As Object, e As EventArgs) Handles btnSignUp.Click
+
+    End Sub
 End Class

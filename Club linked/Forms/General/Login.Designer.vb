@@ -411,9 +411,9 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1091, 941)
-        Me.Controls.Add(Me.gbLogin)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.gbRegister)
+        Me.Controls.Add(Me.gbLogin)
         Me.Name = "Login"
         Me.Text = "Login"
         Me.gbLogin.ResumeLayout(False)

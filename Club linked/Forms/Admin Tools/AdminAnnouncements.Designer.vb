@@ -23,7 +23,7 @@ Partial Class AdminAnnouncements
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Announcment1 = New System.Windows.Forms.RichTextBox()
+        Me.tbAnnouncment = New System.Windows.Forms.RichTextBox()
         Me.button5 = New System.Windows.Forms.Button()
         Me.label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -57,17 +57,15 @@ Partial Class AdminAnnouncements
         Me.Button1.Text = "Send now"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Announcment1
+        'tbAnnouncment
         '
-        Me.Announcment1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Announcment1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Announcment1.Location = New System.Drawing.Point(24, 63)
-        Me.Announcment1.Name = "Announcment1"
-        Me.Announcment1.ReadOnly = True
-        Me.Announcment1.Size = New System.Drawing.Size(626, 173)
-        Me.Announcment1.TabIndex = 41
-        Me.Announcment1.Text = "Announcment text here"
+        Me.tbAnnouncment.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbAnnouncment.Location = New System.Drawing.Point(24, 63)
+        Me.tbAnnouncment.Name = "tbAnnouncment"
+        Me.tbAnnouncment.ReadOnly = True
+        Me.tbAnnouncment.Size = New System.Drawing.Size(626, 173)
+        Me.tbAnnouncment.TabIndex = 41
+        Me.tbAnnouncment.Text = "Announcment text here"
         '
         'button5
         '
@@ -124,7 +122,7 @@ Partial Class AdminAnnouncements
         Me.gbCreator.Controls.Add(Me.btnOpenDatabase)
         Me.gbCreator.Controls.Add(Me.TextBox1)
         Me.gbCreator.Controls.Add(Me.Button1)
-        Me.gbCreator.Controls.Add(Me.Announcment1)
+        Me.gbCreator.Controls.Add(Me.tbAnnouncment)
         Me.gbCreator.Location = New System.Drawing.Point(28, 87)
         Me.gbCreator.Margin = New System.Windows.Forms.Padding(2)
         Me.gbCreator.Name = "gbCreator"
@@ -266,7 +264,7 @@ Partial Class AdminAnnouncements
 
     End Sub
     Private WithEvents Button1 As Button
-    Friend WithEvents Announcment1 As RichTextBox
+    Friend WithEvents tbAnnouncment As RichTextBox
     Private WithEvents button5 As Button
     Private WithEvents label1 As Label
     Friend WithEvents TextBox1 As TextBox

@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Club linked/DatabaseDataSet.xsc
+/Club linked/DatabaseDataSet.xsd
+/Club linked/DatabaseDataSet.xss
