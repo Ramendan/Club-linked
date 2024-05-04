@@ -40,7 +40,7 @@ Partial Class Announcments
         Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(108, 11)
+        Me.button5.Location = New System.Drawing.Point(34, 21)
         Me.button5.Name = "button5"
         Me.button5.Size = New System.Drawing.Size(25, 25)
         Me.button5.TabIndex = 28
@@ -49,13 +49,12 @@ Partial Class Announcments
         '
         'label1
         '
-        Me.label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.label1.AutoSize = True
-        Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(302, 25)
+        Me.label1.Location = New System.Drawing.Point(65, 21)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(204, 32)
+        Me.label1.Size = New System.Drawing.Size(207, 31)
         Me.label1.TabIndex = 26
         Me.label1.Text = "Announcments"
         '
@@ -63,7 +62,7 @@ Partial Class Announcments
         '
         Me.Announcment1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Announcment1.Location = New System.Drawing.Point(108, 127)
+        Me.Announcment1.Location = New System.Drawing.Point(34, 127)
         Me.Announcment1.Name = "Announcment1"
         Me.Announcment1.ReadOnly = True
         Me.Announcment1.Size = New System.Drawing.Size(612, 253)
@@ -75,7 +74,7 @@ Partial Class Announcments
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(104, 97)
+        Me.Label2.Location = New System.Drawing.Point(30, 97)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(213, 29)
@@ -87,7 +86,7 @@ Partial Class Announcments
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(302, 97)
+        Me.Label3.Location = New System.Drawing.Point(228, 97)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(215, 29)
@@ -99,7 +98,7 @@ Partial Class Announcments
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(504, 97)
+        Me.Label4.Location = New System.Drawing.Point(430, 97)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(234, 29)
@@ -114,7 +113,7 @@ Partial Class Announcments
         Me.btnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPrevious.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrevious.ForeColor = System.Drawing.Color.LightGray
-        Me.btnPrevious.Location = New System.Drawing.Point(109, 386)
+        Me.btnPrevious.Location = New System.Drawing.Point(35, 386)
         Me.btnPrevious.Name = "btnPrevious"
         Me.btnPrevious.Size = New System.Drawing.Size(195, 40)
         Me.btnPrevious.TabIndex = 58
@@ -129,7 +128,7 @@ Partial Class Announcments
         Me.btnLastest.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLastest.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLastest.ForeColor = System.Drawing.Color.LightGray
-        Me.btnLastest.Location = New System.Drawing.Point(317, 386)
+        Me.btnLastest.Location = New System.Drawing.Point(243, 386)
         Me.btnLastest.Name = "btnLastest"
         Me.btnLastest.Size = New System.Drawing.Size(195, 40)
         Me.btnLastest.TabIndex = 57
@@ -144,7 +143,7 @@ Partial Class Announcments
         Me.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNext.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNext.ForeColor = System.Drawing.Color.LightGray
-        Me.btnNext.Location = New System.Drawing.Point(525, 386)
+        Me.btnNext.Location = New System.Drawing.Point(451, 386)
         Me.btnNext.Name = "btnNext"
         Me.btnNext.Size = New System.Drawing.Size(195, 40)
         Me.btnNext.TabIndex = 56

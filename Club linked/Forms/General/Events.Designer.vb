@@ -40,11 +40,11 @@ Partial Class Events
         'label1
         '
         Me.label1.AutoSize = True
-        Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(48, 34)
+        Me.label1.Location = New System.Drawing.Point(65, 21)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(72, 25)
+        Me.label1.Size = New System.Drawing.Size(104, 31)
         Me.label1.TabIndex = 26
         Me.label1.Text = "Events"
         '
@@ -55,7 +55,7 @@ Partial Class Events
         Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(17, 30)
+        Me.button5.Location = New System.Drawing.Point(34, 21)
         Me.button5.Name = "button5"
         Me.button5.Size = New System.Drawing.Size(25, 25)
         Me.button5.TabIndex = 28
@@ -150,7 +150,7 @@ Partial Class Events
         Me.btnSearch.ForeColor = System.Drawing.Color.LightGray
         Me.btnSearch.Location = New System.Drawing.Point(20, 386)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(170, 40)
+        Me.btnSearch.Size = New System.Drawing.Size(172, 40)
         Me.btnSearch.TabIndex = 29
         Me.btnSearch.Text = "Search for event"
         Me.btnSearch.UseVisualStyleBackColor = False
