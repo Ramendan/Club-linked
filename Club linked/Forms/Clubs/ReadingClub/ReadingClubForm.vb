@@ -35,7 +35,7 @@
 
 
     Private Sub btnEvents_Click(sender As Object, e As EventArgs) Handles btnEvents.Click
-
+        openChildForm(New ReadingEvents)
         highlight(btnEvents)
     End Sub
 

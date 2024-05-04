@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class test
+Partial Class ProgrammingEvents
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,27 +22,9 @@ Partial Class test
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.myPanel = New System.Windows.Forms.Panel()
-        Me.SuspendLayout()
-        '
-        'myPanel
-        '
-        Me.myPanel.Location = New System.Drawing.Point(292, 135)
-        Me.myPanel.Name = "myPanel"
-        Me.myPanel.Size = New System.Drawing.Size(200, 100)
-        Me.myPanel.TabIndex = 0
-        '
-        'test
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        components = New System.ComponentModel.Container
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.myPanel)
-        Me.Name = "test"
-        Me.Text = "test"
-        Me.ResumeLayout(False)
-
+        Me.Text = "ProgrammingEvents"
     End Sub
-
-    Friend WithEvents myPanel As Panel
 End Class

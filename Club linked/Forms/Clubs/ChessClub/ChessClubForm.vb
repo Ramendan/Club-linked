@@ -36,7 +36,7 @@
 
 
     Private Sub btnEvents_Click(sender As Object, e As EventArgs) Handles btnEvents.Click
-
+        openChildForm(New ChessEvents)
         highlight(btnEvents)
     End Sub
 
@@ -48,11 +48,6 @@
     Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
         openChildForm(New ChessInfo)
         highlight(btnInfo)
-    End Sub
-
-    Private Sub btnStatus_Click(sender As Object, e As EventArgs) Handles btnStatus.Click
-        highlight(btnStatus)
-        openChildForm(New test)
     End Sub
 
     Private Sub ChessClubForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load

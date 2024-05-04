@@ -40,7 +40,7 @@
 
 
     Private Sub btnEvents_Click(sender As Object, e As EventArgs) Handles btnEvents.Click
-        ' openChildForm(New ProgrammingTab2)
+        openChildForm(New ProgrammingEvents)
         highlight(btnEvents)
     End Sub
 
