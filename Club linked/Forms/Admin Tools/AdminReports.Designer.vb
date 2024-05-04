@@ -51,11 +51,10 @@ Partial Class AdminReports
         '
         'label1
         '
-        Me.label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.label1.AutoSize = True
         Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!)
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(48, 32)
+        Me.label1.Location = New System.Drawing.Point(56, 32)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(113, 32)
         Me.label1.TabIndex = 37
@@ -113,7 +112,7 @@ Partial Class AdminReports
         Me.GroupBox1.Controls.Add(Me.btnRevoke)
         Me.GroupBox1.Controls.Add(Me.btnSearchUsr)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(18, 61)
+        Me.GroupBox1.Location = New System.Drawing.Point(26, 61)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
@@ -175,7 +174,7 @@ Partial Class AdminReports
         Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(18, 30)
+        Me.button5.Location = New System.Drawing.Point(26, 30)
         Me.button5.Name = "button5"
         Me.button5.Size = New System.Drawing.Size(25, 25)
         Me.button5.TabIndex = 38

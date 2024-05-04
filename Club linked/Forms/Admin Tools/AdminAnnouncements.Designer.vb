@@ -76,7 +76,7 @@ Partial Class AdminAnnouncements
         Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(52, 15)
+        Me.button5.Location = New System.Drawing.Point(26, 30)
         Me.button5.Name = "button5"
         Me.button5.Size = New System.Drawing.Size(25, 25)
         Me.button5.TabIndex = 39
@@ -85,11 +85,10 @@ Partial Class AdminAnnouncements
         '
         'label1
         '
-        Me.label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.label1.AutoSize = True
         Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(83, 15)
+        Me.label1.Location = New System.Drawing.Point(56, 32)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(204, 32)
         Me.label1.TabIndex = 38

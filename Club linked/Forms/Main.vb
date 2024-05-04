@@ -122,4 +122,8 @@
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
         openChildForm(New Settings)
     End Sub
+
+    Private Sub btnReports_Click(sender As Object, e As EventArgs) Handles btnReports.Click
+        openChildForm(New AdminReports)
+    End Sub
 End Class
