@@ -27,7 +27,6 @@ Partial Class MusicAnnouncements
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.Announcment1 = New System.Windows.Forms.RichTextBox()
-        Me.button5 = New System.Windows.Forms.Button()
         Me.label1 = New System.Windows.Forms.Label()
         Me.btnLastest = New System.Windows.Forms.Button()
         Me.btnPrevious = New System.Windows.Forms.Button()
@@ -95,20 +94,6 @@ Partial Class MusicAnnouncements
         Me.Announcment1.TabIndex = 41
         Me.Announcment1.Text = ""
         '
-        'button5
-        '
-        Me.button5.FlatAppearance.BorderSize = 0
-        Me.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(87, 18)
-        Me.button5.Name = "button5"
-        Me.button5.Size = New System.Drawing.Size(25, 25)
-        Me.button5.TabIndex = 39
-        Me.button5.Text = "X"
-        Me.button5.UseVisualStyleBackColor = True
-        '
         'label1
         '
         Me.label1.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -164,7 +149,6 @@ Partial Class MusicAnnouncements
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.Announcment1)
-        Me.Controls.Add(Me.button5)
         Me.Controls.Add(Me.label1)
         Me.Name = "MusicAnnouncements"
         Me.Text = "MusicAnnouncements"
@@ -178,7 +162,6 @@ Partial Class MusicAnnouncements
     Friend WithEvents Label2 As Label
     Private WithEvents btnNext As Button
     Friend WithEvents Announcment1 As RichTextBox
-    Private WithEvents button5 As Button
     Private WithEvents label1 As Label
     Private WithEvents btnLastest As Button
     Private WithEvents btnPrevious As Button
