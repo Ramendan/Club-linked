@@ -32,7 +32,7 @@ Partial Class ReadingInfo
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(821, 16)
+        Me.PictureBox1.Location = New System.Drawing.Point(852, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(97, 98)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -44,7 +44,7 @@ Partial Class ReadingInfo
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(19, 48)
+        Me.Label1.Location = New System.Drawing.Point(49, 48)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(274, 31)
         Me.Label1.TabIndex = 10
@@ -55,7 +55,7 @@ Partial Class ReadingInfo
         Me.RichTextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.RichTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox2.ForeColor = System.Drawing.SystemColors.Control
-        Me.RichTextBox2.Location = New System.Drawing.Point(23, 120)
+        Me.RichTextBox2.Location = New System.Drawing.Point(53, 120)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.Size = New System.Drawing.Size(895, 301)
         Me.RichTextBox2.TabIndex = 9
@@ -66,7 +66,7 @@ Partial Class ReadingInfo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(939, 496)
+        Me.ClientSize = New System.Drawing.Size(1053, 496)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.RichTextBox2)

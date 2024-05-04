@@ -33,7 +33,7 @@ Partial Class ChessInfo
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(832, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(852, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(96, 96)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -45,7 +45,7 @@ Partial Class ChessInfo
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(35, 44)
+        Me.Label1.Location = New System.Drawing.Point(49, 48)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(249, 31)
         Me.Label1.TabIndex = 4
@@ -56,7 +56,7 @@ Partial Class ChessInfo
         Me.RichTextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.RichTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox2.ForeColor = System.Drawing.SystemColors.Control
-        Me.RichTextBox2.Location = New System.Drawing.Point(35, 112)
+        Me.RichTextBox2.Location = New System.Drawing.Point(53, 120)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.Size = New System.Drawing.Size(895, 301)
         Me.RichTextBox2.TabIndex = 3
