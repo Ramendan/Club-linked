@@ -39,11 +39,10 @@ Partial Class Events
         '
         'label1
         '
-        Me.label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.label1.AutoSize = True
         Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(48, 32)
+        Me.label1.Location = New System.Drawing.Point(48, 34)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(72, 25)
         Me.label1.TabIndex = 26
@@ -66,21 +65,21 @@ Partial Class Events
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(258, 18)
+        Me.DataGridView1.Location = New System.Drawing.Point(197, 17)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(546, 354)
+        Me.DataGridView1.Size = New System.Drawing.Size(603, 356)
         Me.DataGridView1.TabIndex = 33
         '
         'txtSearch
         '
         Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearch.Location = New System.Drawing.Point(258, 386)
+        Me.txtSearch.Location = New System.Drawing.Point(197, 386)
         Me.txtSearch.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(546, 31)
+        Me.txtSearch.Size = New System.Drawing.Size(603, 31)
         Me.txtSearch.TabIndex = 34
         Me.txtSearch.Text = "Enter your search here..."
         '
@@ -92,7 +91,7 @@ Partial Class Events
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
         Me.GroupBox1.Controls.Add(Me.btnSearch)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(17, 61)
+        Me.GroupBox1.Location = New System.Drawing.Point(53, 61)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
@@ -102,6 +101,9 @@ Partial Class Events
         '
         'MonthCalendar1
         '
+        Me.MonthCalendar1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.MonthCalendar1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.MonthCalendar1.Location = New System.Drawing.Point(20, 18)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 38
@@ -110,9 +112,9 @@ Partial Class Events
         '
         Me.GroupBox2.Controls.Add(Me.CheckBox1)
         Me.GroupBox2.Controls.Add(Me.CheckBox2)
-        Me.GroupBox2.Location = New System.Drawing.Point(20, 192)
+        Me.GroupBox2.Location = New System.Drawing.Point(20, 156)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(233, 180)
+        Me.GroupBox2.Size = New System.Drawing.Size(170, 217)
         Me.GroupBox2.TabIndex = 37
         Me.GroupBox2.TabStop = False
         '
@@ -146,9 +148,9 @@ Partial Class Events
         Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSearch.ForeColor = System.Drawing.Color.LightGray
-        Me.btnSearch.Location = New System.Drawing.Point(20, 384)
+        Me.btnSearch.Location = New System.Drawing.Point(20, 386)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(227, 40)
+        Me.btnSearch.Size = New System.Drawing.Size(170, 40)
         Me.btnSearch.TabIndex = 29
         Me.btnSearch.Text = "Search for event"
         Me.btnSearch.UseVisualStyleBackColor = False
@@ -158,7 +160,7 @@ Partial Class Events
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(845, 518)
+        Me.ClientSize = New System.Drawing.Size(1096, 518)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.button5)
         Me.Controls.Add(Me.label1)
