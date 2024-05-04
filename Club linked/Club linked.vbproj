@@ -297,6 +297,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UsersInfo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsersInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UsersInfo.vb">
+      <DependentUpon>UsersInfo.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\Admin Tools\Admin Privileges.resx">
@@ -418,6 +426,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="UsersInfo.xsc">
+      <DependentUpon>UsersInfo.xsd</DependentUpon>
+    </None>
+    <None Include="UsersInfo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsersInfo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UsersInfo.xss">
+      <DependentUpon>UsersInfo.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

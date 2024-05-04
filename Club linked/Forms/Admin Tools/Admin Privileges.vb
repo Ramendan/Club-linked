@@ -4,6 +4,8 @@
     End Sub
 
     Private Sub Admin_Privileges_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'UsersInfo.Accounts' table. You can move, or remove it, as needed.
+        Me.AccountsTableAdapter.Fill(Me.UsersInfo.Accounts)
         'TODO: This line of code loads data into the 'DatabaseDataSet.Accounts' table. You can move, or remove it, as needed.
 
     End Sub

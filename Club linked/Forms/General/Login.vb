@@ -56,5 +56,17 @@
 
     Private Sub btnSignUp_Click(sender As Object, e As EventArgs) Handles btnSignUp.Click
 
+        If tbRegiserPass.Text = tbConfirmPass.Text Then
+
+            Main.cmd = Main.con.CreateCommand()
+            Main.cmd.CommandType = CommandType.Text
+            Main.cmd.CommandText = "Insert into Accounts (userID, username, password) values ('" + tbID.Text + "','" + tbName.Text + "','" + tbRegiserPass.Text + "')"
+            Main.cmd.ExecuteNonQuery()
+
+            MsgBox($"Welcome {tbName.Text}")
+        ElseIf len(tbRegiserPass.Text) <= 5 Then
+            MsgBox("Passwords do not match")
+        End If
+
     End Sub
 End Class

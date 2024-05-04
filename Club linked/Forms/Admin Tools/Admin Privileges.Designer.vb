@@ -35,10 +35,17 @@ Partial Class Admin_Privileges
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.txtSearchUsr = New System.Windows.Forms.TextBox()
         Me.button5 = New System.Windows.Forms.Button()
+        Me.UsersInfo = New Club_linked.UsersInfo()
+        Me.AccountsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.AccountsTableAdapter = New Club_linked.UsersInfoTableAdapters.AccountsTableAdapter()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AccountsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.UsersInfo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AccountsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'label1
@@ -57,7 +64,8 @@ Partial Class Admin_Privileges
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.DataSource = Me.AccountsBindingSource
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
+        Me.DataGridView1.DataSource = Me.AccountsBindingSource1
         Me.DataGridView1.Location = New System.Drawing.Point(191, 18)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
@@ -191,6 +199,32 @@ Partial Class Admin_Privileges
         Me.button5.Text = "X"
         Me.button5.UseVisualStyleBackColor = True
         '
+        'UsersInfo
+        '
+        Me.UsersInfo.DataSetName = "UsersInfo"
+        Me.UsersInfo.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'AccountsBindingSource1
+        '
+        Me.AccountsBindingSource1.DataMember = "Accounts"
+        Me.AccountsBindingSource1.DataSource = Me.UsersInfo
+        '
+        'AccountsTableAdapter
+        '
+        Me.AccountsTableAdapter.ClearBeforeFill = True
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "userID"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "userID"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "username"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "username"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
         'Admin_Privileges
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -209,6 +243,8 @@ Partial Class Admin_Privileges
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.UsersInfo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AccountsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -228,4 +264,9 @@ Partial Class Admin_Privileges
     Friend WithEvents AccountsBindingSource As BindingSource
     Friend WithEvents UserIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents UsernameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents UsersInfo As UsersInfo
+    Friend WithEvents AccountsBindingSource1 As BindingSource
+    Friend WithEvents AccountsTableAdapter As UsersInfoTableAdapters.AccountsTableAdapter
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
 End Class

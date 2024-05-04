@@ -6,7 +6,14 @@ Public Class Main
     Public Shared cmd As New SqlCommand
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database\Database.mdf;Integrated Security=True"
+
+        con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\tooth\Source\Repos\Ramendan\Club-linked\Club linked\Database\Database.mdf;Integrated Security=True"
+
+        If con.State = ConnectionState.Open Then
+            con.Close()
+        End If
+        con.Open()
+
         hideSubmenu()
 
     End Sub

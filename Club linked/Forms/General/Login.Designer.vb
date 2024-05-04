@@ -43,14 +43,14 @@ Partial Class Login
         Me.btnRigShowPass = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.tbConfirmPass = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.tbID = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnSignUp = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnShow_login = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tbName = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbRegiserPass = New System.Windows.Forms.TextBox()
         Me.ttID = New System.Windows.Forms.ToolTip(Me.components)
@@ -213,14 +213,14 @@ Partial Class Login
         Me.gbRegister.Controls.Add(Me.btnRigShowPass)
         Me.gbRegister.Controls.Add(Me.Label7)
         Me.gbRegister.Controls.Add(Me.tbConfirmPass)
-        Me.gbRegister.Controls.Add(Me.TextBox3)
+        Me.gbRegister.Controls.Add(Me.tbID)
         Me.gbRegister.Controls.Add(Me.Label6)
         Me.gbRegister.Controls.Add(Me.btnSignUp)
         Me.gbRegister.Controls.Add(Me.Label2)
         Me.gbRegister.Controls.Add(Me.Label3)
         Me.gbRegister.Controls.Add(Me.btnShow_login)
         Me.gbRegister.Controls.Add(Me.Label4)
-        Me.gbRegister.Controls.Add(Me.TextBox1)
+        Me.gbRegister.Controls.Add(Me.tbName)
         Me.gbRegister.Controls.Add(Me.Label5)
         Me.gbRegister.Controls.Add(Me.tbRegiserPass)
         Me.gbRegister.Location = New System.Drawing.Point(34, 63)
@@ -297,14 +297,14 @@ Partial Class Login
         Me.tbConfirmPass.Size = New System.Drawing.Size(317, 40)
         Me.tbConfirmPass.TabIndex = 38
         '
-        'TextBox3
+        'tbID
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(398, 142)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(317, 40)
-        Me.TextBox3.TabIndex = 36
-        Me.ttID.SetToolTip(Me.TextBox3, "Example: 210000")
+        Me.tbID.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbID.Location = New System.Drawing.Point(398, 142)
+        Me.tbID.Name = "tbID"
+        Me.tbID.Size = New System.Drawing.Size(317, 40)
+        Me.tbID.TabIndex = 36
+        Me.ttID.SetToolTip(Me.tbID, "Example: 210000")
         '
         'Label6
         '
@@ -380,13 +380,13 @@ Partial Class Login
         Me.Label4.TabIndex = 34
         Me.Label4.Text = "Password"
         '
-        'TextBox1
+        'tbName
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(45, 142)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(317, 40)
-        Me.TextBox1.TabIndex = 31
+        Me.tbName.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbName.Location = New System.Drawing.Point(45, 142)
+        Me.tbName.Name = "tbName"
+        Me.tbName.Size = New System.Drawing.Size(317, 40)
+        Me.tbName.TabIndex = 31
         '
         'Label5
         '
@@ -446,12 +446,12 @@ Partial Class Login
     Private WithEvents Label3 As Label
     Private WithEvents btnShow_login As Button
     Private WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents tbName As TextBox
     Private WithEvents Label5 As Label
     Friend WithEvents tbRegiserPass As TextBox
     Private WithEvents Label7 As Label
     Friend WithEvents tbConfirmPass As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents tbID As TextBox
     Private WithEvents Label6 As Label
     Friend WithEvents btnRigShowPass As Button
     Friend WithEvents btnConfirmShowPass As Button
