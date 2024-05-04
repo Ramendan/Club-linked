@@ -54,7 +54,7 @@
         highlight(btnInfo)
     End Sub
 
-    Private Sub btnStatus_Click(sender As Object, e As EventArgs) Handles btnStatus.Click
+    Private Sub btnStatus_Click(sender As Object, e As EventArgs)
         highlight(btnStatus)
     End Sub
 

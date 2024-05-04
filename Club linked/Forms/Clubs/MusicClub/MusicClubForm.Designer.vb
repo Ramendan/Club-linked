@@ -28,7 +28,6 @@ Partial Class MusicClubForm
         Me.btnInfo = New System.Windows.Forms.Button()
         Me.btnAnnouncments = New System.Windows.Forms.Button()
         Me.btnEvents = New System.Windows.Forms.Button()
-        Me.btnStatus = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TabPanel.SuspendLayout()
@@ -45,10 +44,9 @@ Partial Class MusicClubForm
         'TabPanel
         '
         Me.TabPanel.Controls.Add(Me.btnMembers)
-        Me.TabPanel.Controls.Add(Me.btnInfo)
-        Me.TabPanel.Controls.Add(Me.btnAnnouncments)
         Me.TabPanel.Controls.Add(Me.btnEvents)
-        Me.TabPanel.Controls.Add(Me.btnStatus)
+        Me.TabPanel.Controls.Add(Me.btnAnnouncments)
+        Me.TabPanel.Controls.Add(Me.btnInfo)
         Me.TabPanel.Controls.Add(Me.btnClose)
         Me.TabPanel.Controls.Add(Me.Panel1)
         Me.TabPanel.Dock = System.Windows.Forms.DockStyle.Top
@@ -65,7 +63,7 @@ Partial Class MusicClubForm
         Me.btnMembers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMembers.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMembers.ForeColor = System.Drawing.Color.LightGray
-        Me.btnMembers.Location = New System.Drawing.Point(680, 0)
+        Me.btnMembers.Location = New System.Drawing.Point(529, 0)
         Me.btnMembers.Name = "btnMembers"
         Me.btnMembers.Size = New System.Drawing.Size(151, 48)
         Me.btnMembers.TabIndex = 37
@@ -80,7 +78,7 @@ Partial Class MusicClubForm
         Me.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnInfo.ForeColor = System.Drawing.Color.LightGray
-        Me.btnInfo.Location = New System.Drawing.Point(529, 0)
+        Me.btnInfo.Location = New System.Drawing.Point(76, 0)
         Me.btnInfo.Name = "btnInfo"
         Me.btnInfo.Size = New System.Drawing.Size(151, 48)
         Me.btnInfo.TabIndex = 36
@@ -95,7 +93,7 @@ Partial Class MusicClubForm
         Me.btnAnnouncments.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAnnouncments.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAnnouncments.ForeColor = System.Drawing.Color.LightGray
-        Me.btnAnnouncments.Location = New System.Drawing.Point(378, 0)
+        Me.btnAnnouncments.Location = New System.Drawing.Point(227, 0)
         Me.btnAnnouncments.Name = "btnAnnouncments"
         Me.btnAnnouncments.Size = New System.Drawing.Size(151, 48)
         Me.btnAnnouncments.TabIndex = 35
@@ -110,27 +108,12 @@ Partial Class MusicClubForm
         Me.btnEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEvents.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEvents.ForeColor = System.Drawing.Color.LightGray
-        Me.btnEvents.Location = New System.Drawing.Point(227, 0)
+        Me.btnEvents.Location = New System.Drawing.Point(378, 0)
         Me.btnEvents.Name = "btnEvents"
         Me.btnEvents.Size = New System.Drawing.Size(151, 48)
         Me.btnEvents.TabIndex = 34
         Me.btnEvents.Text = "Event Calender"
         Me.btnEvents.UseVisualStyleBackColor = False
-        '
-        'btnStatus
-        '
-        Me.btnStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.btnStatus.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnStatus.FlatAppearance.BorderSize = 0
-        Me.btnStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStatus.ForeColor = System.Drawing.Color.LightGray
-        Me.btnStatus.Location = New System.Drawing.Point(76, 0)
-        Me.btnStatus.Name = "btnStatus"
-        Me.btnStatus.Size = New System.Drawing.Size(151, 48)
-        Me.btnStatus.TabIndex = 33
-        Me.btnStatus.Text = "Club Status"
-        Me.btnStatus.UseVisualStyleBackColor = False
         '
         'btnClose
         '
@@ -178,7 +161,6 @@ Partial Class MusicClubForm
     Private WithEvents btnInfo As Button
     Private WithEvents btnAnnouncments As Button
     Private WithEvents btnEvents As Button
-    Private WithEvents btnStatus As Button
     Private WithEvents btnClose As Button
     Friend WithEvents Panel1 As Panel
 End Class

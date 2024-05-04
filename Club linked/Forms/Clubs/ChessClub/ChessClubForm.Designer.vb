@@ -44,8 +44,8 @@ Partial Class ChessClubForm
         'TabPanel
         '
         Me.TabPanel.Controls.Add(Me.btnMembers)
-        Me.TabPanel.Controls.Add(Me.btnAnnouncments)
         Me.TabPanel.Controls.Add(Me.btnEvents)
+        Me.TabPanel.Controls.Add(Me.btnAnnouncments)
         Me.TabPanel.Controls.Add(Me.btnInfo)
         Me.TabPanel.Controls.Add(Me.btnClose)
         Me.TabPanel.Controls.Add(Me.Panel1)
@@ -93,7 +93,7 @@ Partial Class ChessClubForm
         Me.btnAnnouncments.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAnnouncments.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAnnouncments.ForeColor = System.Drawing.Color.LightGray
-        Me.btnAnnouncments.Location = New System.Drawing.Point(378, 0)
+        Me.btnAnnouncments.Location = New System.Drawing.Point(227, 0)
         Me.btnAnnouncments.Name = "btnAnnouncments"
         Me.btnAnnouncments.Size = New System.Drawing.Size(151, 48)
         Me.btnAnnouncments.TabIndex = 35
@@ -108,7 +108,7 @@ Partial Class ChessClubForm
         Me.btnEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEvents.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEvents.ForeColor = System.Drawing.Color.LightGray
-        Me.btnEvents.Location = New System.Drawing.Point(227, 0)
+        Me.btnEvents.Location = New System.Drawing.Point(378, 0)
         Me.btnEvents.Name = "btnEvents"
         Me.btnEvents.Size = New System.Drawing.Size(151, 48)
         Me.btnEvents.TabIndex = 34
