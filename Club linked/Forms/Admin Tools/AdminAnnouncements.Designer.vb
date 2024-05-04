@@ -89,7 +89,7 @@ Partial Class AdminAnnouncements
         Me.label1.AutoSize = True
         Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(252, 30)
+        Me.label1.Location = New System.Drawing.Point(83, 15)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(204, 32)
         Me.label1.TabIndex = 38
@@ -99,7 +99,7 @@ Partial Class AdminAnnouncements
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(24, 29)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(282, 29)
         Me.TextBox1.TabIndex = 45
@@ -127,9 +127,9 @@ Partial Class AdminAnnouncements
         Me.gbCreator.Controls.Add(Me.Button1)
         Me.gbCreator.Controls.Add(Me.Announcment1)
         Me.gbCreator.Location = New System.Drawing.Point(28, 87)
-        Me.gbCreator.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gbCreator.Margin = New System.Windows.Forms.Padding(2)
         Me.gbCreator.Name = "gbCreator"
-        Me.gbCreator.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gbCreator.Padding = New System.Windows.Forms.Padding(2)
         Me.gbCreator.Size = New System.Drawing.Size(676, 340)
         Me.gbCreator.TabIndex = 47
         Me.gbCreator.TabStop = False
@@ -145,9 +145,9 @@ Partial Class AdminAnnouncements
         Me.gbAnnouncementDatabase.Controls.Add(Me.btnSearch)
         Me.gbAnnouncementDatabase.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.gbAnnouncementDatabase.Location = New System.Drawing.Point(23, 105)
-        Me.gbAnnouncementDatabase.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gbAnnouncementDatabase.Margin = New System.Windows.Forms.Padding(2)
         Me.gbAnnouncementDatabase.Name = "gbAnnouncementDatabase"
-        Me.gbAnnouncementDatabase.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gbAnnouncementDatabase.Padding = New System.Windows.Forms.Padding(2)
         Me.gbAnnouncementDatabase.Size = New System.Drawing.Size(682, 306)
         Me.gbAnnouncementDatabase.TabIndex = 48
         Me.gbAnnouncementDatabase.TabStop = False
@@ -184,7 +184,7 @@ Partial Class AdminAnnouncements
         '
         Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearch.Location = New System.Drawing.Point(191, 268)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.Size = New System.Drawing.Size(478, 24)
         Me.txtSearch.TabIndex = 34
@@ -194,7 +194,7 @@ Partial Class AdminAnnouncements
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(191, 18)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
@@ -254,7 +254,7 @@ Partial Class AdminAnnouncements
         Me.Controls.Add(Me.label1)
         Me.Controls.Add(Me.gbCreator)
         Me.Controls.Add(Me.gbAnnouncementDatabase)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "AdminAnnouncements"
         Me.Text = "AdminAnnouncements"
         Me.gbCreator.ResumeLayout(False)

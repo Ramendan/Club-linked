@@ -1,5 +1,5 @@
 ﻿Public Class Login
-    Private Sub button5_Click(sender As Object, e As EventArgs) Handles button5.Click
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
 

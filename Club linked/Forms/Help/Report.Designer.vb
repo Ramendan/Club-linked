@@ -23,17 +23,22 @@ Partial Class Report
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gbCreator = New System.Windows.Forms.GroupBox()
+        Me.cbReason = New System.Windows.Forms.ComboBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Announcment1 = New System.Windows.Forms.RichTextBox()
         Me.lLogin = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.gbCreator.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbCreator
         '
-        Me.gbCreator.Controls.Add(Me.ComboBox1)
+        Me.gbCreator.Controls.Add(Me.Label2)
+        Me.gbCreator.Controls.Add(Me.Label1)
+        Me.gbCreator.Controls.Add(Me.cbReason)
         Me.gbCreator.Controls.Add(Me.TextBox1)
         Me.gbCreator.Controls.Add(Me.Button1)
         Me.gbCreator.Controls.Add(Me.Announcment1)
@@ -45,15 +50,24 @@ Partial Class Report
         Me.gbCreator.TabIndex = 48
         Me.gbCreator.TabStop = False
         '
+        'cbReason
+        '
+        Me.cbReason.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbReason.FormattingEnabled = True
+        Me.cbReason.Items.AddRange(New Object() {"Report spam", "Report user", "Report bug", "Give suggestion", "More (write in the text box).."})
+        Me.cbReason.Location = New System.Drawing.Point(140, 22)
+        Me.cbReason.Name = "cbReason"
+        Me.cbReason.Size = New System.Drawing.Size(511, 32)
+        Me.cbReason.TabIndex = 46
+        '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(25, 15)
+        Me.TextBox1.Location = New System.Drawing.Point(140, 59)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(282, 29)
+        Me.TextBox1.Size = New System.Drawing.Size(511, 29)
         Me.TextBox1.TabIndex = 45
-        Me.TextBox1.Text = "Title here"
         '
         'Button1
         '
@@ -93,15 +107,41 @@ Partial Class Report
         Me.lLogin.TabIndex = 49
         Me.lLogin.Text = "Report"
         '
-        'ComboBox1
+        'btnClose
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Report spam", "Report user", "Report bug", "Give suggestion", "More.."})
-        Me.ComboBox1.Location = New System.Drawing.Point(25, 56)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(282, 32)
-        Me.ComboBox1.TabIndex = 46
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClose.ForeColor = System.Drawing.Color.LightGray
+        Me.btnClose.Location = New System.Drawing.Point(34, 21)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(25, 25)
+        Me.btnClose.TabIndex = 50
+        Me.btnClose.Text = "X"
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(21, 28)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(71, 20)
+        Me.Label1.TabIndex = 51
+        Me.Label1.Text = "Reason"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(21, 65)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(114, 20)
+        Me.Label2.TabIndex = 52
+        Me.Label2.Text = "Other reason"
         '
         'Report
         '
@@ -109,6 +149,7 @@ Partial Class Report
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.lLogin)
         Me.Controls.Add(Me.gbCreator)
         Me.Name = "Report"
@@ -125,5 +166,8 @@ Partial Class Report
     Private WithEvents Button1 As Button
     Friend WithEvents Announcment1 As RichTextBox
     Private WithEvents lLogin As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cbReason As ComboBox
+    Private WithEvents btnClose As Button
+    Private WithEvents Label2 As Label
+    Private WithEvents Label1 As Label
 End Class

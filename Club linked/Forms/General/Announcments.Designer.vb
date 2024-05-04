@@ -22,7 +22,7 @@ Partial Class Announcments
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.button5 = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.label1 = New System.Windows.Forms.Label()
         Me.Announcment1 = New System.Windows.Forms.RichTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -33,19 +33,19 @@ Partial Class Announcments
         Me.btnNext = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'button5
+        'btnClose
         '
-        Me.button5.FlatAppearance.BorderSize = 0
-        Me.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(34, 21)
-        Me.button5.Name = "button5"
-        Me.button5.Size = New System.Drawing.Size(25, 25)
-        Me.button5.TabIndex = 28
-        Me.button5.Text = "X"
-        Me.button5.UseVisualStyleBackColor = True
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClose.ForeColor = System.Drawing.Color.LightGray
+        Me.btnClose.Location = New System.Drawing.Point(34, 21)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(25, 25)
+        Me.btnClose.TabIndex = 28
+        Me.btnClose.Text = "X"
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'label1
         '
@@ -163,7 +163,7 @@ Partial Class Announcments
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Announcment1)
-        Me.Controls.Add(Me.button5)
+        Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.label1)
         Me.Name = "Announcments"
         Me.Text = "Announcments"
@@ -171,7 +171,7 @@ Partial Class Announcments
         Me.PerformLayout()
 
     End Sub
-    Private WithEvents button5 As Button
+    Private WithEvents btnClose As Button
     Private WithEvents label1 As Label
     Friend WithEvents Announcment1 As RichTextBox
     Friend WithEvents Label2 As Label

@@ -23,7 +23,7 @@ Partial Class Events
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.label1 = New System.Windows.Forms.Label()
-        Me.button5 = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -48,19 +48,19 @@ Partial Class Events
         Me.label1.TabIndex = 26
         Me.label1.Text = "Events"
         '
-        'button5
+        'btnClose
         '
-        Me.button5.FlatAppearance.BorderSize = 0
-        Me.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(34, 21)
-        Me.button5.Name = "button5"
-        Me.button5.Size = New System.Drawing.Size(25, 25)
-        Me.button5.TabIndex = 28
-        Me.button5.Text = "X"
-        Me.button5.UseVisualStyleBackColor = True
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClose.ForeColor = System.Drawing.Color.LightGray
+        Me.btnClose.Location = New System.Drawing.Point(34, 21)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(25, 25)
+        Me.btnClose.TabIndex = 28
+        Me.btnClose.Text = "X"
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -162,7 +162,7 @@ Partial Class Events
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1096, 518)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.button5)
+        Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.label1)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Events"
@@ -178,7 +178,7 @@ Partial Class Events
     End Sub
 
     Private WithEvents label1 As Label
-    Private WithEvents button5 As Button
+    Private WithEvents btnClose As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents txtSearch As TextBox
     Friend WithEvents GroupBox1 As GroupBox

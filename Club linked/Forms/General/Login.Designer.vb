@@ -25,7 +25,7 @@ Partial Class Login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.btnShow_signUp = New System.Windows.Forms.Button()
         Me.btnLogin = New System.Windows.Forms.Button()
-        Me.button5 = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.lLogin = New System.Windows.Forms.Label()
         Me.tbUsername_login = New System.Windows.Forms.TextBox()
         Me.tbPassword_login = New System.Windows.Forms.TextBox()
@@ -84,19 +84,19 @@ Partial Class Login
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = False
         '
-        'button5
+        'btnClose
         '
-        Me.button5.FlatAppearance.BorderSize = 0
-        Me.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(34, 21)
-        Me.button5.Name = "button5"
-        Me.button5.Size = New System.Drawing.Size(25, 25)
-        Me.button5.TabIndex = 28
-        Me.button5.Text = "X"
-        Me.button5.UseVisualStyleBackColor = True
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClose.ForeColor = System.Drawing.Color.LightGray
+        Me.btnClose.Location = New System.Drawing.Point(34, 21)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(25, 25)
+        Me.btnClose.TabIndex = 28
+        Me.btnClose.Text = "X"
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'lLogin
         '
@@ -412,7 +412,7 @@ Partial Class Login
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1091, 941)
         Me.Controls.Add(Me.gbLogin)
-        Me.Controls.Add(Me.button5)
+        Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.gbRegister)
         Me.Name = "Login"
         Me.Text = "Login"
@@ -425,7 +425,7 @@ Partial Class Login
     End Sub
     Private WithEvents btnShow_signUp As Button
     Private WithEvents btnLogin As Button
-    Private WithEvents button5 As Button
+    Private WithEvents btnClose As Button
     Private WithEvents lLogin As Label
     Friend WithEvents tbUsername_login As TextBox
     Friend WithEvents tbPassword_login As TextBox

@@ -28,11 +28,11 @@ Partial Class Admin_Privileges
         Me.btnRevoke = New System.Windows.Forms.Button()
         Me.btnSearchUsr = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.txtSearchUsr = New System.Windows.Forms.TextBox()
         Me.button5 = New System.Windows.Forms.Button()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -42,23 +42,23 @@ Partial Class Admin_Privileges
         '
         Me.label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.label1.AutoSize = True
-        Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!)
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(75, 39)
-        Me.label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.label1.Location = New System.Drawing.Point(56, 32)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(79, 29)
+        Me.label1.Size = New System.Drawing.Size(87, 32)
         Me.label1.TabIndex = 34
         Me.label1.Text = "Users"
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(255, 22)
+        Me.DataGridView1.Location = New System.Drawing.Point(191, 18)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(817, 436)
+        Me.DataGridView1.Size = New System.Drawing.Size(613, 354)
         Me.DataGridView1.TabIndex = 33
         '
         'btnAddAdmin
@@ -68,10 +68,9 @@ Partial Class Admin_Privileges
         Me.btnAddAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAddAdmin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddAdmin.ForeColor = System.Drawing.Color.LightGray
-        Me.btnAddAdmin.Location = New System.Drawing.Point(26, 22)
-        Me.btnAddAdmin.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAddAdmin.Location = New System.Drawing.Point(20, 18)
         Me.btnAddAdmin.Name = "btnAddAdmin"
-        Me.btnAddAdmin.Size = New System.Drawing.Size(200, 49)
+        Me.btnAddAdmin.Size = New System.Drawing.Size(150, 40)
         Me.btnAddAdmin.TabIndex = 32
         Me.btnAddAdmin.Text = "Give Admin Status"
         Me.btnAddAdmin.UseVisualStyleBackColor = False
@@ -83,10 +82,9 @@ Partial Class Admin_Privileges
         Me.btnRevoke.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRevoke.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRevoke.ForeColor = System.Drawing.Color.LightGray
-        Me.btnRevoke.Location = New System.Drawing.Point(26, 92)
-        Me.btnRevoke.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnRevoke.Location = New System.Drawing.Point(20, 75)
         Me.btnRevoke.Name = "btnRevoke"
-        Me.btnRevoke.Size = New System.Drawing.Size(200, 49)
+        Me.btnRevoke.Size = New System.Drawing.Size(150, 40)
         Me.btnRevoke.TabIndex = 31
         Me.btnRevoke.Text = "Revoke Admin Status"
         Me.btnRevoke.UseVisualStyleBackColor = False
@@ -99,10 +97,9 @@ Partial Class Admin_Privileges
         Me.btnSearchUsr.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSearchUsr.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSearchUsr.ForeColor = System.Drawing.Color.LightGray
-        Me.btnSearchUsr.Location = New System.Drawing.Point(26, 472)
-        Me.btnSearchUsr.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSearchUsr.Location = New System.Drawing.Point(20, 384)
         Me.btnSearchUsr.Name = "btnSearchUsr"
-        Me.btnSearchUsr.Size = New System.Drawing.Size(200, 49)
+        Me.btnSearchUsr.Size = New System.Drawing.Size(150, 40)
         Me.btnSearchUsr.TabIndex = 29
         Me.btnSearchUsr.Text = "Search for user"
         Me.btnSearchUsr.UseVisualStyleBackColor = False
@@ -116,18 +113,58 @@ Partial Class Admin_Privileges
         Me.GroupBox1.Controls.Add(Me.btnRevoke)
         Me.GroupBox1.Controls.Add(Me.btnSearchUsr)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(34, 75)
+        Me.GroupBox1.Location = New System.Drawing.Point(26, 61)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1092, 550)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(819, 447)
         Me.GroupBox1.TabIndex = 36
         Me.GroupBox1.TabStop = False
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Label2)
+        Me.GroupBox2.Controls.Add(Me.ListBox1)
+        Me.GroupBox2.Location = New System.Drawing.Point(20, 120)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(150, 252)
+        Me.GroupBox2.TabIndex = 35
+        Me.GroupBox2.TabStop = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(40, 13)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(73, 26)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Select"
+        '
+        'ListBox1
+        '
+        Me.ListBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.ListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 22
+        Me.ListBox1.Items.AddRange(New Object() {"-General App", "-Club1", "-Club2", "-Club3", "-Club4"})
+        Me.ListBox1.Location = New System.Drawing.Point(5, 41)
+        Me.ListBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(141, 180)
+        Me.ListBox1.TabIndex = 0
         '
         'txtSearchUsr
         '
         Me.txtSearchUsr.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearchUsr.Location = New System.Drawing.Point(255, 481)
+        Me.txtSearchUsr.Location = New System.Drawing.Point(191, 391)
+        Me.txtSearchUsr.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtSearchUsr.Name = "txtSearchUsr"
-        Me.txtSearchUsr.Size = New System.Drawing.Size(817, 28)
+        Me.txtSearchUsr.Size = New System.Drawing.Size(614, 24)
         Me.txtSearchUsr.TabIndex = 34
         Me.txtSearchUsr.Text = "Enter your search here..."
         '
@@ -138,56 +175,23 @@ Partial Class Admin_Privileges
         Me.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button5.ForeColor = System.Drawing.Color.LightGray
-        Me.button5.Location = New System.Drawing.Point(34, 37)
-        Me.button5.Margin = New System.Windows.Forms.Padding(4)
+        Me.button5.Location = New System.Drawing.Point(26, 30)
         Me.button5.Name = "button5"
-        Me.button5.Size = New System.Drawing.Size(33, 31)
+        Me.button5.Size = New System.Drawing.Size(25, 25)
         Me.button5.TabIndex = 35
         Me.button5.Text = "X"
         Me.button5.UseVisualStyleBackColor = True
         '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Controls.Add(Me.ListBox1)
-        Me.GroupBox2.Location = New System.Drawing.Point(26, 148)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(200, 310)
-        Me.GroupBox2.TabIndex = 35
-        Me.GroupBox2.TabStop = False
-        '
-        'ListBox1
-        '
-        Me.ListBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 29
-        Me.ListBox1.Items.AddRange(New Object() {"-General App", "-Club1", "-Club2", "-Club3", "-Club4"})
-        Me.ListBox1.Location = New System.Drawing.Point(7, 51)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(187, 236)
-        Me.ListBox1.TabIndex = 0
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(53, 16)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(95, 32)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Select"
-        '
         'Admin_Privileges
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1138, 662)
+        Me.ClientSize = New System.Drawing.Size(854, 538)
         Me.Controls.Add(Me.label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.button5)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Admin_Privileges"
         Me.Text = "Admin_Privileges"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
