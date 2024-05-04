@@ -37,6 +37,8 @@ Partial Class AdminAnnouncements
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnPrev = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.gbCreator.SuspendLayout()
         Me.gbAnnouncementDatabase.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,10 +62,9 @@ Partial Class AdminAnnouncements
         'tbAnnouncment
         '
         Me.tbAnnouncment.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbAnnouncment.Location = New System.Drawing.Point(24, 63)
+        Me.tbAnnouncment.Location = New System.Drawing.Point(24, 106)
         Me.tbAnnouncment.Name = "tbAnnouncment"
-        Me.tbAnnouncment.ReadOnly = True
-        Me.tbAnnouncment.Size = New System.Drawing.Size(626, 173)
+        Me.tbAnnouncment.Size = New System.Drawing.Size(626, 130)
         Me.tbAnnouncment.TabIndex = 41
         Me.tbAnnouncment.Text = "Announcment text here"
         '
@@ -88,9 +89,9 @@ Partial Class AdminAnnouncements
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.label1.Location = New System.Drawing.Point(56, 32)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(204, 32)
+        Me.label1.Size = New System.Drawing.Size(296, 32)
         Me.label1.TabIndex = 38
-        Me.label1.Text = "Announcments"
+        Me.label1.Text = "Create Announcments"
         '
         'TextBox1
         '
@@ -98,7 +99,7 @@ Partial Class AdminAnnouncements
         Me.TextBox1.Location = New System.Drawing.Point(24, 29)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(282, 29)
+        Me.TextBox1.Size = New System.Drawing.Size(344, 29)
         Me.TextBox1.TabIndex = 45
         Me.TextBox1.Text = "Title here"
         '
@@ -110,7 +111,7 @@ Partial Class AdminAnnouncements
         Me.btnOpenDatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOpenDatabase.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOpenDatabase.ForeColor = System.Drawing.Color.LightGray
-        Me.btnOpenDatabase.Location = New System.Drawing.Point(243, 241)
+        Me.btnOpenDatabase.Location = New System.Drawing.Point(199, 241)
         Me.btnOpenDatabase.Name = "btnOpenDatabase"
         Me.btnOpenDatabase.Size = New System.Drawing.Size(169, 68)
         Me.btnOpenDatabase.TabIndex = 46
@@ -119,10 +120,13 @@ Partial Class AdminAnnouncements
         '
         'gbCreator
         '
+        Me.gbCreator.Controls.Add(Me.Label2)
+        Me.gbCreator.Controls.Add(Me.ComboBox1)
         Me.gbCreator.Controls.Add(Me.btnOpenDatabase)
         Me.gbCreator.Controls.Add(Me.TextBox1)
         Me.gbCreator.Controls.Add(Me.Button1)
         Me.gbCreator.Controls.Add(Me.tbAnnouncment)
+        Me.gbCreator.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.gbCreator.Location = New System.Drawing.Point(28, 87)
         Me.gbCreator.Margin = New System.Windows.Forms.Padding(2)
         Me.gbCreator.Name = "gbCreator"
@@ -241,6 +245,27 @@ Partial Class AdminAnnouncements
         Me.btnSearch.Text = "Search for event"
         Me.btnSearch.UseVisualStyleBackColor = False
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"All", "Programming", "Music", "Chess", "Reading"})
+        Me.ComboBox1.Location = New System.Drawing.Point(220, 68)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(430, 28)
+        Me.ComboBox1.TabIndex = 47
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.Label2.Location = New System.Drawing.Point(20, 72)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(195, 24)
+        Me.Label2.TabIndex = 49
+        Me.Label2.Text = "Type of announcment"
+        '
         'AdminAnnouncements
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -278,4 +303,6 @@ Partial Class AdminAnnouncements
     Private WithEvents btnPrev As Button
     Private WithEvents btnSearch As Button
     Private WithEvents btnCreator As Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label2 As Label
 End Class
