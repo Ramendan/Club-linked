@@ -48,4 +48,9 @@
         openChildForm(New ChessInfo)
         highlight(btnInfo)
     End Sub
+
+    Private Sub ChessClubForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        openChildForm(New ChessInfo)
+        highlight(btnInfo)
+    End Sub
 End Class

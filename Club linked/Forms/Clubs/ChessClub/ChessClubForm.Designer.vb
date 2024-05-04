@@ -25,9 +25,9 @@ Partial Class ChessClubForm
         Me.PanelChildForm = New System.Windows.Forms.Panel()
         Me.TabPanel = New System.Windows.Forms.Panel()
         Me.btnMembers = New System.Windows.Forms.Button()
-        Me.btnInfo = New System.Windows.Forms.Button()
-        Me.btnAnnouncments = New System.Windows.Forms.Button()
         Me.btnEvents = New System.Windows.Forms.Button()
+        Me.btnAnnouncments = New System.Windows.Forms.Button()
+        Me.btnInfo = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TabPanel.SuspendLayout()
@@ -70,20 +70,20 @@ Partial Class ChessClubForm
         Me.btnMembers.Text = "Show Members"
         Me.btnMembers.UseVisualStyleBackColor = False
         '
-        'btnInfo
+        'btnEvents
         '
-        Me.btnInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.btnInfo.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnInfo.FlatAppearance.BorderSize = 0
-        Me.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInfo.ForeColor = System.Drawing.Color.LightGray
-        Me.btnInfo.Location = New System.Drawing.Point(76, 0)
-        Me.btnInfo.Name = "btnInfo"
-        Me.btnInfo.Size = New System.Drawing.Size(151, 48)
-        Me.btnInfo.TabIndex = 36
-        Me.btnInfo.Text = "Show Info"
-        Me.btnInfo.UseVisualStyleBackColor = False
+        Me.btnEvents.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.btnEvents.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnEvents.FlatAppearance.BorderSize = 0
+        Me.btnEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEvents.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEvents.ForeColor = System.Drawing.Color.LightGray
+        Me.btnEvents.Location = New System.Drawing.Point(378, 0)
+        Me.btnEvents.Name = "btnEvents"
+        Me.btnEvents.Size = New System.Drawing.Size(151, 48)
+        Me.btnEvents.TabIndex = 34
+        Me.btnEvents.Text = "Event Calender"
+        Me.btnEvents.UseVisualStyleBackColor = False
         '
         'btnAnnouncments
         '
@@ -100,20 +100,20 @@ Partial Class ChessClubForm
         Me.btnAnnouncments.Text = "Announcments"
         Me.btnAnnouncments.UseVisualStyleBackColor = False
         '
-        'btnEvents
+        'btnInfo
         '
-        Me.btnEvents.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.btnEvents.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnEvents.FlatAppearance.BorderSize = 0
-        Me.btnEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEvents.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEvents.ForeColor = System.Drawing.Color.LightGray
-        Me.btnEvents.Location = New System.Drawing.Point(378, 0)
-        Me.btnEvents.Name = "btnEvents"
-        Me.btnEvents.Size = New System.Drawing.Size(151, 48)
-        Me.btnEvents.TabIndex = 34
-        Me.btnEvents.Text = "Event Calender"
-        Me.btnEvents.UseVisualStyleBackColor = False
+        Me.btnInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.btnInfo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnInfo.FlatAppearance.BorderSize = 0
+        Me.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInfo.ForeColor = System.Drawing.Color.LightGray
+        Me.btnInfo.Location = New System.Drawing.Point(76, 0)
+        Me.btnInfo.Name = "btnInfo"
+        Me.btnInfo.Size = New System.Drawing.Size(151, 48)
+        Me.btnInfo.TabIndex = 36
+        Me.btnInfo.Text = "Show Info"
+        Me.btnInfo.UseVisualStyleBackColor = False
         '
         'btnClose
         '

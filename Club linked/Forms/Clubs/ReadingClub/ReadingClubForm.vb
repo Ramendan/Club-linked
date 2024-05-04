@@ -47,4 +47,9 @@
         openChildForm(New ReadingInfo)
         highlight(btnInfo)
     End Sub
+
+    Private Sub ReadingClubForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        openChildForm(New ReadingInfo)
+        highlight(btnInfo)
+    End Sub
 End Class

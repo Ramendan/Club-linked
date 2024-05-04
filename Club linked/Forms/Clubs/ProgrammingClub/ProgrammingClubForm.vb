@@ -1,6 +1,7 @@
 ﻿Public Class ProgrammingClubForm
     Private Sub ProgrammingClubForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        openChildForm(New ProgrammingInfo)
+        highlight(btnInfo)
 
     End Sub
 
