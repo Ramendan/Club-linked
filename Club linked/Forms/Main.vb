@@ -13,8 +13,6 @@ Public Class Main
         ' con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database\Database.mdf;Integrated Security=True"
         con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\tooth\Source\Repos\Ramendan\Club-linked\Club linked\Database\Database.mdf;Integrated Security=True"
 
-
-
         hideSubmenu()
 
     End Sub
@@ -85,6 +83,7 @@ Public Class Main
     End Sub
 
     Private Sub btnShowSideMenu_Click(sender As Object, e As EventArgs) Handles btnShowSideMenu.Click
+
         If PanelSideMenu.Visible = False Then
             btnShowSideMenu.Text = "<"
             PanelSideMenu.Visible = True
@@ -92,6 +91,7 @@ Public Class Main
             btnShowSideMenu.Text = ">"
             PanelSideMenu.Visible = False
         End If
+
     End Sub
     Private Sub btnAdminPrivileges_Click(sender As Object, e As EventArgs) Handles btnAdminPrivileges.Click
         openChildForm(New Admin_Privileges)

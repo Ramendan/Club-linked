@@ -133,7 +133,7 @@ Partial Class ChessMembers
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.label1.Location = New System.Drawing.Point(21, 30)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(198, 32)
+        Me.label1.Size = New System.Drawing.Size(197, 32)
         Me.label1.TabIndex = 37
         Me.label1.Text = "Club Members"
         '
