@@ -24,12 +24,15 @@ Partial Class ReadingMembers
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.rbShowAll = New System.Windows.Forms.RadioButton()
+        Me.rbIDSearch = New System.Windows.Forms.RadioButton()
+        Me.rbNameSearch = New System.Windows.Forms.RadioButton()
+        Me.rbRoleSearch = New System.Windows.Forms.RadioButton()
+        Me.rbAdminOnly = New System.Windows.Forms.RadioButton()
+        Me.tbSearch = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.btnSearchMember = New System.Windows.Forms.Button()
+        Me.lblCount = New System.Windows.Forms.Label()
         Me.label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -39,65 +42,100 @@ Partial Class ReadingMembers
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
-        Me.GroupBox1.Controls.Add(Me.txtSearch)
+        Me.GroupBox1.Controls.Add(Me.tbSearch)
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1.Controls.Add(Me.btnSearch)
+        Me.GroupBox1.Controls.Add(Me.btnSearchMember)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(32, 69)
+        Me.GroupBox1.Location = New System.Drawing.Point(54, 63)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(819, 447)
-        Me.GroupBox1.TabIndex = 36
+        Me.GroupBox1.TabIndex = 42
         Me.GroupBox1.TabStop = False
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.CheckBox2)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
-        Me.GroupBox2.Controls.Add(Me.CheckBox1)
+        Me.GroupBox2.Controls.Add(Me.rbShowAll)
+        Me.GroupBox2.Controls.Add(Me.rbIDSearch)
+        Me.GroupBox2.Controls.Add(Me.rbNameSearch)
+        Me.GroupBox2.Controls.Add(Me.rbRoleSearch)
+        Me.GroupBox2.Controls.Add(Me.rbAdminOnly)
         Me.GroupBox2.Location = New System.Drawing.Point(21, 71)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(150, 125)
+        Me.GroupBox2.Size = New System.Drawing.Size(150, 149)
         Me.GroupBox2.TabIndex = 38
         Me.GroupBox2.TabStop = False
         '
-        'CheckBox2
+        'rbShowAll
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(16, 51)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(134, 17)
-        Me.CheckBox2.TabIndex = 40
-        Me.CheckBox2.Text = "Search for specific role"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.rbShowAll.AutoSize = True
+        Me.rbShowAll.Location = New System.Drawing.Point(6, 17)
+        Me.rbShowAll.Name = "rbShowAll"
+        Me.rbShowAll.Size = New System.Drawing.Size(110, 17)
+        Me.rbShowAll.TabIndex = 45
+        Me.rbShowAll.TabStop = True
+        Me.rbShowAll.Tag = "1"
+        Me.rbShowAll.Text = "Show all members"
+        Me.rbShowAll.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'rbIDSearch
         '
-        Me.TextBox1.Location = New System.Drawing.Point(28, 86)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 39
+        Me.rbIDSearch.AutoSize = True
+        Me.rbIDSearch.Location = New System.Drawing.Point(6, 109)
+        Me.rbIDSearch.Name = "rbIDSearch"
+        Me.rbIDSearch.Size = New System.Drawing.Size(127, 17)
+        Me.rbIDSearch.TabIndex = 44
+        Me.rbIDSearch.TabStop = True
+        Me.rbIDSearch.Tag = "1"
+        Me.rbIDSearch.Text = "Search for specific ID"
+        Me.rbIDSearch.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'rbNameSearch
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(16, 19)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(112, 17)
-        Me.CheckBox1.TabIndex = 35
-        Me.CheckBox1.Text = "Only show Admins"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.rbNameSearch.AutoSize = True
+        Me.rbNameSearch.Location = New System.Drawing.Point(6, 86)
+        Me.rbNameSearch.Name = "rbNameSearch"
+        Me.rbNameSearch.Size = New System.Drawing.Size(142, 17)
+        Me.rbNameSearch.TabIndex = 43
+        Me.rbNameSearch.TabStop = True
+        Me.rbNameSearch.Tag = "1"
+        Me.rbNameSearch.Text = "Search for specific name" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.rbNameSearch.UseVisualStyleBackColor = True
         '
-        'txtSearch
+        'rbRoleSearch
         '
-        Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearch.Location = New System.Drawing.Point(187, 25)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(614, 24)
-        Me.txtSearch.TabIndex = 34
-        Me.txtSearch.Text = "Enter your search here..."
+        Me.rbRoleSearch.AutoSize = True
+        Me.rbRoleSearch.Location = New System.Drawing.Point(6, 63)
+        Me.rbRoleSearch.Name = "rbRoleSearch"
+        Me.rbRoleSearch.Size = New System.Drawing.Size(133, 17)
+        Me.rbRoleSearch.TabIndex = 42
+        Me.rbRoleSearch.TabStop = True
+        Me.rbRoleSearch.Tag = "1"
+        Me.rbRoleSearch.Text = "Search for specific role"
+        Me.rbRoleSearch.UseVisualStyleBackColor = True
+        '
+        'rbAdminOnly
+        '
+        Me.rbAdminOnly.AutoSize = True
+        Me.rbAdminOnly.Location = New System.Drawing.Point(6, 40)
+        Me.rbAdminOnly.Name = "rbAdminOnly"
+        Me.rbAdminOnly.Size = New System.Drawing.Size(111, 17)
+        Me.rbAdminOnly.TabIndex = 41
+        Me.rbAdminOnly.TabStop = True
+        Me.rbAdminOnly.Tag = "1"
+        Me.rbAdminOnly.Text = "Only show Admins"
+        Me.rbAdminOnly.UseVisualStyleBackColor = True
+        '
+        'tbSearch
+        '
+        Me.tbSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbSearch.Location = New System.Drawing.Point(187, 25)
+        Me.tbSearch.Margin = New System.Windows.Forms.Padding(2)
+        Me.tbSearch.Name = "tbSearch"
+        Me.tbSearch.Size = New System.Drawing.Size(614, 24)
+        Me.tbSearch.TabIndex = 34
+        Me.tbSearch.Text = "Enter your search here..."
         '
         'DataGridView1
         '
@@ -110,31 +148,41 @@ Partial Class ReadingMembers
         Me.DataGridView1.Size = New System.Drawing.Size(613, 354)
         Me.DataGridView1.TabIndex = 33
         '
-        'btnSearch
+        'btnSearchMember
         '
-        Me.btnSearch.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.btnSearch.FlatAppearance.BorderSize = 0
-        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearch.ForeColor = System.Drawing.Color.LightGray
-        Me.btnSearch.Location = New System.Drawing.Point(21, 18)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(150, 40)
-        Me.btnSearch.TabIndex = 29
-        Me.btnSearch.Text = "Search for a member"
-        Me.btnSearch.UseVisualStyleBackColor = False
+        Me.btnSearchMember.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnSearchMember.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnSearchMember.FlatAppearance.BorderSize = 0
+        Me.btnSearchMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearchMember.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSearchMember.ForeColor = System.Drawing.Color.LightGray
+        Me.btnSearchMember.Location = New System.Drawing.Point(21, 18)
+        Me.btnSearchMember.Name = "btnSearchMember"
+        Me.btnSearchMember.Size = New System.Drawing.Size(150, 40)
+        Me.btnSearchMember.TabIndex = 29
+        Me.btnSearchMember.Text = "Search for a member"
+        Me.btnSearchMember.UseVisualStyleBackColor = False
+        '
+        'lblCount
+        '
+        Me.lblCount.AutoSize = True
+        Me.lblCount.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.lblCount.Location = New System.Drawing.Point(268, 27)
+        Me.lblCount.Name = "lblCount"
+        Me.lblCount.Size = New System.Drawing.Size(151, 24)
+        Me.lblCount.TabIndex = 44
+        Me.lblCount.Text = "Member count:"
         '
         'label1
         '
-        Me.label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.label1.AutoSize = True
         Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(26, 26)
+        Me.label1.Location = New System.Drawing.Point(48, 20)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(198, 32)
-        Me.label1.TabIndex = 37
+        Me.label1.Size = New System.Drawing.Size(197, 32)
+        Me.label1.TabIndex = 43
         Me.label1.Text = "Club Members"
         '
         'ReadingMembers
@@ -142,8 +190,9 @@ Partial Class ReadingMembers
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(967, 536)
+        Me.ClientSize = New System.Drawing.Size(921, 531)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.lblCount)
         Me.Controls.Add(Me.label1)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "ReadingMembers"
@@ -160,11 +209,14 @@ Partial Class ReadingMembers
 
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents rbShowAll As RadioButton
+    Friend WithEvents rbIDSearch As RadioButton
+    Friend WithEvents rbNameSearch As RadioButton
+    Friend WithEvents rbRoleSearch As RadioButton
+    Friend WithEvents rbAdminOnly As RadioButton
+    Friend WithEvents tbSearch As TextBox
     Friend WithEvents DataGridView1 As DataGridView
-    Private WithEvents btnSearch As Button
+    Private WithEvents btnSearchMember As Button
+    Friend WithEvents lblCount As Label
     Private WithEvents label1 As Label
 End Class

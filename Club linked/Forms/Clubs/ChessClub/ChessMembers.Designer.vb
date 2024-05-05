@@ -31,8 +31,9 @@ Partial Class ChessMembers
         Me.tbSearch = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.btnSearchMember = New System.Windows.Forms.Button()
-        Me.label1 = New System.Windows.Forms.Label()
         Me.lblCount = New System.Windows.Forms.Label()
+        Me.label1 = New System.Windows.Forms.Label()
+        Me.rbShowAll = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,30 +46,31 @@ Partial Class ChessMembers
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
         Me.GroupBox1.Controls.Add(Me.btnSearchMember)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(27, 73)
+        Me.GroupBox1.Location = New System.Drawing.Point(54, 63)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(819, 447)
-        Me.GroupBox1.TabIndex = 36
+        Me.GroupBox1.TabIndex = 39
         Me.GroupBox1.TabStop = False
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.rbShowAll)
         Me.GroupBox2.Controls.Add(Me.rbIDSearch)
         Me.GroupBox2.Controls.Add(Me.rbNameSearch)
         Me.GroupBox2.Controls.Add(Me.rbRoleSearch)
         Me.GroupBox2.Controls.Add(Me.rbAdminOnly)
         Me.GroupBox2.Location = New System.Drawing.Point(21, 71)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(150, 125)
+        Me.GroupBox2.Size = New System.Drawing.Size(150, 149)
         Me.GroupBox2.TabIndex = 38
         Me.GroupBox2.TabStop = False
         '
         'rbIDSearch
         '
         Me.rbIDSearch.AutoSize = True
-        Me.rbIDSearch.Location = New System.Drawing.Point(6, 88)
+        Me.rbIDSearch.Location = New System.Drawing.Point(6, 109)
         Me.rbIDSearch.Name = "rbIDSearch"
         Me.rbIDSearch.Size = New System.Drawing.Size(127, 17)
         Me.rbIDSearch.TabIndex = 44
@@ -80,7 +82,7 @@ Partial Class ChessMembers
         'rbNameSearch
         '
         Me.rbNameSearch.AutoSize = True
-        Me.rbNameSearch.Location = New System.Drawing.Point(6, 65)
+        Me.rbNameSearch.Location = New System.Drawing.Point(6, 86)
         Me.rbNameSearch.Name = "rbNameSearch"
         Me.rbNameSearch.Size = New System.Drawing.Size(142, 17)
         Me.rbNameSearch.TabIndex = 43
@@ -92,7 +94,7 @@ Partial Class ChessMembers
         'rbRoleSearch
         '
         Me.rbRoleSearch.AutoSize = True
-        Me.rbRoleSearch.Location = New System.Drawing.Point(6, 42)
+        Me.rbRoleSearch.Location = New System.Drawing.Point(6, 63)
         Me.rbRoleSearch.Name = "rbRoleSearch"
         Me.rbRoleSearch.Size = New System.Drawing.Size(133, 17)
         Me.rbRoleSearch.TabIndex = 42
@@ -104,7 +106,7 @@ Partial Class ChessMembers
         'rbAdminOnly
         '
         Me.rbAdminOnly.AutoSize = True
-        Me.rbAdminOnly.Location = New System.Drawing.Point(6, 19)
+        Me.rbAdminOnly.Location = New System.Drawing.Point(6, 40)
         Me.rbAdminOnly.Name = "rbAdminOnly"
         Me.rbAdminOnly.Size = New System.Drawing.Size(111, 17)
         Me.rbAdminOnly.TabIndex = 41
@@ -149,27 +151,39 @@ Partial Class ChessMembers
         Me.btnSearchMember.Text = "Search for a member"
         Me.btnSearchMember.UseVisualStyleBackColor = False
         '
-        'label1
-        '
-        Me.label1.AutoSize = True
-        Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.label1.Location = New System.Drawing.Point(21, 30)
-        Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(197, 32)
-        Me.label1.TabIndex = 37
-        Me.label1.Text = "Club Members"
-        '
         'lblCount
         '
         Me.lblCount.AutoSize = True
         Me.lblCount.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.lblCount.Location = New System.Drawing.Point(241, 37)
+        Me.lblCount.Location = New System.Drawing.Point(268, 27)
         Me.lblCount.Name = "lblCount"
         Me.lblCount.Size = New System.Drawing.Size(151, 24)
-        Me.lblCount.TabIndex = 38
+        Me.lblCount.TabIndex = 41
         Me.lblCount.Text = "Member count:"
+        '
+        'label1
+        '
+        Me.label1.AutoSize = True
+        Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.label1.Location = New System.Drawing.Point(48, 20)
+        Me.label1.Name = "label1"
+        Me.label1.Size = New System.Drawing.Size(197, 32)
+        Me.label1.TabIndex = 40
+        Me.label1.Text = "Club Members"
+        '
+        'rbShowAll
+        '
+        Me.rbShowAll.AutoSize = True
+        Me.rbShowAll.Location = New System.Drawing.Point(6, 17)
+        Me.rbShowAll.Name = "rbShowAll"
+        Me.rbShowAll.Size = New System.Drawing.Size(110, 17)
+        Me.rbShowAll.TabIndex = 45
+        Me.rbShowAll.TabStop = True
+        Me.rbShowAll.Tag = "1"
+        Me.rbShowAll.Text = "Show all members"
+        Me.rbShowAll.UseVisualStyleBackColor = True
         '
         'ChessMembers
         '
@@ -177,8 +191,8 @@ Partial Class ChessMembers
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(921, 531)
-        Me.Controls.Add(Me.lblCount)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.lblCount)
         Me.Controls.Add(Me.label1)
         Me.Name = "ChessMembers"
         Me.Text = "ChessMembers"
@@ -194,13 +208,14 @@ Partial Class ChessMembers
 
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents tbSearch As TextBox
-    Friend WithEvents DataGridView1 As DataGridView
-    Private WithEvents btnSearchMember As Button
-    Private WithEvents label1 As Label
-    Friend WithEvents rbAdminOnly As RadioButton
     Friend WithEvents rbIDSearch As RadioButton
     Friend WithEvents rbNameSearch As RadioButton
     Friend WithEvents rbRoleSearch As RadioButton
+    Friend WithEvents rbAdminOnly As RadioButton
+    Friend WithEvents tbSearch As TextBox
+    Friend WithEvents DataGridView1 As DataGridView
+    Private WithEvents btnSearchMember As Button
     Friend WithEvents lblCount As Label
+    Private WithEvents label1 As Label
+    Friend WithEvents rbShowAll As RadioButton
 End Class

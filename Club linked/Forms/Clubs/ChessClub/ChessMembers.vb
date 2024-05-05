@@ -1,8 +1,15 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class ChessMembers
+    Private Sub ChessMembers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        disp_data(DataGridView1, "SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess IS NOT NULL")
+        lblCount.Text = $"There are {GetClubMemberCount()} people who are members of the chess club."
+
+    End Sub
 
     Public Sub disp_data(myDataGridView As DataGridView, mycmd As String)
+
         Try
 
             Main.con.Open()
@@ -34,15 +41,15 @@ Public Class ChessMembers
             disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess IS NOT NULL AND username = '{tbSearch.Text}'")
 
         ElseIf rbIDSearch.Checked Then
-            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess IS NOT NULL AND userID = '{tbSearch.Text}'")
+
+            Dim searchID As Integer
+            If Integer.TryParse(tbSearch.Text, searchID) Then
+                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess IS NOT NULL AND userID = '{tbSearch.Text}'")
+            Else
+                MsgBox($"Please enter an integer, {tbSearch.Text} is not a valid value")
+            End If
+
         End If
-
-    End Sub
-
-    Private Sub ChessMembers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        disp_data(DataGridView1, "SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess IS NOT NULL")
-        lblCount.Text = $"There are {GetClubMemberCount()} people who are members of the chess club."
 
     End Sub
 
@@ -54,6 +61,12 @@ Public Class ChessMembers
     Private Sub rbAdminOnly_CheckedChanged(sender As Object, e As EventArgs) Handles rbAdminOnly.CheckedChanged
 
         disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess = 'Admin'")
+
+    End Sub
+
+    Private Sub rbShowAll_CheckedChanged(sender As Object, e As EventArgs) Handles rbShowAll.CheckedChanged
+
+        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess = 'member'")
 
     End Sub
 
@@ -74,8 +87,8 @@ Public Class ChessMembers
                 Main.con.Close()
             End If
         End Try
-
         Return count
+
     End Function
 
 End Class
