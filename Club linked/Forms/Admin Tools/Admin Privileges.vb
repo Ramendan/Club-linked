@@ -192,7 +192,78 @@ Public Class labelSelectedID
 
         Finally
             Main.con.Close()
+            lblCount.Text = $"There are {GetClubMemberCount("")} people who are users of club linked,{Environment.NewLine}{GetClubMemberCount("Admin")} of them are app admins and {GetClubMemberCount("Club")} are club admins"
         End Try
+
+    End Sub
+
+    Private Sub btnRevoke_Click(sender As Object, e As EventArgs) Handles btnRevoke.Click
+
+        Try
+
+            If Main.con.State = ConnectionState.Open Then
+                Main.con.Close()
+
+            End If
+
+            Main.con.Open()
+            Main.cmd = Main.con.CreateCommand()
+            Main.cmd.CommandType = CommandType.Text
+
+
+            If ListBox1.SelectedItem = "All" Then
+
+                Main.cmd.CommandText = $"update Accounts set status = '' where userID = {i}"
+                MsgBox($"Revoking user {selected_name} ID:{i} global admin")
+                Main.cmd.ExecuteNonQuery()
+                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+
+            ElseIf ListBox1.SelectedItem = "Programming" Then
+
+                Main.cmd.CommandText = $"update Accounts set Programming = '' where userID = {i}"
+                MsgBox($"Revoking user {selected_name} ID:{i} Programming admin")
+                Main.cmd.ExecuteNonQuery()
+                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+
+            ElseIf ListBox1.SelectedItem = "Chess" Then
+
+                Main.cmd.CommandText = $"update Accounts set Chess = '' where userID = {i}"
+                MsgBox($"Revoking user {selected_name} ID:{i} Chess admin")
+                Main.cmd.ExecuteNonQuery()
+                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+
+            ElseIf ListBox1.SelectedItem = "Music" Then
+
+                Main.cmd.CommandText = $"update Accounts set Music = '' where userID = {i}"
+                MsgBox($"Revoking user {selected_name} ID:{i} Music admin")
+                Main.cmd.ExecuteNonQuery()
+                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+
+            ElseIf ListBox1.SelectedItem = "Reading" Then
+
+                Main.cmd.CommandText = $"update Accounts set Reading = '' where userID = {i}"
+                MsgBox($"Revoking user {selected_name} ID:{i} Reading admin")
+                Main.cmd.ExecuteNonQuery()
+                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+
+            Else
+
+                Main.cmd.CommandText = $"update Accounts set status = '' where userID = {i}"
+                MsgBox($"Revoking user {selected_name} ID:{i} global admin")
+                Main.cmd.ExecuteNonQuery()
+                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+
+            End If
+
+            Main.con.Close()
+        Catch ex As Exception
+            MsgBox($"Error: {ex}")
+
+        Finally
+            Main.con.Close()
+            lblCount.Text = $"There are {GetClubMemberCount("")} people who are users of club linked,{Environment.NewLine}{GetClubMemberCount("Admin")} of them are app admins and {GetClubMemberCount("Club")} are club admins"
+        End Try
+
 
     End Sub
 End Class
