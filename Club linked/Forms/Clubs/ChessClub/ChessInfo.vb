@@ -89,4 +89,8 @@
     Private Sub ChessInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblCount.Text = $"There are {GetClubMemberCount()} people who are members of the chess club."
     End Sub
+
+    Private Sub lblCount_Click(sender As Object, e As EventArgs) Handles lblCount.Click
+
+    End Sub
 End Class
