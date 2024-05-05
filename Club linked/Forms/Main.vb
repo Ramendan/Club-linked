@@ -94,7 +94,7 @@ Public Class Main
 
     End Sub
     Private Sub btnAdminPrivileges_Click(sender As Object, e As EventArgs) Handles btnAdminPrivileges.Click
-        openChildForm(New Admin_Privileges)
+        openChildForm(New labelSelectedID)
 
     End Sub
 
