@@ -38,7 +38,7 @@
             Try
                 Main.con.Open()
 
-                Main.cmd.CommandText = $"UPDATE Accounts SET reading = '' WHERE userID = {Main.ID}"
+                Main.cmd.CommandText = $"UPDATE Accounts SET reading = NULL WHERE userID = {Main.ID}"
 
                 Main.cmd.ExecuteNonQuery()
 

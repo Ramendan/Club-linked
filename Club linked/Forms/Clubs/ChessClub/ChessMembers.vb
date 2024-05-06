@@ -32,41 +32,8 @@ Public Class ChessMembers
 
     End Sub
 
-    Private Sub btnSearchMember_Click(sender As Object, e As EventArgs) Handles btnSearchMember.Click
-
-        If rbRoleSearch.Checked Then
-            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess = '{tbSearch.Text}'")
-
-        ElseIf rbNameSearch.Checked Then
-            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess IS NOT NULL AND username = '{tbSearch.Text}'")
-
-        ElseIf rbIDSearch.Checked Then
-
-            Dim searchID As Integer
-            If Integer.TryParse(tbSearch.Text, searchID) Then
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess IS NOT NULL AND userID = '{tbSearch.Text}'")
-            Else
-                MsgBox($"Please enter an integer, {tbSearch.Text} is not a valid value")
-            End If
-
-        End If
-
-    End Sub
-
     Private Sub tbSearch_Click(sender As Object, e As EventArgs) Handles tbSearch.Click
         tbSearch.Text = ""
-
-    End Sub
-
-    Private Sub rbAdminOnly_CheckedChanged(sender As Object, e As EventArgs)
-
-        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess = 'Admin'")
-
-    End Sub
-
-    Private Sub rbShowAll_CheckedChanged(sender As Object, e As EventArgs)
-
-        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess = 'member'")
 
     End Sub
 
@@ -94,17 +61,27 @@ Public Class ChessMembers
     Private Sub tbSearch_TextChanged(sender As Object, e As EventArgs) Handles tbSearch.TextChanged
 
         If rbNameSearch.Checked Then
-            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE username LIKE '{tbSearch.Text}%'")
+            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess IS NOT NULL AND username LIKE '{tbSearch.Text}%'")
 
         ElseIf rbIDSearch.Checked Then
 
             Dim searchID As Integer
             If Integer.TryParse(tbSearch.Text, searchID) Then
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE userID LIKE '{tbSearch.Text}%'")
+                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess IS NOT NULL AND userID LIKE '{tbSearch.Text}%'")
             Else
                 MsgBox($"Please enter an integer, {tbSearch.Text} is not a valid value")
             End If
 
         End If
+
     End Sub
+
+    Private Sub btnrbShowAll_Click(sender As Object, e As EventArgs) Handles btnrbShowAll.Click
+        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess IS NOT NULL")
+    End Sub
+
+    Private Sub btnrbClubAdminSearch_Click(sender As Object, e As EventArgs) Handles btnrbClubAdminSearch.Click
+        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess = 'Admin'")
+    End Sub
+
 End Class

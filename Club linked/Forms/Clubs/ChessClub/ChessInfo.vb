@@ -38,7 +38,7 @@
             Try
                 Main.con.Open()
 
-                Main.cmd.CommandText = $"UPDATE Accounts SET chess = '' WHERE userID = {Main.ID}"
+                Main.cmd.CommandText = $"UPDATE Accounts SET chess = NULL WHERE userID = {Main.ID}"
 
                 Main.cmd.ExecuteNonQuery()
 
@@ -88,9 +88,5 @@
 
     Private Sub ChessInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblCount.Text = $"There are {GetClubMemberCount()} people who are members of the chess club."
-    End Sub
-
-    Private Sub lblCount_Click(sender As Object, e As EventArgs) Handles lblCount.Click
-
     End Sub
 End Class

@@ -97,19 +97,6 @@ Public Class labelSelectedID
 
     End Sub
 
-    Private Sub rbShowAll_CheckedChanged(sender As Object, e As EventArgs) Handles rbShowAll.CheckedChanged
-        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts")
-    End Sub
-
-    Private Sub rbAdminOnly_CheckedChanged(sender As Object, e As EventArgs) Handles rbAdminOnly.CheckedChanged
-        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE status = 'Admin'")
-    End Sub
-
-    Private Sub rbClubAdminSearch_CheckedChanged(sender As Object, e As EventArgs) Handles rbClubAdminSearch.CheckedChanged
-
-        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE chess = 'Admin' OR programming = 'Admin' OR music = 'Admin' OR reading = 'Admin'")
-    End Sub
-
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         Try
 
@@ -282,6 +269,22 @@ Public Class labelSelectedID
             End If
 
         End If
+
+    End Sub
+
+    Private Sub btnrbShowAll_Click(sender As Object, e As EventArgs) Handles btnrbShowAll.Click
+        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts")
+    End Sub
+
+    Private Sub btnAdminOnly_Click(sender As Object, e As EventArgs) Handles btnAdminOnly.Click
+        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE status = 'Admin'")
+    End Sub
+
+    Private Sub btnrbClubAdminSearch_Click(sender As Object, e As EventArgs) Handles btnrbClubAdminSearch.Click
+        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE chess = 'Admin' OR programming = 'Admin' OR music = 'Admin' OR reading = 'Admin'")
+    End Sub
+
+    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs) Handles GroupBox4.Enter
 
     End Sub
 End Class

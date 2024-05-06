@@ -33,12 +33,12 @@ Partial Class labelSelectedID
         Me.lblCount = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.rbShowAll = New System.Windows.Forms.RadioButton()
-        Me.rbIDSearch = New System.Windows.Forms.RadioButton()
+        Me.btnAdminOnly = New System.Windows.Forms.Button()
+        Me.btnrbClubAdminSearch = New System.Windows.Forms.Button()
+        Me.btnrbShowAll = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.rbNameSearch = New System.Windows.Forms.RadioButton()
-        Me.rbClubAdminSearch = New System.Windows.Forms.RadioButton()
-        Me.rbAdminOnly = New System.Windows.Forms.RadioButton()
+        Me.rbIDSearch = New System.Windows.Forms.RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.tbSearch = New System.Windows.Forms.TextBox()
@@ -48,17 +48,15 @@ Partial Class labelSelectedID
         Me.AccountsTableAdapter = New Club_linked.UsersInfoTableAdapters.AccountsTableAdapter()
         Me.AccountsTableAdapter1 = New Club_linked.AllAccountdataTableAdapters.AccountsTableAdapter()
         Me.lablelSelectedID = New System.Windows.Forms.Label()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         CType(Me.AccountsBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AllAccountdata, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AccountsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         CType(Me.AccountsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersInfo, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'label1
@@ -68,7 +66,7 @@ Partial Class labelSelectedID
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.label1.Location = New System.Drawing.Point(56, 32)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(88, 32)
+        Me.label1.Size = New System.Drawing.Size(87, 32)
         Me.label1.TabIndex = 34
         Me.label1.Text = "Users"
         '
@@ -107,7 +105,7 @@ Partial Class labelSelectedID
         Me.btnRevoke.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRevoke.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRevoke.ForeColor = System.Drawing.Color.LightGray
-        Me.btnRevoke.Location = New System.Drawing.Point(20, 69)
+        Me.btnRevoke.Location = New System.Drawing.Point(20, 64)
         Me.btnRevoke.Name = "btnRevoke"
         Me.btnRevoke.Size = New System.Drawing.Size(165, 40)
         Me.btnRevoke.TabIndex = 31
@@ -155,52 +153,71 @@ Partial Class labelSelectedID
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.btnAdminOnly)
+        Me.GroupBox2.Controls.Add(Me.btnrbClubAdminSearch)
+        Me.GroupBox2.Controls.Add(Me.btnrbShowAll)
         Me.GroupBox2.Controls.Add(Me.GroupBox4)
-        Me.GroupBox2.Controls.Add(Me.GroupBox3)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.ListBox1)
-        Me.GroupBox2.Location = New System.Drawing.Point(20, 120)
+        Me.GroupBox2.Location = New System.Drawing.Point(20, 109)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox2.Size = New System.Drawing.Size(166, 333)
+        Me.GroupBox2.Size = New System.Drawing.Size(166, 399)
         Me.GroupBox2.TabIndex = 35
         Me.GroupBox2.TabStop = False
         '
-        'GroupBox3
+        'btnAdminOnly
         '
-        Me.GroupBox3.Controls.Add(Me.rbShowAll)
-        Me.GroupBox3.Controls.Add(Me.rbClubAdminSearch)
-        Me.GroupBox3.Controls.Add(Me.rbAdminOnly)
-        Me.GroupBox3.Location = New System.Drawing.Point(5, 170)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(156, 82)
-        Me.GroupBox3.TabIndex = 39
-        Me.GroupBox3.TabStop = False
+        Me.btnAdminOnly.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnAdminOnly.FlatAppearance.BorderSize = 0
+        Me.btnAdminOnly.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdminOnly.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdminOnly.ForeColor = System.Drawing.Color.LightGray
+        Me.btnAdminOnly.Location = New System.Drawing.Point(5, 208)
+        Me.btnAdminOnly.Name = "btnAdminOnly"
+        Me.btnAdminOnly.Size = New System.Drawing.Size(156, 40)
+        Me.btnAdminOnly.TabIndex = 48
+        Me.btnAdminOnly.Text = "Show Admins"
+        Me.btnAdminOnly.UseVisualStyleBackColor = False
         '
-        'rbShowAll
+        'btnrbClubAdminSearch
         '
-        Me.rbShowAll.AutoSize = True
-        Me.rbShowAll.Checked = True
-        Me.rbShowAll.Location = New System.Drawing.Point(7, 15)
-        Me.rbShowAll.Name = "rbShowAll"
-        Me.rbShowAll.Size = New System.Drawing.Size(110, 17)
-        Me.rbShowAll.TabIndex = 45
-        Me.rbShowAll.TabStop = True
-        Me.rbShowAll.Tag = "1"
-        Me.rbShowAll.Text = "Show all members"
-        Me.rbShowAll.UseVisualStyleBackColor = True
+        Me.btnrbClubAdminSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnrbClubAdminSearch.FlatAppearance.BorderSize = 0
+        Me.btnrbClubAdminSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnrbClubAdminSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnrbClubAdminSearch.ForeColor = System.Drawing.Color.LightGray
+        Me.btnrbClubAdminSearch.Location = New System.Drawing.Point(5, 256)
+        Me.btnrbClubAdminSearch.Name = "btnrbClubAdminSearch"
+        Me.btnrbClubAdminSearch.Size = New System.Drawing.Size(156, 40)
+        Me.btnrbClubAdminSearch.TabIndex = 47
+        Me.btnrbClubAdminSearch.Text = "Show club admins"
+        Me.btnrbClubAdminSearch.UseVisualStyleBackColor = False
         '
-        'rbIDSearch
+        'btnrbShowAll
         '
-        Me.rbIDSearch.AutoSize = True
-        Me.rbIDSearch.Location = New System.Drawing.Point(6, 40)
-        Me.rbIDSearch.Name = "rbIDSearch"
-        Me.rbIDSearch.Size = New System.Drawing.Size(127, 17)
-        Me.rbIDSearch.TabIndex = 44
-        Me.rbIDSearch.Tag = "2"
-        Me.rbIDSearch.Text = "Search for specific ID"
-        Me.rbIDSearch.UseVisualStyleBackColor = True
+        Me.btnrbShowAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnrbShowAll.FlatAppearance.BorderSize = 0
+        Me.btnrbShowAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnrbShowAll.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnrbShowAll.ForeColor = System.Drawing.Color.LightGray
+        Me.btnrbShowAll.Location = New System.Drawing.Point(5, 160)
+        Me.btnrbShowAll.Name = "btnrbShowAll"
+        Me.btnrbShowAll.Size = New System.Drawing.Size(156, 40)
+        Me.btnrbShowAll.TabIndex = 43
+        Me.btnrbShowAll.Text = "Show all members"
+        Me.btnrbShowAll.UseVisualStyleBackColor = False
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.rbNameSearch)
+        Me.GroupBox4.Controls.Add(Me.rbIDSearch)
+        Me.GroupBox4.Location = New System.Drawing.Point(5, 302)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(156, 64)
+        Me.GroupBox4.TabIndex = 46
+        Me.GroupBox4.TabStop = False
         '
         'rbNameSearch
         '
@@ -215,27 +232,16 @@ Partial Class labelSelectedID
         Me.rbNameSearch.Text = "Search for specific name" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.rbNameSearch.UseVisualStyleBackColor = True
         '
-        'rbClubAdminSearch
+        'rbIDSearch
         '
-        Me.rbClubAdminSearch.AutoSize = True
-        Me.rbClubAdminSearch.Location = New System.Drawing.Point(6, 59)
-        Me.rbClubAdminSearch.Name = "rbClubAdminSearch"
-        Me.rbClubAdminSearch.Size = New System.Drawing.Size(133, 17)
-        Me.rbClubAdminSearch.TabIndex = 42
-        Me.rbClubAdminSearch.Tag = "1"
-        Me.rbClubAdminSearch.Text = "Only show club admins"
-        Me.rbClubAdminSearch.UseVisualStyleBackColor = True
-        '
-        'rbAdminOnly
-        '
-        Me.rbAdminOnly.AutoSize = True
-        Me.rbAdminOnly.Location = New System.Drawing.Point(6, 36)
-        Me.rbAdminOnly.Name = "rbAdminOnly"
-        Me.rbAdminOnly.Size = New System.Drawing.Size(111, 17)
-        Me.rbAdminOnly.TabIndex = 41
-        Me.rbAdminOnly.Tag = "1"
-        Me.rbAdminOnly.Text = "Only show Admins"
-        Me.rbAdminOnly.UseVisualStyleBackColor = True
+        Me.rbIDSearch.AutoSize = True
+        Me.rbIDSearch.Location = New System.Drawing.Point(6, 40)
+        Me.rbIDSearch.Name = "rbIDSearch"
+        Me.rbIDSearch.Size = New System.Drawing.Size(127, 17)
+        Me.rbIDSearch.TabIndex = 44
+        Me.rbIDSearch.Tag = "2"
+        Me.rbIDSearch.Text = "Search for specific ID"
+        Me.rbIDSearch.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -315,16 +321,6 @@ Partial Class labelSelectedID
         Me.lablelSelectedID.TabIndex = 40
         Me.lablelSelectedID.Text = "Selected ID:"
         '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.rbNameSearch)
-        Me.GroupBox4.Controls.Add(Me.rbIDSearch)
-        Me.GroupBox4.Location = New System.Drawing.Point(5, 258)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(156, 64)
-        Me.GroupBox4.TabIndex = 46
-        Me.GroupBox4.TabStop = False
-        '
         'labelSelectedID
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -347,12 +343,10 @@ Partial Class labelSelectedID
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        CType(Me.AccountsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UsersInfo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
+        CType(Me.AccountsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UsersInfo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -378,12 +372,11 @@ Partial Class labelSelectedID
     Friend WithEvents AccountsTableAdapter1 As AllAccountdataTableAdapters.AccountsTableAdapter
     Friend WithEvents lblCount As Label
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents rbShowAll As RadioButton
     Friend WithEvents rbIDSearch As RadioButton
     Friend WithEvents rbNameSearch As RadioButton
-    Friend WithEvents rbAdminOnly As RadioButton
-    Friend WithEvents rbClubAdminSearch As RadioButton
     Friend WithEvents lablelSelectedID As Label
     Friend WithEvents GroupBox4 As GroupBox
+    Private WithEvents btnAdminOnly As Button
+    Private WithEvents btnrbClubAdminSearch As Button
+    Private WithEvents btnrbShowAll As Button
 End Class

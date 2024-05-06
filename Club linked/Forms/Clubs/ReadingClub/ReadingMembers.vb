@@ -33,41 +33,28 @@ Public Class ReadingMembers
 
     End Sub
 
-    Private Sub btnSearchMember_Click(sender As Object, e As EventArgs) Handles btnSearchMember.Click
+    Private Sub tbSearch_TextChanged(sender As Object, e As EventArgs) Handles tbSearch.TextChanged
 
-        If rbRoleSearch.Checked Then
-            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, reading AS Role FROM Accounts WHERE reading = '{tbSearch.Text}'")
-
-        ElseIf rbNameSearch.Checked Then
-            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, reading AS Role FROM Accounts WHERE reading IS NOT NULL AND username = '{tbSearch.Text}'")
+        If rbNameSearch.Checked Then
+            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, reading AS Role FROM Accounts WHERE reading IS NOT NULL AND username LIKE '{tbSearch.Text}%'")
 
         ElseIf rbIDSearch.Checked Then
 
             Dim searchID As Integer
             If Integer.TryParse(tbSearch.Text, searchID) Then
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, reading AS Role FROM Accounts WHERE reading IS NOT NULL AND userID = '{tbSearch.Text}'")
+                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, reading AS Role FROM Accounts WHERE reading IS NOT NULL AND userID LIKE '{tbSearch.Text}%'")
             Else
                 MsgBox($"Please enter an integer, {tbSearch.Text} is not a valid value")
-            End If
 
+            End If
+        Else
+            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, reading AS Role FROM Accounts WHERE reading LIKE '{tbSearch.Text}%'")
         End If
 
     End Sub
 
     Private Sub tbSearch_Click(sender As Object, e As EventArgs) Handles tbSearch.Click
         tbSearch.Text = ""
-
-    End Sub
-
-    Private Sub rbAdminOnly_CheckedChanged(sender As Object, e As EventArgs) Handles rbAdminOnly.CheckedChanged
-
-        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, reading AS Role FROM Accounts WHERE reading = 'Admin'")
-
-    End Sub
-
-    Private Sub rbShowAll_CheckedChanged(sender As Object, e As EventArgs) Handles rbShowAll.CheckedChanged
-
-        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, reading AS Role FROM Accounts WHERE reading = 'member'")
 
     End Sub
 
@@ -91,4 +78,12 @@ Public Class ReadingMembers
         Return count
 
     End Function
+    Private Sub btnrbShowAll_Click(sender As Object, e As EventArgs) Handles btnrbShowAll.Click
+        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE reading IS NOT NULL")
+    End Sub
+
+    Private Sub btnrbClubAdminSearch_Click(sender As Object, e As EventArgs) Handles btnrbClubAdminSearch.Click
+        disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE reading = 'Admin'")
+    End Sub
+
 End Class
