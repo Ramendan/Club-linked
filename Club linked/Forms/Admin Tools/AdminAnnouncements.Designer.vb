@@ -36,12 +36,14 @@ Partial Class AdminAnnouncements
         Me.Button3 = New System.Windows.Forms.Button()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.btnNext = New System.Windows.Forms.Button()
-        Me.btnPrev = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.rbTitleSearch = New System.Windows.Forms.RadioButton()
+        Me.rbIDSearch = New System.Windows.Forms.RadioButton()
         Me.gbCreator.SuspendLayout()
         Me.gbAnnouncementDatabase.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -158,12 +160,11 @@ Partial Class AdminAnnouncements
         '
         'gbAnnouncementDatabase
         '
+        Me.gbAnnouncementDatabase.Controls.Add(Me.GroupBox4)
         Me.gbAnnouncementDatabase.Controls.Add(Me.btnCreator)
         Me.gbAnnouncementDatabase.Controls.Add(Me.Button3)
         Me.gbAnnouncementDatabase.Controls.Add(Me.txtSearch)
         Me.gbAnnouncementDatabase.Controls.Add(Me.DataGridView1)
-        Me.gbAnnouncementDatabase.Controls.Add(Me.btnNext)
-        Me.gbAnnouncementDatabase.Controls.Add(Me.btnPrev)
         Me.gbAnnouncementDatabase.Controls.Add(Me.btnSearch)
         Me.gbAnnouncementDatabase.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.gbAnnouncementDatabase.Location = New System.Drawing.Point(23, 105)
@@ -181,7 +182,7 @@ Partial Class AdminAnnouncements
         Me.btnCreator.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCreator.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCreator.ForeColor = System.Drawing.Color.LightGray
-        Me.btnCreator.Location = New System.Drawing.Point(20, 162)
+        Me.btnCreator.Location = New System.Drawing.Point(19, 64)
         Me.btnCreator.Name = "btnCreator"
         Me.btnCreator.Size = New System.Drawing.Size(150, 40)
         Me.btnCreator.TabIndex = 36
@@ -195,7 +196,7 @@ Partial Class AdminAnnouncements
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.LightGray
-        Me.Button3.Location = New System.Drawing.Point(19, 67)
+        Me.Button3.Location = New System.Drawing.Point(19, 18)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(150, 40)
         Me.Button3.TabIndex = 35
@@ -223,34 +224,6 @@ Partial Class AdminAnnouncements
         Me.DataGridView1.Size = New System.Drawing.Size(477, 234)
         Me.DataGridView1.TabIndex = 33
         '
-        'btnNext
-        '
-        Me.btnNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.btnNext.FlatAppearance.BorderSize = 0
-        Me.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNext.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNext.ForeColor = System.Drawing.Color.LightGray
-        Me.btnNext.Location = New System.Drawing.Point(20, 18)
-        Me.btnNext.Name = "btnNext"
-        Me.btnNext.Size = New System.Drawing.Size(150, 40)
-        Me.btnNext.TabIndex = 32
-        Me.btnNext.Text = "Next"
-        Me.btnNext.UseVisualStyleBackColor = False
-        '
-        'btnPrev
-        '
-        Me.btnPrev.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.btnPrev.FlatAppearance.BorderSize = 0
-        Me.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPrev.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrev.ForeColor = System.Drawing.Color.LightGray
-        Me.btnPrev.Location = New System.Drawing.Point(19, 115)
-        Me.btnPrev.Name = "btnPrev"
-        Me.btnPrev.Size = New System.Drawing.Size(150, 40)
-        Me.btnPrev.TabIndex = 31
-        Me.btnPrev.Text = "Prev"
-        Me.btnPrev.UseVisualStyleBackColor = False
-        '
         'btnSearch
         '
         Me.btnSearch.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -259,12 +232,46 @@ Partial Class AdminAnnouncements
         Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSearch.ForeColor = System.Drawing.Color.LightGray
-        Me.btnSearch.Location = New System.Drawing.Point(26, 251)
+        Me.btnSearch.Location = New System.Drawing.Point(19, 252)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(150, 40)
         Me.btnSearch.TabIndex = 29
-        Me.btnSearch.Text = "Search for event"
+        Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = False
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.rbTitleSearch)
+        Me.GroupBox4.Controls.Add(Me.rbIDSearch)
+        Me.GroupBox4.Location = New System.Drawing.Point(19, 173)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(156, 64)
+        Me.GroupBox4.TabIndex = 47
+        Me.GroupBox4.TabStop = False
+        '
+        'rbTitleSearch
+        '
+        Me.rbTitleSearch.AutoSize = True
+        Me.rbTitleSearch.Checked = True
+        Me.rbTitleSearch.Location = New System.Drawing.Point(6, 13)
+        Me.rbTitleSearch.Name = "rbTitleSearch"
+        Me.rbTitleSearch.Size = New System.Drawing.Size(132, 17)
+        Me.rbTitleSearch.TabIndex = 43
+        Me.rbTitleSearch.TabStop = True
+        Me.rbTitleSearch.Tag = "2"
+        Me.rbTitleSearch.Text = "Search for specific title"
+        Me.rbTitleSearch.UseVisualStyleBackColor = True
+        '
+        'rbIDSearch
+        '
+        Me.rbIDSearch.AutoSize = True
+        Me.rbIDSearch.Location = New System.Drawing.Point(6, 36)
+        Me.rbIDSearch.Name = "rbIDSearch"
+        Me.rbIDSearch.Size = New System.Drawing.Size(127, 17)
+        Me.rbIDSearch.TabIndex = 44
+        Me.rbIDSearch.Tag = "2"
+        Me.rbIDSearch.Text = "Search for specific ID"
+        Me.rbIDSearch.UseVisualStyleBackColor = True
         '
         'AdminAnnouncements
         '
@@ -274,8 +281,8 @@ Partial Class AdminAnnouncements
         Me.ClientSize = New System.Drawing.Size(725, 448)
         Me.Controls.Add(Me.button5)
         Me.Controls.Add(Me.label1)
-        Me.Controls.Add(Me.gbCreator)
         Me.Controls.Add(Me.gbAnnouncementDatabase)
+        Me.Controls.Add(Me.gbCreator)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "AdminAnnouncements"
         Me.Text = "AdminAnnouncements"
@@ -284,6 +291,8 @@ Partial Class AdminAnnouncements
         Me.gbAnnouncementDatabase.ResumeLayout(False)
         Me.gbAnnouncementDatabase.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -299,10 +308,11 @@ Partial Class AdminAnnouncements
     Private WithEvents Button3 As Button
     Friend WithEvents txtSearch As TextBox
     Friend WithEvents DataGridView1 As DataGridView
-    Private WithEvents btnNext As Button
-    Private WithEvents btnPrev As Button
     Private WithEvents btnSearch As Button
     Private WithEvents btnCreator As Button
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents rbTitleSearch As RadioButton
+    Friend WithEvents rbIDSearch As RadioButton
 End Class
