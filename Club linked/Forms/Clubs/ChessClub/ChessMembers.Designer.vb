@@ -23,25 +23,29 @@ Partial Class ChessMembers
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.rbIDSearch = New System.Windows.Forms.RadioButton()
-        Me.rbNameSearch = New System.Windows.Forms.RadioButton()
-        Me.rbRoleSearch = New System.Windows.Forms.RadioButton()
-        Me.rbAdminOnly = New System.Windows.Forms.RadioButton()
         Me.tbSearch = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.btnSearchMember = New System.Windows.Forms.Button()
         Me.lblCount = New System.Windows.Forms.Label()
         Me.label1 = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.rbNameSearch = New System.Windows.Forms.RadioButton()
+        Me.rbIDSearch = New System.Windows.Forms.RadioButton()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.rbShowAll = New System.Windows.Forms.RadioButton()
+        Me.rbClubAdminSearch = New System.Windows.Forms.RadioButton()
+        Me.rbAdminOnly = New System.Windows.Forms.RadioButton()
+        Me.rbRoleSearch = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.GroupBox2)
+        Me.GroupBox1.Controls.Add(Me.GroupBox4)
+        Me.GroupBox1.Controls.Add(Me.GroupBox3)
         Me.GroupBox1.Controls.Add(Me.tbSearch)
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
         Me.GroupBox1.Controls.Add(Me.btnSearchMember)
@@ -53,67 +57,6 @@ Partial Class ChessMembers
         Me.GroupBox1.Size = New System.Drawing.Size(819, 447)
         Me.GroupBox1.TabIndex = 39
         Me.GroupBox1.TabStop = False
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.rbShowAll)
-        Me.GroupBox2.Controls.Add(Me.rbIDSearch)
-        Me.GroupBox2.Controls.Add(Me.rbNameSearch)
-        Me.GroupBox2.Controls.Add(Me.rbRoleSearch)
-        Me.GroupBox2.Controls.Add(Me.rbAdminOnly)
-        Me.GroupBox2.Location = New System.Drawing.Point(21, 71)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(150, 149)
-        Me.GroupBox2.TabIndex = 38
-        Me.GroupBox2.TabStop = False
-        '
-        'rbIDSearch
-        '
-        Me.rbIDSearch.AutoSize = True
-        Me.rbIDSearch.Location = New System.Drawing.Point(6, 109)
-        Me.rbIDSearch.Name = "rbIDSearch"
-        Me.rbIDSearch.Size = New System.Drawing.Size(127, 17)
-        Me.rbIDSearch.TabIndex = 44
-        Me.rbIDSearch.TabStop = True
-        Me.rbIDSearch.Tag = "1"
-        Me.rbIDSearch.Text = "Search for specific ID"
-        Me.rbIDSearch.UseVisualStyleBackColor = True
-        '
-        'rbNameSearch
-        '
-        Me.rbNameSearch.AutoSize = True
-        Me.rbNameSearch.Location = New System.Drawing.Point(6, 86)
-        Me.rbNameSearch.Name = "rbNameSearch"
-        Me.rbNameSearch.Size = New System.Drawing.Size(142, 17)
-        Me.rbNameSearch.TabIndex = 43
-        Me.rbNameSearch.TabStop = True
-        Me.rbNameSearch.Tag = "1"
-        Me.rbNameSearch.Text = "Search for specific name" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.rbNameSearch.UseVisualStyleBackColor = True
-        '
-        'rbRoleSearch
-        '
-        Me.rbRoleSearch.AutoSize = True
-        Me.rbRoleSearch.Location = New System.Drawing.Point(6, 63)
-        Me.rbRoleSearch.Name = "rbRoleSearch"
-        Me.rbRoleSearch.Size = New System.Drawing.Size(133, 17)
-        Me.rbRoleSearch.TabIndex = 42
-        Me.rbRoleSearch.TabStop = True
-        Me.rbRoleSearch.Tag = "1"
-        Me.rbRoleSearch.Text = "Search for specific role"
-        Me.rbRoleSearch.UseVisualStyleBackColor = True
-        '
-        'rbAdminOnly
-        '
-        Me.rbAdminOnly.AutoSize = True
-        Me.rbAdminOnly.Location = New System.Drawing.Point(6, 40)
-        Me.rbAdminOnly.Name = "rbAdminOnly"
-        Me.rbAdminOnly.Size = New System.Drawing.Size(111, 17)
-        Me.rbAdminOnly.TabIndex = 41
-        Me.rbAdminOnly.TabStop = True
-        Me.rbAdminOnly.Tag = "1"
-        Me.rbAdminOnly.Text = "Only show Admins"
-        Me.rbAdminOnly.UseVisualStyleBackColor = True
         '
         'tbSearch
         '
@@ -169,14 +112,61 @@ Partial Class ChessMembers
         Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.label1.Location = New System.Drawing.Point(48, 20)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(197, 32)
+        Me.label1.Size = New System.Drawing.Size(198, 32)
         Me.label1.TabIndex = 40
         Me.label1.Text = "Club Members"
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.rbRoleSearch)
+        Me.GroupBox4.Controls.Add(Me.rbNameSearch)
+        Me.GroupBox4.Controls.Add(Me.rbIDSearch)
+        Me.GroupBox4.Location = New System.Drawing.Point(15, 159)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(156, 97)
+        Me.GroupBox4.TabIndex = 48
+        Me.GroupBox4.TabStop = False
+        '
+        'rbNameSearch
+        '
+        Me.rbNameSearch.AutoSize = True
+        Me.rbNameSearch.Checked = True
+        Me.rbNameSearch.Location = New System.Drawing.Point(6, 13)
+        Me.rbNameSearch.Name = "rbNameSearch"
+        Me.rbNameSearch.Size = New System.Drawing.Size(142, 17)
+        Me.rbNameSearch.TabIndex = 43
+        Me.rbNameSearch.TabStop = True
+        Me.rbNameSearch.Tag = "2"
+        Me.rbNameSearch.Text = "Search for specific name" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.rbNameSearch.UseVisualStyleBackColor = True
+        '
+        'rbIDSearch
+        '
+        Me.rbIDSearch.AutoSize = True
+        Me.rbIDSearch.Location = New System.Drawing.Point(6, 38)
+        Me.rbIDSearch.Name = "rbIDSearch"
+        Me.rbIDSearch.Size = New System.Drawing.Size(127, 17)
+        Me.rbIDSearch.TabIndex = 44
+        Me.rbIDSearch.Tag = "2"
+        Me.rbIDSearch.Text = "Search for specific ID"
+        Me.rbIDSearch.UseVisualStyleBackColor = True
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.rbShowAll)
+        Me.GroupBox3.Controls.Add(Me.rbClubAdminSearch)
+        Me.GroupBox3.Controls.Add(Me.rbAdminOnly)
+        Me.GroupBox3.Location = New System.Drawing.Point(15, 71)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(156, 82)
+        Me.GroupBox3.TabIndex = 47
+        Me.GroupBox3.TabStop = False
         '
         'rbShowAll
         '
         Me.rbShowAll.AutoSize = True
-        Me.rbShowAll.Location = New System.Drawing.Point(6, 17)
+        Me.rbShowAll.Checked = True
+        Me.rbShowAll.Location = New System.Drawing.Point(7, 15)
         Me.rbShowAll.Name = "rbShowAll"
         Me.rbShowAll.Size = New System.Drawing.Size(110, 17)
         Me.rbShowAll.TabIndex = 45
@@ -184,6 +174,40 @@ Partial Class ChessMembers
         Me.rbShowAll.Tag = "1"
         Me.rbShowAll.Text = "Show all members"
         Me.rbShowAll.UseVisualStyleBackColor = True
+        '
+        'rbClubAdminSearch
+        '
+        Me.rbClubAdminSearch.AutoSize = True
+        Me.rbClubAdminSearch.Location = New System.Drawing.Point(6, 59)
+        Me.rbClubAdminSearch.Name = "rbClubAdminSearch"
+        Me.rbClubAdminSearch.Size = New System.Drawing.Size(133, 17)
+        Me.rbClubAdminSearch.TabIndex = 42
+        Me.rbClubAdminSearch.Tag = "1"
+        Me.rbClubAdminSearch.Text = "Only show club admins"
+        Me.rbClubAdminSearch.UseVisualStyleBackColor = True
+        '
+        'rbAdminOnly
+        '
+        Me.rbAdminOnly.AutoSize = True
+        Me.rbAdminOnly.Location = New System.Drawing.Point(6, 36)
+        Me.rbAdminOnly.Name = "rbAdminOnly"
+        Me.rbAdminOnly.Size = New System.Drawing.Size(111, 17)
+        Me.rbAdminOnly.TabIndex = 41
+        Me.rbAdminOnly.Tag = "1"
+        Me.rbAdminOnly.Text = "Only show Admins"
+        Me.rbAdminOnly.UseVisualStyleBackColor = True
+        '
+        'rbRoleSearch
+        '
+        Me.rbRoleSearch.AutoSize = True
+        Me.rbRoleSearch.Location = New System.Drawing.Point(7, 63)
+        Me.rbRoleSearch.Name = "rbRoleSearch"
+        Me.rbRoleSearch.Size = New System.Drawing.Size(133, 17)
+        Me.rbRoleSearch.TabIndex = 45
+        Me.rbRoleSearch.TabStop = True
+        Me.rbRoleSearch.Tag = "1"
+        Me.rbRoleSearch.Text = "Search for specific role"
+        Me.rbRoleSearch.UseVisualStyleBackColor = True
         '
         'ChessMembers
         '
@@ -198,24 +222,28 @@ Partial Class ChessMembers
         Me.Text = "ChessMembers"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents rbIDSearch As RadioButton
-    Friend WithEvents rbNameSearch As RadioButton
-    Friend WithEvents rbRoleSearch As RadioButton
-    Friend WithEvents rbAdminOnly As RadioButton
     Friend WithEvents tbSearch As TextBox
     Friend WithEvents DataGridView1 As DataGridView
     Private WithEvents btnSearchMember As Button
     Friend WithEvents lblCount As Label
     Private WithEvents label1 As Label
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents rbNameSearch As RadioButton
+    Friend WithEvents rbIDSearch As RadioButton
+    Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents rbShowAll As RadioButton
+    Friend WithEvents rbClubAdminSearch As RadioButton
+    Friend WithEvents rbAdminOnly As RadioButton
+    Friend WithEvents rbRoleSearch As RadioButton
 End Class

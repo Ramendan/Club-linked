@@ -58,13 +58,13 @@ Public Class ChessMembers
 
     End Sub
 
-    Private Sub rbAdminOnly_CheckedChanged(sender As Object, e As EventArgs) Handles rbAdminOnly.CheckedChanged
+    Private Sub rbAdminOnly_CheckedChanged(sender As Object, e As EventArgs)
 
         disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess = 'Admin'")
 
     End Sub
 
-    Private Sub rbShowAll_CheckedChanged(sender As Object, e As EventArgs) Handles rbShowAll.CheckedChanged
+    Private Sub rbShowAll_CheckedChanged(sender As Object, e As EventArgs)
 
         disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, chess AS Role FROM Accounts WHERE chess = 'member'")
 
@@ -91,4 +91,20 @@ Public Class ChessMembers
 
     End Function
 
+    Private Sub tbSearch_TextChanged(sender As Object, e As EventArgs) Handles tbSearch.TextChanged
+
+        If rbNameSearch.Checked Then
+            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE username LIKE '{tbSearch.Text}%'")
+
+        ElseIf rbIDSearch.Checked Then
+
+            Dim searchID As Integer
+            If Integer.TryParse(tbSearch.Text, searchID) Then
+                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE userID LIKE '{tbSearch.Text}%'")
+            Else
+                MsgBox($"Please enter an integer, {tbSearch.Text} is not a valid value")
+            End If
+
+        End If
+    End Sub
 End Class
