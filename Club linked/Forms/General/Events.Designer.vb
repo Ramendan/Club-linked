@@ -25,7 +25,7 @@ Partial Class Events
         Me.label1 = New System.Windows.Forms.Label()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.tbSearch = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -73,21 +73,21 @@ Partial Class Events
         Me.DataGridView1.Size = New System.Drawing.Size(603, 356)
         Me.DataGridView1.TabIndex = 33
         '
-        'txtSearch
+        'tbSearch
         '
-        Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearch.Location = New System.Drawing.Point(197, 386)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(603, 31)
-        Me.txtSearch.TabIndex = 34
-        Me.txtSearch.Text = "Enter your search here..."
+        Me.tbSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbSearch.Location = New System.Drawing.Point(197, 386)
+        Me.tbSearch.Margin = New System.Windows.Forms.Padding(2)
+        Me.tbSearch.Name = "tbSearch"
+        Me.tbSearch.Size = New System.Drawing.Size(603, 31)
+        Me.tbSearch.TabIndex = 34
+        Me.tbSearch.Text = "Enter your search here..."
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.MonthCalendar1)
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
-        Me.GroupBox1.Controls.Add(Me.txtSearch)
+        Me.GroupBox1.Controls.Add(Me.tbSearch)
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
         Me.GroupBox1.Controls.Add(Me.btnSearch)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
@@ -180,7 +180,7 @@ Partial Class Events
     Private WithEvents label1 As Label
     Private WithEvents btnClose As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents tbSearch As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Private WithEvents btnSearch As Button
     Friend WithEvents GroupBox2 As GroupBox

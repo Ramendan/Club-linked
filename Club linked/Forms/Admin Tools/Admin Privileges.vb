@@ -79,7 +79,7 @@ Public Class labelSelectedID
         tbSearch.Text = ""
     End Sub
 
-    Private Sub btnSearchUsr_Click(sender As Object, e As EventArgs) Handles btnSearchUsr.Click
+    Private Sub btnSearchUsr_Click(sender As Object, e As EventArgs)
 
         If rbNameSearch.Checked Then
             disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE username = '{tbSearch.Text}'")
@@ -264,6 +264,24 @@ Public Class labelSelectedID
             lblCount.Text = $"There are {GetClubMemberCount("")} people who are users of club linked,{Environment.NewLine}{GetClubMemberCount("Admin")} of them are app admins and {GetClubMemberCount("Club")} are club admins"
         End Try
 
+
+    End Sub
+
+    Private Sub tbSearch_TextChanged(sender As Object, e As EventArgs) Handles tbSearch.TextChanged
+
+        If rbNameSearch.Checked Then
+            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE username LIKE '{tbSearch.Text}%'")
+
+        ElseIf rbIDSearch.Checked Then
+
+            Dim searchID As Integer
+            If Integer.TryParse(tbSearch.Text, searchID) Then
+                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE userID LIKE '{tbSearch.Text}%'")
+            Else
+                MsgBox($"Please enter an integer, {tbSearch.Text} is not a valid value")
+            End If
+
+        End If
 
     End Sub
 End Class
