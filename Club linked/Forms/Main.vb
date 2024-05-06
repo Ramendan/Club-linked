@@ -7,13 +7,21 @@ Public Class Main
     Public Shared rdr As SqlDataReader
     Public Shared Username As String
     Public Shared ID As String
+    Public Shared Status As String
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        ' con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database\Database.mdf;Integrated Security=True"
-        con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\tooth\Source\Repos\Ramendan\Club-linked\Club linked\Database\Database.mdf;Integrated Security=True"
+        con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database\Database.mdf;Integrated Security=True"
+        ' con.ConnectionString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\tooth\Source\Repos\Ramendan\Club-linked\Club linked\Database\Database.mdf;Integrated Security=True"
 
         hideSubmenu()
+        If Status = "Admin" Then
+            AdminPanel.Visible = True
+            btnAdminTools.Visible = True
+        Else
+            AdminPanel.Visible = False
+            btnAdminTools.Visible = False
+        End If
 
     End Sub
 

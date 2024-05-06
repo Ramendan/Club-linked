@@ -117,9 +117,23 @@ Public Class Login
                     MsgBox($"Welcome back, {reader("username").ToString()}!")
                     Main.Username = reader("username").ToString()
                     Main.ID = reader("userID").ToString()
+                    Main.Status = reader("status").ToString()
+
                     Label8.Text = $"Currently signed in as: {Main.Username}"
                     btnLogout.Visible = True
                     gbLogin.Visible = False
+
+                    If Main.Status = "Admin" Then
+
+                        Main.btnAdminTools.Visible = True
+                        Main.AdminPanel.Visible = True
+
+                    Else
+
+                        Main.btnAdminTools.Visible = False
+                        Main.AdminPanel.Visible = False
+
+                    End If
                 Else
                     MsgBox("Invalid ID or password")
                 End If
@@ -142,9 +156,13 @@ Public Class Login
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
         Main.Username = ""
         Main.ID = ""
+        Main.Status = ""
         MsgBox("Logged out")
         gbLogin.Visible = True
         btnLogout.Visible = False
+        Main.AdminPanel.Visible = False
+        Main.btnAdminTools.Visible = False
+        Label8.Text = $"Currently logged out"
     End Sub
 
 

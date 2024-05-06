@@ -556,7 +556,6 @@ Partial Class Main
     Private WithEvents HelpPanel As Panel
     Private WithEvents btnReport As Button
     Private WithEvents btnAbout As Button
-    Private WithEvents btnAdminTools As Button
     Private WithEvents btnSettings As Button
     Private WithEvents ClubsPanel As Panel
     Private WithEvents btnReadingClub As Button
@@ -566,7 +565,6 @@ Partial Class Main
     Private WithEvents btnClubs As Button
     Friend WithEvents PanelChildForm As Panel
     Private WithEvents pictureBox1 As PictureBox
-    Private WithEvents AdminPanel As Panel
     Private WithEvents panelLogo As Panel
     Private WithEvents btnReports As Button
     Private WithEvents btnAdminAnnouncments As Button
@@ -579,4 +577,6 @@ Partial Class Main
     Friend WithEvents Panel1 As Panel
     Private WithEvents btnGeneral As Button
     Friend WithEvents Label1 As Label
+    Public WithEvents btnAdminTools As Button
+    Public WithEvents AdminPanel As Panel
 End Class
