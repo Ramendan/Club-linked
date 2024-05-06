@@ -56,6 +56,7 @@ Partial Class Login
         Me.ttID = New System.Windows.Forms.ToolTip(Me.components)
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.gbLogin.SuspendLayout()
         Me.gbRegister.SuspendLayout()
         Me.SuspendLayout()
@@ -167,6 +168,7 @@ Partial Class Login
         '
         'gbLogin
         '
+        Me.gbLogin.Controls.Add(Me.Label9)
         Me.gbLogin.Controls.Add(Me.btnHideLoginPass)
         Me.gbLogin.Controls.Add(Me.btnLoginShowPass)
         Me.gbLogin.Controls.Add(Me.btnLogin)
@@ -439,6 +441,17 @@ Partial Class Login
         Me.Label8.TabIndex = 45
         Me.Label8.Text = "Login"
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label9.Location = New System.Drawing.Point(41, 32)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(162, 72)
+        Me.Label9.TabIndex = 45
+        Me.Label9.Text = "Admin login:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ID: 210608" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Password: 123123" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -492,4 +505,5 @@ Partial Class Login
     Friend WithEvents ttID As ToolTip
     Private WithEvents btnLogout As Button
     Private WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
 End Class
