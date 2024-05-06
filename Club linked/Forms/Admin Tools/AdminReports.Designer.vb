@@ -23,62 +23,33 @@ Partial Class AdminReports
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UsernameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AccountsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DatabaseDataSet1 = New Club_linked.DatabaseDataSet1()
         Me.label1 = New System.Windows.Forms.Label()
-        Me.btnAddAdmin = New System.Windows.Forms.Button()
-        Me.btnRevoke = New System.Windows.Forms.Button()
-        Me.btnSearchUsr = New System.Windows.Forms.Button()
+        Me.btnBan = New System.Windows.Forms.Button()
+        Me.btnUnban = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.tbSearch = New System.Windows.Forms.TextBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.rbNameSearch = New System.Windows.Forms.RadioButton()
+        Me.rbIDSearch = New System.Windows.Forms.RadioButton()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.txtSearchUsr = New System.Windows.Forms.TextBox()
         Me.button5 = New System.Windows.Forms.Button()
         Me.DatabaseDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.AccountsTableAdapter = New Club_linked.DatabaseDataSet1TableAdapters.AccountsTableAdapter()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.lablelSelectedID = New System.Windows.Forms.Label()
+        Me.btnrbShowAll = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         CType(Me.AccountsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DatabaseDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
         CType(Me.DatabaseDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserIDDataGridViewTextBoxColumn, Me.UsernameDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.AccountsBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(191, 55)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(335, 317)
-        Me.DataGridView1.TabIndex = 33
-        '
-        'UserIDDataGridViewTextBoxColumn
-        '
-        Me.UserIDDataGridViewTextBoxColumn.DataPropertyName = "userID"
-        Me.UserIDDataGridViewTextBoxColumn.HeaderText = "userID"
-        Me.UserIDDataGridViewTextBoxColumn.Name = "UserIDDataGridViewTextBoxColumn"
-        '
-        'UsernameDataGridViewTextBoxColumn
-        '
-        Me.UsernameDataGridViewTextBoxColumn.DataPropertyName = "username"
-        Me.UsernameDataGridViewTextBoxColumn.HeaderText = "username"
-        Me.UsernameDataGridViewTextBoxColumn.Name = "UsernameDataGridViewTextBoxColumn"
         '
         'AccountsBindingSource
         '
@@ -101,74 +72,103 @@ Partial Class AdminReports
         Me.label1.TabIndex = 37
         Me.label1.Text = "Reports"
         '
-        'btnAddAdmin
+        'btnBan
         '
-        Me.btnAddAdmin.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.btnAddAdmin.FlatAppearance.BorderSize = 0
-        Me.btnAddAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAddAdmin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddAdmin.ForeColor = System.Drawing.Color.LightGray
-        Me.btnAddAdmin.Location = New System.Drawing.Point(20, 22)
-        Me.btnAddAdmin.Name = "btnAddAdmin"
-        Me.btnAddAdmin.Size = New System.Drawing.Size(150, 40)
-        Me.btnAddAdmin.TabIndex = 32
-        Me.btnAddAdmin.Text = "Ban user"
-        Me.btnAddAdmin.UseVisualStyleBackColor = False
+        Me.btnBan.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnBan.FlatAppearance.BorderSize = 0
+        Me.btnBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBan.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBan.ForeColor = System.Drawing.Color.LightGray
+        Me.btnBan.Location = New System.Drawing.Point(20, 55)
+        Me.btnBan.Name = "btnBan"
+        Me.btnBan.Size = New System.Drawing.Size(150, 40)
+        Me.btnBan.TabIndex = 32
+        Me.btnBan.Text = "Ban user"
+        Me.btnBan.UseVisualStyleBackColor = False
         '
-        'btnRevoke
+        'btnUnban
         '
-        Me.btnRevoke.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.btnRevoke.FlatAppearance.BorderSize = 0
-        Me.btnRevoke.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRevoke.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRevoke.ForeColor = System.Drawing.Color.LightGray
-        Me.btnRevoke.Location = New System.Drawing.Point(20, 75)
-        Me.btnRevoke.Name = "btnRevoke"
-        Me.btnRevoke.Size = New System.Drawing.Size(150, 40)
-        Me.btnRevoke.TabIndex = 31
-        Me.btnRevoke.Text = "Unban user"
-        Me.btnRevoke.UseVisualStyleBackColor = False
-        '
-        'btnSearchUsr
-        '
-        Me.btnSearchUsr.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSearchUsr.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.btnSearchUsr.FlatAppearance.BorderSize = 0
-        Me.btnSearchUsr.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearchUsr.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearchUsr.ForeColor = System.Drawing.Color.LightGray
-        Me.btnSearchUsr.Location = New System.Drawing.Point(20, 384)
-        Me.btnSearchUsr.Name = "btnSearchUsr"
-        Me.btnSearchUsr.Size = New System.Drawing.Size(150, 40)
-        Me.btnSearchUsr.TabIndex = 29
-        Me.btnSearchUsr.Text = "Search for user"
-        Me.btnSearchUsr.UseVisualStyleBackColor = False
+        Me.btnUnban.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnUnban.FlatAppearance.BorderSize = 0
+        Me.btnUnban.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUnban.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUnban.ForeColor = System.Drawing.Color.LightGray
+        Me.btnUnban.Location = New System.Drawing.Point(20, 101)
+        Me.btnUnban.Name = "btnUnban"
+        Me.btnUnban.Size = New System.Drawing.Size(150, 40)
+        Me.btnUnban.TabIndex = 31
+        Me.btnUnban.Text = "Unban user"
+        Me.btnUnban.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.DataGridView1)
+        Me.GroupBox1.Controls.Add(Me.btnrbShowAll)
+        Me.GroupBox1.Controls.Add(Me.tbSearch)
+        Me.GroupBox1.Controls.Add(Me.GroupBox4)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.DataGridView2)
-        Me.GroupBox1.Controls.Add(Me.GroupBox2)
-        Me.GroupBox1.Controls.Add(Me.txtSearchUsr)
-        Me.GroupBox1.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1.Controls.Add(Me.btnAddAdmin)
-        Me.GroupBox1.Controls.Add(Me.btnRevoke)
-        Me.GroupBox1.Controls.Add(Me.btnSearchUsr)
+        Me.GroupBox1.Controls.Add(Me.btnBan)
+        Me.GroupBox1.Controls.Add(Me.btnUnban)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.GroupBox1.Location = New System.Drawing.Point(26, 61)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(819, 447)
+        Me.GroupBox1.Size = New System.Drawing.Size(1097, 447)
         Me.GroupBox1.TabIndex = 39
         Me.GroupBox1.TabStop = False
+        '
+        'tbSearch
+        '
+        Me.tbSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbSearch.Location = New System.Drawing.Point(191, 376)
+        Me.tbSearch.Margin = New System.Windows.Forms.Padding(2)
+        Me.tbSearch.Name = "tbSearch"
+        Me.tbSearch.Size = New System.Drawing.Size(887, 24)
+        Me.tbSearch.TabIndex = 47
+        Me.tbSearch.Text = "Enter your search here..."
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.rbNameSearch)
+        Me.GroupBox4.Controls.Add(Me.rbIDSearch)
+        Me.GroupBox4.Location = New System.Drawing.Point(14, 203)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(156, 64)
+        Me.GroupBox4.TabIndex = 48
+        Me.GroupBox4.TabStop = False
+        '
+        'rbNameSearch
+        '
+        Me.rbNameSearch.AutoSize = True
+        Me.rbNameSearch.Checked = True
+        Me.rbNameSearch.Location = New System.Drawing.Point(6, 13)
+        Me.rbNameSearch.Name = "rbNameSearch"
+        Me.rbNameSearch.Size = New System.Drawing.Size(142, 17)
+        Me.rbNameSearch.TabIndex = 43
+        Me.rbNameSearch.TabStop = True
+        Me.rbNameSearch.Tag = "2"
+        Me.rbNameSearch.Text = "Search for specific name" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.rbNameSearch.UseVisualStyleBackColor = True
+        '
+        'rbIDSearch
+        '
+        Me.rbIDSearch.AutoSize = True
+        Me.rbIDSearch.Location = New System.Drawing.Point(6, 41)
+        Me.rbIDSearch.Name = "rbIDSearch"
+        Me.rbIDSearch.Size = New System.Drawing.Size(127, 17)
+        Me.rbIDSearch.TabIndex = 44
+        Me.rbIDSearch.Tag = "2"
+        Me.rbIDSearch.Text = "Search for specific ID"
+        Me.rbIDSearch.UseVisualStyleBackColor = True
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(445, 22)
+        Me.Label4.Location = New System.Drawing.Point(525, 22)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(88, 26)
@@ -188,76 +188,14 @@ Partial Class AdminReports
         '
         'DataGridView2
         '
-        Me.DataGridView2.AutoGenerateColumns = False
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
-        Me.DataGridView2.DataSource = Me.AccountsBindingSource
         Me.DataGridView2.Location = New System.Drawing.Point(530, 55)
         Me.DataGridView2.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowHeadersWidth = 51
         Me.DataGridView2.RowTemplate.Height = 24
-        Me.DataGridView2.Size = New System.Drawing.Size(275, 317)
+        Me.DataGridView2.Size = New System.Drawing.Size(548, 317)
         Me.DataGridView2.TabIndex = 36
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "userID"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "userID"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "username"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "username"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Controls.Add(Me.ListBox1)
-        Me.GroupBox2.Location = New System.Drawing.Point(20, 120)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox2.Size = New System.Drawing.Size(150, 252)
-        Me.GroupBox2.TabIndex = 35
-        Me.GroupBox2.TabStop = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(11, 13)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(131, 26)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Search from"
-        '
-        'ListBox1
-        '
-        Me.ListBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 22
-        Me.ListBox1.Items.AddRange(New Object() {"All", "Programming", "Music", "Chess", "Reading"})
-        Me.ListBox1.Location = New System.Drawing.Point(5, 41)
-        Me.ListBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(141, 114)
-        Me.ListBox1.TabIndex = 0
-        '
-        'txtSearchUsr
-        '
-        Me.txtSearchUsr.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearchUsr.Location = New System.Drawing.Point(191, 384)
-        Me.txtSearchUsr.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtSearchUsr.Name = "txtSearchUsr"
-        Me.txtSearchUsr.Size = New System.Drawing.Size(614, 24)
-        Me.txtSearchUsr.TabIndex = 34
-        Me.txtSearchUsr.Text = "Enter your search here..."
         '
         'button5
         '
@@ -277,51 +215,85 @@ Partial Class AdminReports
         '
         Me.AccountsTableAdapter.ClearBeforeFill = True
         '
+        'lablelSelectedID
+        '
+        Me.lablelSelectedID.AutoSize = True
+        Me.lablelSelectedID.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablelSelectedID.Location = New System.Drawing.Point(177, 38)
+        Me.lablelSelectedID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lablelSelectedID.Name = "lablelSelectedID"
+        Me.lablelSelectedID.Size = New System.Drawing.Size(131, 26)
+        Me.lablelSelectedID.TabIndex = 41
+        Me.lablelSelectedID.Text = "Selected ID:"
+        '
+        'btnrbShowAll
+        '
+        Me.btnrbShowAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnrbShowAll.FlatAppearance.BorderSize = 0
+        Me.btnrbShowAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnrbShowAll.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnrbShowAll.ForeColor = System.Drawing.Color.LightGray
+        Me.btnrbShowAll.Location = New System.Drawing.Point(20, 147)
+        Me.btnrbShowAll.Name = "btnrbShowAll"
+        Me.btnrbShowAll.Size = New System.Drawing.Size(150, 40)
+        Me.btnrbShowAll.TabIndex = 49
+        Me.btnrbShowAll.Text = "Show all members"
+        Me.btnrbShowAll.UseVisualStyleBackColor = False
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(191, 55)
+        Me.DataGridView1.MultiSelect = False
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView1.Size = New System.Drawing.Size(334, 316)
+        Me.DataGridView1.TabIndex = 50
+        '
         'AdminReports
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(854, 538)
+        Me.ClientSize = New System.Drawing.Size(1145, 538)
+        Me.Controls.Add(Me.lablelSelectedID)
         Me.Controls.Add(Me.label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.button5)
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.Name = "AdminReports"
         Me.Text = "AdminReports"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AccountsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DatabaseDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         CType(Me.DatabaseDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents DataGridView1 As DataGridView
     Private WithEvents label1 As Label
-    Private WithEvents btnAddAdmin As Button
-    Private WithEvents btnRevoke As Button
-    Private WithEvents btnSearchUsr As Button
+    Private WithEvents btnBan As Button
+    Private WithEvents btnUnban As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents txtSearchUsr As TextBox
     Private WithEvents button5 As Button
     Friend WithEvents DatabaseDataSetBindingSource As BindingSource
     Friend WithEvents DatabaseDataSet1 As DatabaseDataSet1
     Friend WithEvents AccountsBindingSource As BindingSource
     Friend WithEvents AccountsTableAdapter As DatabaseDataSet1TableAdapters.AccountsTableAdapter
-    Friend WithEvents UserIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents UsernameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents tbSearch As TextBox
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents rbNameSearch As RadioButton
+    Friend WithEvents rbIDSearch As RadioButton
+    Friend WithEvents lablelSelectedID As Label
+    Private WithEvents btnrbShowAll As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

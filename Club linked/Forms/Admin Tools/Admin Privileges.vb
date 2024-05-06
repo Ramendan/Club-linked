@@ -38,10 +38,11 @@ Public Class labelSelectedID
         Catch ex As Exception
             MsgBox($"Error: {ex}")
 
-        Finally
-            Main.con.Close()
-
         End Try
+
+        If Main.con.State = ConnectionState.Open Then
+            Main.con.Close()
+        End If
 
     End Sub
 
@@ -79,24 +80,6 @@ Public Class labelSelectedID
         tbSearch.Text = ""
     End Sub
 
-    Private Sub btnSearchUsr_Click(sender As Object, e As EventArgs)
-
-        If rbNameSearch.Checked Then
-            disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE username = '{tbSearch.Text}'")
-
-        ElseIf rbIDSearch.Checked Then
-
-            Dim searchID As Integer
-            If Integer.TryParse(tbSearch.Text, searchID) Then
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE userID = '{tbSearch.Text}'")
-            Else
-                MsgBox($"Please enter an integer, {tbSearch.Text} is not a valid value")
-            End If
-
-        End If
-
-    End Sub
-
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         Try
 
@@ -128,52 +111,55 @@ Public Class labelSelectedID
             Main.cmd = Main.con.CreateCommand()
             Main.cmd.CommandType = CommandType.Text
 
+            If Not i = 0 Then
 
-            If ListBox1.SelectedItem = "All" Then
+                If ListBox1.SelectedItem = "All" Then
 
-                Main.cmd.CommandText = $"update Accounts set status = 'Admin' where userID = {i}"
-                MsgBox($"Giving user {selected_name} ID:{i} global admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+                    Main.cmd.CommandText = $"update Accounts set status = 'Admin' where userID = {i}"
+                    MsgBox($"Giving user {selected_name} ID:{i} global admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
 
-            ElseIf ListBox1.SelectedItem = "Programming" Then
+                ElseIf ListBox1.SelectedItem = "Programming" Then
 
-                Main.cmd.CommandText = $"update Accounts set Programming = 'Admin' where userID = {i}"
-                MsgBox($"Giving user {selected_name} ID:{i} Programming admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+                    Main.cmd.CommandText = $"update Accounts set Programming = 'Admin' where userID = {i}"
+                    MsgBox($"Giving user {selected_name} ID:{i} Programming admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
 
-            ElseIf ListBox1.SelectedItem = "Chess" Then
+                ElseIf ListBox1.SelectedItem = "Chess" Then
 
-                Main.cmd.CommandText = $"update Accounts set Chess = 'Admin' where userID = {i}"
-                MsgBox($"Giving user {selected_name} ID:{i} Chess admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+                    Main.cmd.CommandText = $"update Accounts set Chess = 'Admin' where userID = {i}"
+                    MsgBox($"Giving user {selected_name} ID:{i} Chess admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
 
-            ElseIf ListBox1.SelectedItem = "Music" Then
+                ElseIf ListBox1.SelectedItem = "Music" Then
 
-                Main.cmd.CommandText = $"update Accounts set Music = 'Admin' where userID = {i}"
-                MsgBox($"Giving user {selected_name} ID:{i} Music admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+                    Main.cmd.CommandText = $"update Accounts set Music = 'Admin' where userID = {i}"
+                    MsgBox($"Giving user {selected_name} ID:{i} Music admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
 
-            ElseIf ListBox1.SelectedItem = "Reading" Then
+                ElseIf ListBox1.SelectedItem = "Reading" Then
 
-                Main.cmd.CommandText = $"update Accounts set Reading = 'Admin' where userID = {i}"
-                MsgBox($"Giving user {selected_name} ID:{i} Reading admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+                    Main.cmd.CommandText = $"update Accounts set Reading = 'Admin' where userID = {i}"
+                    MsgBox($"Giving user {selected_name} ID:{i} Reading admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+
+                Else
+
+                    Main.cmd.CommandText = $"update Accounts set status = 'Admin' where userID = {i}"
+                    MsgBox($"Giving user {selected_name} ID:{i} global admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+
+                End If
 
             Else
-
-                Main.cmd.CommandText = $"update Accounts set status = 'Admin' where userID = {i}"
-                MsgBox($"Giving user {selected_name} ID:{i} global admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
-
+                MsgBox("Please select a user to give admin first")
             End If
-
-            Main.con.Close()
         Catch ex As Exception
             MsgBox($"Error: {ex}")
 
@@ -197,52 +183,54 @@ Public Class labelSelectedID
             Main.cmd = Main.con.CreateCommand()
             Main.cmd.CommandType = CommandType.Text
 
+            If Not i = 0 Then
 
-            If ListBox1.SelectedItem = "All" Then
+                If ListBox1.SelectedItem = "All" Then
 
-                Main.cmd.CommandText = $"update Accounts set status = '' where userID = {i}"
-                MsgBox($"Revoking user {selected_name} ID:{i} global admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+                    Main.cmd.CommandText = $"update Accounts set status = '' where userID = {i}"
+                    MsgBox($"Revoking user {selected_name} ID:{i} global admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
 
-            ElseIf ListBox1.SelectedItem = "Programming" Then
+                ElseIf ListBox1.SelectedItem = "Programming" Then
 
-                Main.cmd.CommandText = $"update Accounts set Programming = '' where userID = {i}"
-                MsgBox($"Revoking user {selected_name} ID:{i} Programming admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+                    Main.cmd.CommandText = $"update Accounts set Programming = '' where userID = {i}"
+                    MsgBox($"Revoking user {selected_name} ID:{i} Programming admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
 
-            ElseIf ListBox1.SelectedItem = "Chess" Then
+                ElseIf ListBox1.SelectedItem = "Chess" Then
 
-                Main.cmd.CommandText = $"update Accounts set Chess = '' where userID = {i}"
-                MsgBox($"Revoking user {selected_name} ID:{i} Chess admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+                    Main.cmd.CommandText = $"update Accounts set Chess = '' where userID = {i}"
+                    MsgBox($"Revoking user {selected_name} ID:{i} Chess admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
 
-            ElseIf ListBox1.SelectedItem = "Music" Then
+                ElseIf ListBox1.SelectedItem = "Music" Then
 
-                Main.cmd.CommandText = $"update Accounts set Music = '' where userID = {i}"
-                MsgBox($"Revoking user {selected_name} ID:{i} Music admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+                    Main.cmd.CommandText = $"update Accounts set Music = '' where userID = {i}"
+                    MsgBox($"Revoking user {selected_name} ID:{i} Music admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
 
-            ElseIf ListBox1.SelectedItem = "Reading" Then
+                ElseIf ListBox1.SelectedItem = "Reading" Then
 
-                Main.cmd.CommandText = $"update Accounts set Reading = '' where userID = {i}"
-                MsgBox($"Revoking user {selected_name} ID:{i} Reading admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+                    Main.cmd.CommandText = $"update Accounts set Reading = '' where userID = {i}"
+                    MsgBox($"Revoking user {selected_name} ID:{i} Reading admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
 
+                Else
+
+                    Main.cmd.CommandText = $"update Accounts set status = '' where userID = {i}"
+                    MsgBox($"Revoking user {selected_name} ID:{i} global admin")
+                    Main.cmd.ExecuteNonQuery()
+                    disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
+
+                End If
             Else
-
-                Main.cmd.CommandText = $"update Accounts set status = '' where userID = {i}"
-                MsgBox($"Revoking user {selected_name} ID:{i} global admin")
-                Main.cmd.ExecuteNonQuery()
-                disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts where userID = {i}")
-
+                MsgBox("Please select a user to give revoke admin first")
             End If
-
-            Main.con.Close()
         Catch ex As Exception
             MsgBox($"Error: {ex}")
 
@@ -284,7 +272,4 @@ Public Class labelSelectedID
         disp_data(DataGridView1, $"SELECT userID AS ID, username AS Name, status AS Status, chess AS Chess, programming AS Programming, music As Music, reading as Reading FROM Accounts WHERE chess = 'Admin' OR programming = 'Admin' OR music = 'Admin' OR reading = 'Admin'")
     End Sub
 
-    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs) Handles GroupBox4.Enter
-
-    End Sub
 End Class
